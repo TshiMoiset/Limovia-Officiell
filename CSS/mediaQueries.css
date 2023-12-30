@@ -1,0 +1,168 @@
+@media screen and (max-width: 1025px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.navigationLinks,
+	.login {
+		display: none !important;
+	}
+
+	.heroImageText {
+		width: 80%;
+	}
+
+	/* -------------------- Section 2 About Limovia -------------------- */
+
+	.aboutCard1,
+	.aboutCard4 {
+		padding: 40px;
+		text-align: center;
+		background-color: #e8dfd9;
+	}
+
+	.aboutCard1 h2,
+	.aboutCard4 h2 {
+		font-size: 30px;
+		padding-bottom: 15px;
+		font-weight: lighter;
+	}
+
+	.aboutCard1 p,
+	.aboutCard4 p {
+		font-size: 16px;
+		padding: 15px 25px 0px 25px;
+		letter-spacing: 0.5px;
+	}
+
+	/* -------------------- Section 3 Subscription -------------------- */
+
+	.subscriptionText p {
+		padding: 0px 50px 30px 50px;
+	}
+
+	.subscription {
+		padding: 20px;
+	}
+
+	.subscriptionTableContent table {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	/* -------------------- Section 1 Limovia Number Show-------------------- */
+
+	.section1 .numberShowContainer {
+		display: grid;
+		grid-template-columns: auto;
+		border-bottom: solid 2px #D49641;
+	}
+
+	.numberShowHR {
+		transform: rotate(0deg);
+		margin: 40px;
+		align-items: center;
+		width: 25rem;
+		height: 2px;
+		border-style: solid;
+		border-radius: 5px;
+	}
+
+	/* -------------------- Section 2 About Limovia -------------------- */
+	.aboutCard1,
+	.aboutCard4 {
+		padding: 20px;
+	}
+
+	.aboutCard1 p,
+	.aboutCard4 p {
+		font-size: 15;
+		padding: 15px 15px 0px 15px;
+	}
+
+	/* -------------------- Section 3 Subscription -------------------- */
+
+	.subscriptionTableContent {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	/* -------------------- Section 5 Contact -------------------- */
+
+	.contactProfiles {
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+
+	/* -------------------- Footer -------------------- */
+	.footerContent {
+		flex-direction: column;
+		padding: 15px 20px;
+	}
+
+	.footerLeft p {
+		margin: 8px 0;
+	}
+
+	.footerRight {
+		flex-direction: column;
+	}
+
+	.footerRight ul {
+		padding: 0;
+	}
+
+	.footerRight ul {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 541px) {
+
+	/* -------------------- Section 2 About Limovia -------------------- */
+	.aboutLimovia {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.aboutCard3 {
+		display: none;
+	}
+
+	.aboutCardImage541px {
+		display: flex;
+	}
+
+	.aboutCard1 p,
+	.aboutCard4 p {
+		font-size: 17px;
+		padding: 0px 40px 0px 40px;
+	}
+
+	/* -------------------- Section 3 Subscription -------------------- */
+
+	.subscriptionTableContent {
+		display: grid;
+		grid-template-columns: auto;
+		width: 100%;
+	}
+
+	.subscriptionTableContent table {
+		width: 25rem;
+	}
+
+	.greenButton {
+		padding-bottom: 40px;
+	}
+
+	/* -------------------- Footer -------------------- */
+	.footerRight ul li {
+		display: block;
+		padding: 0.6rem;
+	}
+}
+
+@media screen and (max-width: 426px) {}

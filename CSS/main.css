@@ -1,0 +1,269 @@
+.mainHeroImage {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url("../IMAGES/OneVolvoCar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.heroImageText {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.heroImageText h1 {
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.heroImageText p {
+    padding: 0 80px;
+}
+
+.heroImageQuote {
+    font-size: 22px;
+}
+
+/* -------------------- Section 1 Limovia Number Show-------------------- */
+
+.numberShowContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px;
+    background-color: black;
+    /*color: #D49641;*/
+    color: #997357;
+}
+
+.numberShowNumber {
+    font-size: 5rem;
+    padding-bottom: 10px;
+    transition: 500ms;
+    font-family: "Hedvig Serif";
+}
+
+.numberShowText {
+    font-family: sans-serif;
+    font-size: larger;
+    font-family: "Montserrat";
+}
+
+.numberShowHR {
+    transform: rotate(90deg);
+    width: 10%;
+    margin: 10px;
+    height: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #D49641;
+}
+
+/* -------------------- Section 2 About Limovia -------------------- */
+.showImgOn769px {
+    display: none;
+}
+
+.aboutLimovia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #997357;
+}
+
+.aboutCard2 img,
+.aboutCard3 img,
+.aboutCardImage541px img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.aboutCard1,
+.aboutCard4 {
+    padding: 100px;
+    text-align: center;
+    background-color: #e8dfd9;
+}
+
+.aboutCard1 h2,
+.aboutCard4 h2 {
+    font-size: 40px;
+    padding-bottom: 15px;
+    font-weight: lighter;
+}
+
+.aboutCard1 p,
+.aboutCard4 p {
+    font-size: 20px;
+    padding: 15px 60px 0px 60px;
+}
+
+.aboutLimoviaHR {
+    text-align: center;
+    width: 300px;
+    height: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #997357;
+    display: none;
+}
+
+.aboutCardImage541px {
+    display: none;
+}
+
+/* -------------------- Section 3 Subscription -------------------- */
+
+.tableTitle {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.subscription {
+    padding: 75px;
+    background-color: #e8dfd9;
+    color: #997357;
+    width: 100%;
+}
+
+.subscriptionText {
+    text-align: center;
+}
+
+.subscriptionText h2 {
+    font-size: 70px;
+    padding-bottom: 15px;
+    font-weight: lighter;
+}
+
+.subscriptionText p {
+    text-align: center;
+    font-size: larger;
+    padding: 0px 300px 30px 300px;
+}
+
+.subscriptionTableContent {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.subscriptionTableContent table th {
+    text-align: center;
+}
+
+.subscriptionTableContent table {
+    width: 20rem;
+    height: 10rem;
+    border-collapse: collapse;
+}
+
+.subscriptionTableContent th {
+    color: white;
+}
+
+.subscriptionTableContent table th,
+td {
+    padding: 16px;
+}
+
+.subscriptionTableContent table th {
+    background-color: #997357;
+}
+
+.travelForFee td:nth-child(even) {
+    text-align: right;
+}
+
+.checkIcon {
+    text-align: right;
+}
+
+.travelForFee td {
+    background: #F6F1EE;
+}
+
+.extraTableInfo td {
+    background-color: white;
+}
+
+.tableHead h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.tableHead p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.greenButton {
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* -------------------- Section 5 Contact -------------------- */
+.contact {
+    background-color: #e8dfd9;
+    padding: 40px;
+}
+
+
+.contactProfiles {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.profileImageAndText img {
+    width: 70%;
+    border-radius: 2%;
+    padding-bottom: 10px;
+}
+
+.profileFigure {
+    padding-bottom: 40px;
+}
+
+.contactTitle h2 {
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: lighter;
+    color: #997357;
+    text-align: center;
+}
+
+.inputRow input {
+    width: 15%;
+    padding: 4px;
+    border-color: #997357;
+    border-style: solid;
+    border-radius: 5px;
+    outline: none;
+}
+
+.inputGroup textarea {
+    width: fit-content;
+    resize: none;
+    width: 30%;
+    padding: 10px;
+    border-color: #997357;
+    border-style: solid;
+    border-radius: 5px;
+}
+
