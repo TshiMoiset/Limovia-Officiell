@@ -1,12 +1,12 @@
 footer {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: black;
 	position: relative;
 	color: white;
 	width: 100%;
 	padding: 16px 0;
 	transition: 500ms;
 	bottom: 0;
-	border-top: solid 2px #94652B;
+	/*border-top: solid 2px #94652B;*/
 }
 
 .footerLogo h3 {
@@ -20,7 +20,6 @@ footer {
 	letter-spacing: 2px;
 	font-weight: lighter;
 	margin: 0px 20px;
-
 }
 
 .footerLeft p {
@@ -30,7 +29,6 @@ footer {
 
 .footerContent {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	text-align: center;
