@@ -1,0 +1,45 @@
+.aboutLimovia {
+    display: grid;
+   /* grid-template-columns: 15% 70% 15%;*/
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.aboutLimoviaInfo:nth-child(2) {
+    padding: 30px;
+}
+
+.aboutLimoviaInfo img {
+     width: 900px;
+    height: auto;
+}
+
+.aboutLimoviaText1 {
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+    color: #E6D8D7;
+    padding-top: 25px;
+}
+
+.aboutLimoviaText1 h1 {
+    font-weight: lighter;
+}
+
+.aboutLimoviaText2 {
+    text-align: center;
+    color: white;
+    font-size: larger;
+    font-style: oblique;
+    padding: 20px 0;
+}
+
+.aboutLimoviaText3 {
+    text-align: center;
+    color: white;
+    font-size: larger;
+    letter-spacing: 1px;
+}
+
+.aboutLimoviaImage768px {
+    display: none;
+}

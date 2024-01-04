@@ -33,6 +33,29 @@
 		border-radius: 5px;
 	}
 
+	/* -------------------- Section 1 About Limovia -------------------- */
+
+	.aboutLimoviaImage768px {
+		display: flex !important;
+	}
+
+	.aboutLimoviaImage {
+		display: none;
+	}
+
+	.aboutLimovia {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.aboutLimoviaInfo img {
+		width: 500px ;
+		height: auto;
+	}
+
+
+
 	/* -------------------- Footer -------------------- */
 	.footerContent {
 		flex-direction: column;
