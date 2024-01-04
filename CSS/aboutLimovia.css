@@ -1,6 +1,6 @@
 .aboutLimovia {
     display: grid;
-   /* grid-template-columns: 15% 70% 15%;*/
+    /*grid-template-columns: 22% 56% 22%;*/
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -9,7 +9,7 @@
 }
 
 .aboutLimoviaInfo img {
-     width: 900px;
+    width: 900px;
     height: auto;
 }
 
