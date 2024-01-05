@@ -38,9 +38,8 @@
 .aboutLimoviaText3 {
     text-align: center;
     color: white;
-    font-size: larger;
-    letter-spacing: 1px;
-    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+        font-family: 'Raleway', sans-serif;
 }
 
 .aboutLimoviaImage768px {
@@ -79,9 +78,7 @@
 }
 
 .aboutLimoviaHeroText p {
-    font-size: larger;
     padding: 0 100px;
-   line-height: 25px;
+    line-height: 25px;
     font-family: 'Raleway', sans-serif;
-    font-weight: light;
 }
