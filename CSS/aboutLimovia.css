@@ -39,7 +39,7 @@
     text-align: center;
     color: white;
     line-height: 25px;
-        font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .aboutLimoviaImage768px {
@@ -81,4 +81,39 @@
     padding: 0 100px;
     line-height: 25px;
     font-family: 'Raleway', sans-serif;
+}
+
+/* -------------------- About Limovia Slideshow -------------------- */
+
+.aboutLimoviaSlideshow {
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+.slides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
