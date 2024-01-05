@@ -2,6 +2,7 @@
     display: grid;
     /*grid-template-columns: 22% 56% 22%;*/
     grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 50px;
 }
 
 .aboutLimoviaInfo:nth-child(2) {
@@ -31,6 +32,7 @@
     font-size: larger;
     font-style: oblique;
     padding: 20px 0;
+
 }
 
 .aboutLimoviaText3 {
@@ -38,8 +40,48 @@
     color: white;
     font-size: larger;
     letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .aboutLimoviaImage768px {
     display: none;
+}
+
+/* -------------------- About Limovia Hero Image -------------------- */
+
+.aboutLimoviaHeroImage {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url("../IMAGES/GuyInCar.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.aboutLimoviaHeroText {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.aboutLimoviaHeroText h1 {
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.aboutLimoviaHeroText p {
+    font-size: larger;
+    padding: 0 100px;
+   line-height: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: light;
 }
