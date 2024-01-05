@@ -26,7 +26,7 @@ function plusSlides(n) {
 function startAutoPlay() {
   intervalId = setInterval(function () {
     plusSlides(1);
-  }, 30000);
+  }, 5000);
 }
 
 function stopAutoPlay() {
