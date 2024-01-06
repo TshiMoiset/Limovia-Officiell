@@ -108,10 +108,10 @@
     /* Add a smooth transition effect */
 }
 
-.slides.active {
+/*.slides.active {
     opacity: 3;
-    /* Set the opacity of the active slide to 1 */
-}
+    /* Set the opacity of the active slide to 1 
+}*/
 
 .prev,
 .next {

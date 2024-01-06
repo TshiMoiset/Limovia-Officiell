@@ -1,0 +1,21 @@
+.ourServices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    grid-gap: 30px;
+}
+
+.servicesContainer h2 {
+    font-weight: lighter;
+    color: #E6D8D7;
+}
+
+.servicesContainer p {
+    color: white;
+}
+
+.ourServicesCard img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
