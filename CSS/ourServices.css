@@ -44,7 +44,7 @@
 .servicesButtons ul {
     display: flex;
     box-sizing: border-box;
-    padding: 25px;
+    padding: 25px 20px;
 }
 
 .bookServicesButton {
