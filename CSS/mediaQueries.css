@@ -27,15 +27,11 @@
 	/* -------------------- About Limovia Slideshow -------------------- */
 	.slides {
 		padding: 0px !important;
+		width: 70%;
 	}
 
 	.slides p {
 		padding: 10px;
-	}
-
-	.slides {
-		padding: 0px !important;
-		width: 70%;
 	}
 
 	.prev,
