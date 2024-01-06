@@ -30,5 +30,6 @@
 .commonQuestionsHeroText p {
     padding: 0 100px;
     line-height: 25px;
+    font-style: oblique;
     font-family: 'Raleway', sans-serif;
 }
