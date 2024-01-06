@@ -5,17 +5,70 @@
     grid-gap: 30px;
 }
 
+.servicesContainer {
+    padding: 10px 20px;
+}
+
 .servicesContainer h2 {
     font-weight: lighter;
     color: #E6D8D7;
+    padding-bottom: 15px;
 }
 
 .servicesContainer p {
     color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
 }
 
 .ourServicesCard img {
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+.ourServicesCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+    border-bottom: solid 1px #D4A78C;
+}
+
+.ourServicesCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+.servicesButtons li {
+    list-style: none;
+}
+
+.servicesButtons ul {
+    display: flex;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.bookServicesButton {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 15px 50px;
+    transition: 500ms;
+    border: 1px solid white;
+}
+
+.bookServicesButton:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.readMoreServicesButton {
+    text-decoration: none;
+    color: white;
+    transition: 500ms;
+    margin: 30px;
+    padding: 5px;
+}
+
+.readMoreServicesButton:hover {
+    color: #D4A78C;
 }
