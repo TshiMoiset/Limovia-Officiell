@@ -39,6 +39,13 @@
 		top: 40% !important;
 	}
 
+	/* -------------------- Our Services -------------------- */
+	.ourServicesContainer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr) !important;
+		grid-gap: 30px;
+	}
+
 }
 
 @media screen and (max-width: 913px) {
@@ -150,6 +157,13 @@
 		display: none;
 	}
 
+	/* -------------------- Our Services -------------------- */
+	.ourServicesContainer {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr) !important;
+		grid-gap: 30px;
+	}
+
 	/* -------------------- Footer -------------------- */
 	.footerRight ul li {
 		display: block;
@@ -168,4 +182,5 @@
 	.aboutLimoviaText1 {
 		font-size: 18px !important;
 	}
+
 }
