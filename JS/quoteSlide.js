@@ -26,7 +26,7 @@ function plusSlides(n) {
 function startAutoPlay() {
   intervalId = setInterval(function () {
     plusSlides(1);
-  }, 3000);
+  }, 5000);
 }
 
 function fadeInNextSlide() {
@@ -47,5 +47,5 @@ function fadeInNextSlide() {
 
 function stopAutoPlay() {
   clearInterval(intervalId);
-  setTimeout(startAutoPlay, 8000); // Restart after 10 seconds
+  setTimeout(startAutoPlay, 7000); // Restart after 10 seconds
 }

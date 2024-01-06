@@ -138,6 +138,7 @@
 .slides p {
     padding: 20px;
     font-size: larger;
+    user-select: none;
 }
 
 .quoteIcon img {
