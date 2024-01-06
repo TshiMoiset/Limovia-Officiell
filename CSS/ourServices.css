@@ -1,7 +1,10 @@
 .ourServices {
+    padding: 50px;
+}
+
+.ourServicesContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 50px;
     grid-gap: 30px;
 }
 
@@ -71,4 +74,12 @@
 
 .readMoreServicesButton:hover {
     color: #D4A78C;
+}
+
+.ourServicesTitle h1 {
+    color: #E6D8D7;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 35px;
 }
