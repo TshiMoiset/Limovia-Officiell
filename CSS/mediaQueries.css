@@ -164,6 +164,19 @@
 		grid-gap: 30px;
 	}
 
+
+	/* -------------------- Common Questions -------------------- */
+
+	.searchBar input[type="text"] {
+		width: 300px !important;
+	}
+
+	.searchBar input[type="text"]:focus {
+		border: solid 2px white;
+
+	}
+
+
 	/* -------------------- Footer -------------------- */
 	.footerRight ul li {
 		display: block;
@@ -182,5 +195,17 @@
 	.aboutLimoviaText1 {
 		font-size: 18px !important;
 	}
+
+
+	/* -------------------- Common Questions -------------------- */
+
+	.searchBar input[type="text"] {
+		width: 250px !important;
+	}
+
+	.searchBar button {
+		width: 49px;
+	}
+
 
 }
