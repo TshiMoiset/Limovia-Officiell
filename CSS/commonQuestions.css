@@ -67,10 +67,6 @@
     border-bottom: solid 2px white;
 }
 
- .searchBar input[type="text"]:valid {
-     border-color: white;
- }
-
 .searchBar button {
     background-color: white;
     color: black;
