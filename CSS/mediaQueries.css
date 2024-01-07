@@ -46,6 +46,14 @@
 		grid-gap: 30px;
 	}
 
+	.ourServices {
+		padding: 50px 25px !important;
+	}
+
+	.readMoreServicesButton {
+		margin: 10px !important;
+	}
+
 	/* -------------------- Common Questions -------------------- */
 
 	.commonQuestionsHeroParagraph {
