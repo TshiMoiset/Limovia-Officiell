@@ -77,13 +77,13 @@
     transition: 500ms;
 
     border-top: solid 2px #373B4D;
-    border-left:none;
+    border-left: none;
     border-bottom: solid 2px #373B4D;
     border-right: solid 2px #373B4D;
 }
 
 .searchBar button:hover {
-color: white;
+    color: white;
     background-color: black;
 
 }
@@ -99,6 +99,34 @@ color: white;
 }
 
 .questionContainer {
-    /*background-color: black;*/
+    background-color: black;
     padding: 50px;
+}
+
+.questionCards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    padding-top: 70px;
+}
+
+.questions {
+    max-width: 390px;
+    margin: 30px;
+}
+
+.questions h2 {
+    color: #E6D8D7;
+    padding-bottom: 25px;
+    height: 100px;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.questions p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 25px;
 }
