@@ -46,6 +46,20 @@
 		grid-gap: 30px;
 	}
 
+	/* -------------------- Common Questions -------------------- */
+
+	.commonQuestionsHeroParagraph {
+		padding: 0px !important;
+	}
+
+	.commonQuestionsHeroText {
+		width: 100%;
+	}
+
+	.questions h2 {
+		height: 150px !important;
+	}
+
 }
 
 @media screen and (max-width: 913px) {
@@ -116,6 +130,21 @@
 		width: 80%;
 	}
 
+	/* -------------------- Common Questions -------------------- */
+
+	.questionCards {
+		display: grid !important;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.questionContainer {
+		padding: 50px 20px !important;
+	}
+
+	.questions h2 {
+		height: 120px !important;
+	}
+
 	/* -------------------- Footer -------------------- */
 	.footerContent {
 		flex-direction: column;
@@ -176,6 +205,20 @@
 
 	}
 
+	.questionCards {
+		display: grid !important;
+		grid-template-columns: repeat(1, 1fr);
+		text-align: center;
+	}
+
+	.questionContainer {
+		padding: 50px 20px !important;
+	}
+
+	.questions h2 {
+		height: 115px !important;
+	}
+
 
 	/* -------------------- Footer -------------------- */
 	.footerRight ul li {
@@ -206,6 +249,8 @@
 	.searchBar button {
 		width: 49px;
 	}
+
+
 
 
 }
