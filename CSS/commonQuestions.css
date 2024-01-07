@@ -67,6 +67,10 @@
     border-bottom: solid 2px white;
 }
 
+ .searchBar input[type="text"]:valid {
+     border-color: white;
+ }
+
 .searchBar button {
     background-color: white;
     color: black;
@@ -74,6 +78,18 @@
     cursor: pointer;
     font-size: larger;
     width: 70px;
+    transition: 500ms;
+
+    border-top: solid 2px #373B4D;
+    border-left:none;
+    border-bottom: solid 2px #373B4D;
+    border-right: solid 2px #373B4D;
+}
+
+.searchBar button:hover {
+color: white;
+    background-color: black;
+
 }
 
 .searchBar input[type="text"],
