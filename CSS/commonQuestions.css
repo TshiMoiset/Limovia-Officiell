@@ -51,13 +51,14 @@
     border-left: solid 2px #373B4D;
     border-bottom: solid 2px #373B4D;
     border-right: none;
-    font-size: 18px;
+    font-size: 15px;
     width: 430px;
     outline: none;
     background-color: black;
     font-style: oblique;
     color: aliceblue;
     transition: 500ms;
+    font-family: 'Roboto', sans-serif;
 }
 
 .searchBar input[type="text"]:focus {
@@ -82,6 +83,7 @@
 
 .searchBar ::placeholder {
     color: #373B4D;
+    font-size: 18px;
 }
 
 .questionContainer {
