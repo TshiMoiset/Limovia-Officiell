@@ -4,6 +4,9 @@
 
 .fleetSlide {
     display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    align-items: center;
+    /* border-bottom: solid 1px #D4A78C;*/
 }
 
 .fleetSlideImage img {
@@ -12,14 +15,50 @@
     object-fit: cover;
 }
 
+.carInfo {
+    color: white;
+    padding: 20px;
+}
 
+.carInfo p {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
 
+.carFleetButton li {
+    list-style: none;
+}
 
+.carFleetButton ul {
+    position: static;
+}
 
+.carInfo h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: #E6D8D7;
+    text-align: center;
+    padding: 20px;
+}
 
+.carFleetButton ul {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
 
+.carFleetButton a {
+    color: white;
+    transition: 500ms;
+    text-decoration: none;
+}
 
-
+.carFleetButton a:hover {
+    color: #E6D8D7;
+}
 
 
 
