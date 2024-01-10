@@ -1,11 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Get all slide elements
   var slides = document.querySelectorAll(".carousel-slide");
-
-  // Initialize current slide index
   var currentSlide = 0;
+  var autoPlayTimer;
 
-  // Function to show the current slide
   function showSlide(index) {
     slides.forEach(function (slide, i) {
       if (i === index) {
@@ -16,26 +13,48 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Initial display
-  showSlide(currentSlide);
-
-  // Function to navigate to the next slide
   function nextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
+    startAutoPlay();
   }
 
-  // Function to navigate to the previous slide
   function prevSlide() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     showSlide(currentSlide);
+    startAutoPlay();
   }
+
+  function startAutoPlay() {
+    // Clear the existing timer if it exists
+    clearTimeout(autoPlayTimer);
+
+    // Set a new timer for automatic slideshow every 2 seconds
+    autoPlayTimer = setTimeout(function () {
+      nextSlide();
+    }, 1000); // 2 seconds
+  }
+
+  // Initial display
+  showSlide(currentSlide);
 
   // Attach click event listeners to navigation buttons using class selectors
   document
     .querySelector(".prevCarfleetBtn")
-    .addEventListener("click", prevSlide);
+    .addEventListener("click", function () {
+      prevSlide();
+      clearInterval(autoPlayTimer); // Clear timer on manual interaction
+      setTimeout(startAutoPlay, 10000); // Restart after 10 seconds
+    });
+
   document
     .querySelector(".nextCarFleetbtn")
-    .addEventListener("click", nextSlide);
+    .addEventListener("click", function () {
+      nextSlide();
+      clearInterval(autoPlayTimer); // Clear timer on manual interaction
+      setTimeout(startAutoPlay, 10000); // Restart after 10 seconds
+    });
+
+  // Start automatic slideshow
+  startAutoPlay();
 });
