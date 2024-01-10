@@ -1,6 +1,7 @@
 .carFleet {
     overflow: hidden;
-    padding: 50px;
+    padding: 60px;
+    position: relative;
 }
 
 .carousel-slide {
@@ -66,10 +67,25 @@
     color: #E6D8D7;
 }
 
+.prevCarfleetBtn,
+.nextCarFleetbtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
 
+.prevCarfleetBtn {
+    left: 10px;
+}
 
-
-
+.nextCarFleetbtn {
+    right: 10px;
+}
 
 
 

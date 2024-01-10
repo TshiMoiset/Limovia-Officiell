@@ -31,7 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(currentSlide);
   }
 
-  // Attach click event listeners to navigation buttons
-  document.getElementById("prevBtn").addEventListener("click", prevSlide);
-  document.getElementById("nextBtn").addEventListener("click", nextSlide);
+  // Attach click event listeners to navigation buttons using class selectors
+  document
+    .querySelector(".prevCarfleetBtn")
+    .addEventListener("click", prevSlide);
+  document
+    .querySelector(".nextCarFleetbtn")
+    .addEventListener("click", nextSlide);
 });
