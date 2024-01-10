@@ -1,14 +1,15 @@
 .carFleet {
-    overflow: hidden;
     padding: 60px;
     position: relative;
+    overflow: hidden;
 }
 
 .carousel-slide {
     flex: 0 0 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    justify-content: center;
     align-items: center;
-    /* border-bottom: solid 1px #D4A78C;*/
+    border-bottom: solid 1px #D4A78C;
 }
 
 .carousel-slide.active {
@@ -16,9 +17,14 @@
     /* Assuming you want to display them as flex containers */
 }
 
+.fleetSlideImage {
+    display: flex;
+    /* Stretch the image to take full height */
+}
+
 .fleetSlideImage img {
     width: 800px;
-    height: 400px;
+    height: 410px;
     object-fit: cover;
 }
 
@@ -72,11 +78,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 24px;
+    font-size: 40px;
     color: white;
     text-decoration: none;
     padding: 10px;
     cursor: pointer;
+    user-select: none;
 }
 
 .prevCarfleetBtn {
