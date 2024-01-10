@@ -1,12 +1,18 @@
 .carFleet {
+    overflow: hidden;
     padding: 50px;
 }
 
-.fleetSlide {
-    display: flex;
+.carousel-slide {
+    flex: 0 0 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
     align-items: center;
     /* border-bottom: solid 1px #D4A78C;*/
+}
+
+.carousel-slide.active {
+    display: flex;
+    /* Assuming you want to display them as flex containers */
 }
 
 .fleetSlideImage img {
