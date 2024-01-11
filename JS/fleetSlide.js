@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set a new timer for automatic slideshow every 2 seconds
     autoPlayTimer = setTimeout(function () {
       nextSlide();
-    }, 5000); // 2 seconds
+    }, 300000); // 2 seconds
   }
 
   // Initial display

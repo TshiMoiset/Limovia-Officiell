@@ -33,7 +33,7 @@
     padding: 20px;
 }
 
-.carInfo p {
+.carInfoParagraph {
     text-align: center;
     padding: 10px;
     font-family: 'Raleway', sans-serif;
@@ -94,6 +94,36 @@
     right: 10px;
 }
 
+.carSpecsIcons {
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 15px;
+}
+
+.specIconFrame {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.specIcon img {
+    width: 25px;
+    height: 25px;
+}
+
+.specIcon p {
+    font-size: 15px;
+    padding-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
 
 
 
