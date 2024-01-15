@@ -7,7 +7,7 @@
    width: 100%;
 }
 
-.contactTitle h1{
+.contactTitle h1 {
    color: #E6D8D7;
    font-size: 40px;
    font-weight: lighter;
@@ -16,6 +16,7 @@
 
 .contactContainer {
    display: flex;
+   align-items: center;
 }
 
 .contactRightText {
@@ -128,3 +129,22 @@ input[type=number] {
 }
 
 /* -------------------- Contact Left -------------------- */
+.addressRow {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   padding: 2px;
+}
+
+.addressRow h1 {
+   font-weight: lighter;
+   color: #E6D8D7;
+   font-size: 30px;
+}
+
+.addressRow p {
+   font-size: 20px;
+   font-family: 'Raleway', sans-serif;
+   letter-spacing: 1px;
+}
