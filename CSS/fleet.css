@@ -101,6 +101,7 @@
     align-items: center;
     text-align: center;
     grid-gap: 15px;
+    user-select: none;
 }
 
 .specIconFrame {

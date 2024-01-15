@@ -1,0 +1,116 @@
+.contact {
+   padding: 50px;
+   background-color: black;
+}
+
+.contactMap img {
+   width: 100%;
+}
+
+.contactContainer {
+   /*display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: space-between;
+   align-items: center;*/
+   display: flex;
+}
+
+/*.contactForm {}*/
+
+.contactRight {
+   flex-basis: 40%;
+   padding: 40px 60px;
+}
+
+.contactLeft {
+   flex-basis: 60%;
+   padding: 40px;
+}
+
+.contactInputRow {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.contactInputGroup {
+   flex-basis: 100%;
+   padding: 3px;
+}
+
+.contactRight input {
+   border: solid 2px #373B4D;
+   font-size: 15px;
+   width: 100%;
+   outline: none;
+   background-color: black;
+   font-style: oblique;
+   color: aliceblue;
+   padding: 10px;
+   transition: 500ms;
+   font-family: 'Roboto', sans-serif;
+}
+
+.contactRight textarea {
+   width: 100%;
+   resize: none;
+}
+
+.contactRight input[type="message"] {
+   width: 100%;
+}
+
+.contactRight button {
+   width: 100%;
+}
+
+.contactRight input:focus,
+.contactRight textarea:focus {
+   border: solid 2px white;
+}
+
+.contactRight ::placeholder {
+   color: rgba(255, 255, 255, 0.788);
+   font-size: 15px;
+}
+
+.contactRight textarea {
+   border: solid 2px #373B4D;
+   font-size: 15px;
+   width: 100%;
+   outline: none;
+   background-color: black;
+   font-style: oblique;
+   color: aliceblue;
+   padding: 10px;
+   transition: 500ms;
+   font-family: 'Roboto', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+input[type=number] {
+   -moz-appearance: textfield;
+}
+
+.contactRight button {
+   background-color: white;
+   color: black;
+   border: none;
+   cursor: pointer;
+   font-size: larger;
+   border: solid 2px white;
+   transition: 500ms;
+   padding: 10px;
+   font-style: oblique;
+   font-family: 'Raleway', sans-serif;
+}
+
+.contactRight button:hover {
+   color: white;
+   background-color: black;
+}
