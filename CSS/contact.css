@@ -66,29 +66,6 @@
 }
 
 .contactRight textarea {
-   width: 100%;
-   resize: none;
-}
-
-.contactRight input[type="message"] {
-   width: 100%;
-}
-
-.contactRight button {
-   width: 100%;
-}
-
-.contactRight input:focus,
-.contactRight textarea:focus {
-   border-bottom: solid 2px white;
-}
-
-.contactRight ::placeholder {
-   color: rgba(255, 255, 255, 0.788);
-   font-size: 15px;
-}
-
-.contactRight textarea {
    border: solid 2px #373B4D;
    border-top: none;
    border-right: none;
@@ -104,14 +81,12 @@
    font-family: 'Roboto', sans-serif;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-   -webkit-appearance: none;
-   margin: 0;
+.contactRight textarea {
+   resize: none;
 }
 
-input[type=number] {
-   -moz-appearance: textfield;
+.contactRight button {
+   width: 100%;
 }
 
 .contactRight button {
@@ -131,3 +106,25 @@ input[type=number] {
    color: white;
    background-color: black;
 }
+
+.contactRight input:focus,
+.contactRight textarea:focus {
+   border-bottom: solid 2px white;
+}
+
+.contactRight ::placeholder {
+   color: rgba(255, 255, 255, 0.788);
+   font-size: 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+input[type=number] {
+   -moz-appearance: textfield;
+}
+
+/* -------------------- Contact Left -------------------- */
