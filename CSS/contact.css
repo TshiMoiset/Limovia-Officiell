@@ -7,15 +7,26 @@
    width: 100%;
 }
 
+.contactTitle h1{
+   color: #E6D8D7;
+   font-size: 40px;
+   font-weight: lighter;
+   text-align: center;
+}
+
 .contactContainer {
-   /*display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   justify-content: space-between;
-   align-items: center;*/
    display: flex;
 }
 
-/*.contactForm {}*/
+.contactRightText {
+   color: white;
+   padding: 20px 0px;
+   line-height: 25px;
+   letter-spacing: 1px;
+   font-family: 'Raleway', sans-serif;
+   box-sizing: border-box;
+   width: 100%;
+}
 
 .contactRight {
    flex-basis: 40%;
@@ -40,6 +51,9 @@
 
 .contactRight input {
    border: solid 2px #373B4D;
+   border-top: none;
+   border-right: none;
+   border-left: none;
    font-size: 15px;
    width: 100%;
    outline: none;
@@ -66,7 +80,7 @@
 
 .contactRight input:focus,
 .contactRight textarea:focus {
-   border: solid 2px white;
+   border-bottom: solid 2px white;
 }
 
 .contactRight ::placeholder {
@@ -76,6 +90,9 @@
 
 .contactRight textarea {
    border: solid 2px #373B4D;
+   border-top: none;
+   border-right: none;
+   border-left: none;
    font-size: 15px;
    width: 100%;
    outline: none;
