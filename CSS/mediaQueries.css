@@ -81,6 +81,19 @@
 		flex-direction: column;
 	}
 
+	/* -------------------- Contact -------------------- */
+
+	.profile img {
+		width: 290px !important;
+		max-width: 150%;
+		height: 190px !important;
+		border-radius: 3px;
+	}
+
+	.contactContainer {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 }
 
 @media screen and (max-width: 913px) {
@@ -173,6 +186,27 @@
 		height: 500px !important;
 		object-fit: cover;
 	}
+
+	/* -------------------- Contact -------------------- */
+
+	.contactLeft {
+		grid-gap: 10px !important;
+	}
+
+	.profile img {
+		width: 290px !important;
+		max-width: 150%;
+		height: 190px !important;
+	}
+
+	.contactRight {
+		padding: 40px 10px !important;
+	}
+
+	.contactLeft {
+		padding: 40px 10px !important;
+	}
+
 
 	/* -------------------- Footer -------------------- */
 	.footerContent {
@@ -271,9 +305,17 @@
 		padding-top: 5px;
 	}
 
-		.carInfo h1 {
-			font-size: 35px !important;
-		}
+	.carInfo h1 {
+		font-size: 35px !important;
+	}
+
+	/* -------------------- Contact -------------------- */
+
+	.profile img {
+		width: 200px !important;
+		max-width: 150%;
+		height: 150px !important;
+	}
 
 
 	/* -------------------- Footer -------------------- */
@@ -306,6 +348,24 @@
 		width: 49px;
 	}
 
+	/* -------------------- Contact -------------------- */
+
+	.contact {
+		padding: 50px 10px !important;
+	}
+
+	.profile img {
+		width: 350px !important;
+		max-width: 100%;
+		height: 250px !important;
+	}
+
+	.contactLeft {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr) !important;
+		grid-gap: 30px;
+		text-align: centers;
+	}
 
 
 
