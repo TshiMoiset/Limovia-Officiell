@@ -1,0 +1,156 @@
+body {
+    /*background-color: #191919;*/
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logInContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 600ms;
+
+    /* box-shadow: 5px 5px 10px #191919;*/
+    box-shadow: 5px 5px 10px #191919, -5px 5px 10px #191919, 0px 5px 10px #191919, 5px 0px 10px #191919;
+}
+
+ .logInContainer:hover {
+    box-shadow: 5px 5px 10px #373b4d77, -5px 5px 10px #373b4d77, 0px 5px 10px #373b4d77, 5px 0px 10px #373b4d77;
+     /* Replace 'your_hover_color' with the desired hover color */
+ }
+
+.loginLeft {
+    flex-basis: 65%;
+    min-height: 60vh;
+    width: 900px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url("../IMAGES/VolvoOcean.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 40px;
+}
+
+.loginRight {
+    flex-basis: 35%;
+    padding: 40px;
+}
+
+.loginInputRow {
+    padding-bottom: 10px;
+}
+
+.loginInputRow input[type="email"],
+.loginInputRow input[type="password"] {
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    font-style: oblique;
+    color: aliceblue;
+    transition: 500ms;
+    font-family: 'Roboto', sans-serif;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: black;
+    /*border: solid 2px #191919;*/
+    border: solid 2px #373B4D;
+}
+
+.loginInputRow input[type="email"]:focus,
+.loginInputRow input[type="password"]:focus {
+    border: solid 2px white;
+}
+
+.loginInputRow button {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    border: solid 2px white;
+    transition: 500ms;
+    padding: 13px;
+    font-style: oblique;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.loginInputRow button:hover {
+    color: white;
+    background-color: black;
+}
+
+.loginInputRow input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.checkboxAndText {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.checkboxAndText span {
+    font-size: 14px;
+}
+
+.logoAndText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoAndText h1 {
+    color: white;
+    font-weight: lighter;
+    font-size: 2.5em;
+    font-family: "Isabel Thin";
+    background: rgb(148, 101, 43);
+    background: linear-gradient(90deg, rgba(148, 101, 43, 1) 0%, rgba(214, 192, 118, 1) 50%, rgba(148, 101, 43, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    user-select: none;
+}
+
+.logoAndText span {
+    color: white;
+    font-size: 30px;
+    padding-left: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.loginText {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.loginPassword li,
+.loginPassword ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.loginPassword a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    transition: 500ms;
+}
+
+.loginPassword a:hover {
+    color: #E6D8D7;
+}
