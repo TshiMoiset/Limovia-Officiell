@@ -7,6 +7,27 @@
 		width: 100%;
 	}
 
+	/* -------------------- Log In -------------------- */
+
+	.loginRight {
+		flex-basis: 50%;
+		padding: 40px;
+	}
+
+	.loginLeft {
+		flex-basis: 50%;
+		min-height: 60vh;
+		width: 300px !important;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+			url("../IMAGES/VolvoOceanSmallScreen.jpg");
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		padding: 40px !important;
+	}
+
+
 	/* -------------------- Section 1 Limovia Number Show-------------------- */
 
 	.navigationLinks,
@@ -115,6 +136,28 @@
 }
 
 @media screen and (max-width: 769px) {
+
+		/* -------------------- Log In -------------------- */
+		
+			.loginRight {
+				flex-basis: 99%;
+				padding: 40px;
+			}
+		
+			.loginLeft {
+				flex-basis: 1%;
+				min-height: 60vh;
+				width: 300px !important;
+				background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+					url("../IMAGES/VolvoOceanSmallScreen.jpg");
+				background-position: right;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+				padding: 40px !important;
+				display: none;
+			}
+
 	/* -------------------- Section 1 Limovia Number Show-------------------- */
 
 	.section1 .numberShowContainer {

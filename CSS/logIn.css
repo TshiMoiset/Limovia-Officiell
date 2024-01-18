@@ -21,10 +21,9 @@ body {
     box-shadow: 5px 5px 10px #191919, -5px 5px 10px #191919, 0px 5px 10px #191919, 5px 0px 10px #191919;
 }
 
- .logInContainer:hover {
+.logInContainer:hover {
     box-shadow: 5px 5px 10px #373b4d77, -5px 5px 10px #373b4d77, 0px 5px 10px #373b4d77, 5px 0px 10px #373b4d77;
-     /* Replace 'your_hover_color' with the desired hover color */
- }
+}
 
 .loginLeft {
     flex-basis: 65%;
@@ -153,4 +152,34 @@ body {
 
 .loginPassword a:hover {
     color: #E6D8D7;
+}
+
+.signUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUp span {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.signUp ul,
+.signUp li {
+    list-style: none;
+    padding-left: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.signUp a {
+    color: #E6D8D7;
+    transition: 500ms;
+    text-decoration: none;
+    border-bottom: solid 2px black;
+}
+
+.signUp a:hover {
+    color: #E6D8D7;
+    border-bottom: solid 2px;
 }
