@@ -10,7 +10,10 @@
     <title>Limovia | Bli Medlem</title>
     <link rel="shortcut icon" href="LOGOS/LimoviaFavicon.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="CSS/signUp.css">
     <link rel="stylesheet" href="CSS/mediaQueries.css">
+
+    <script defer src="JS/signUp.js"></script>
 
     <!--  Raleway  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,69 +36,149 @@
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
 </head>
 
 <body>
+
     <main>
 
-        <div class="logInContainer">
+        <div class="formContainer">
 
-            <div class="loginLeft">
-                <!--<img src="IMAGES/VolvoOcean.jpg" alt="">-->
-            </div>
+            <div class="signUpPrivateContainer">
 
-            <div class="loginRight">
-
-                <div class="logoAndText">
+                <div class="signUpAndText">
                     <h1>Limovia</h1>
-                    <span>| Logga In</span>
+                    <span>| Privat</span>
                 </div>
 
-                <div class="loginForm">
+                <div class="accountChangeButtons">
+                    <button onclick="displayPrivate()">Privat</i></i></button>
+                    <button onclick="displayCompany()">Företag</i></i></button>
+                </div>
 
-                    <div class="loginText">
-                        <p>Logga in med din e-postadress</p>
-                    </div>
+                <div class="signUpForm">
 
                     <form>
-                        <div class=" loginInputRow">
-                            <input type="email" placeholder="Email Address" name="email" required autocomplete="off">
+                        <div class="signUpInputRow">
+                            <div class="titleSelection">
+                                <label>Title*</label>
+                                <select id="title" name="title">
+                                    <option value="selectTitle"></option>
+                                    <option value="Mr">Mr.</option>
+                                    <option value="Ms">Ms.</option>
+                                </select>
+                            </div>
                         </div>
 
-                        <div class="loginInputRow">
-                            <input type="password" placeholder="Lösenord" name="password" required autocomplete="off">
+                        <div class="signUpInputRow">
+                            <input type="text" placeholder="Förnamn*" name="firstname" required autocomplete="off">
+                            <input type="text" placeholder="Efternamn*" name="Surname" required autocomplete="off">
+                            <input type="number" placeholder="Personnummer*" name="socialSecurityNumber" required
+                                autocomplete="off">
                         </div>
 
-                        <div class="loginInputRow checkboxAndText">
-                            <input type="checkbox" name="remember">
-                            <span>Kom Ihåg</span>
+                        <div class="signUpInputRow">
+                            <input type="email" placeholder="Email Address*" name="emailAddress" required
+                                autocomplete="off">
+                            <input type="number" placeholder="Telefonnummer*" name="phoneNumber" required
+                                autocomplete="off">
                         </div>
 
-                        <div class="loginInputRow">
-                            <button type="submit">Logga In</i></i></button>
+                        <div class="signUpInputRow">
+                            <div class="regionContainer">
+                                <label>Region*</label>
+                                <select id="region" name="region">
+                                    <option value="allRegion"></option>
+                                    <option value="regionStockholm">Stockholms Län</option>
+                                    <option value="regionVästerås">Uppsala Län</option>
+                                    <option value="regionVäst">Västmanlands Län</option>
+                                    <option value="regionVäst">Södermanlands Län</option>
+                                    <option value="region">Örebro Län</option>
+                                    <option value="region">Värmlands Län</option>
+                                    <option value="region">Västra Gotlands Län</option>
+                                    <option value="region">Hallands Län</option>
+                                    <option value="region">Östergötlands Län</option>
+                                    <option value="region">Jönköpings Län</option>
+                                    <option value="region">Kronobergs Län</option>
+                                    <option value="region">Kalmar Län</option>
+                                </select>
+                            </div>
+                            <input type="text" placeholder="Adress*" name="address" required autocomplete="off">
+                            <input type="number" placeholder="Postnummer*" name="ZIPcode" required autocomplete="off">
+                            <input type="text" placeholder="Stad*" name="password" required autocomplete="off">
                         </div>
 
-                        <div class="loginInputRow loginPassword">
+                        <div class="signUpInputRow">
+                            <button type="submit">Skapa Konto</i></i></button>
+                        </div>
+
+                        <div class="signUpInputRow">
+                            <span>Har du redan ett konto?</span>
                             <ul>
-                                <li><a href="#">Glömt Lösenordet?</a></li>
+                                <li><a href="logIn.html">Logga In</a></li>
                             </ul>
                         </div>
+                    </form>
+                </div>
+            </div>
 
-                        <div class="loginInputRow signUp">
-                            <span>Har du inget Limovia-konto?</span>
+            <div class="signUpCompanyContainer">
+
+                <div class="signUpAndText">
+                    <h1>Limovia</h1>
+                    <span>| För Företag</span>
+                </div>
+
+                <div class="accountChangeButtons">
+                    <button onclick="displayPrivate()">Privat</i></i></button>
+                    <button onclick="displayCompany()">Företag</i></i></button>
+                </div>
+
+                <div class="signUpForm">
+
+                    <form>
+                        <div class="signUpInputRow">
+                            <input type="text" placeholder="Företagsnamn*" name="companyName" required
+                                autocomplete="off">
+                            <input type="text" placeholder="Org. Nr.*" name="companyName" required autocomplete="off">
+                        </div>
+
+                        <div class="signUpInputRow">
+                            <input type="text" placeholder="Adress*" name="address" required autocomplete="off">
+                            <input type="number" placeholder="Postnummer*" name="ZIPcode" required autocomplete="off">
+                            <input type="text" placeholder="Stad*" name="password" required autocomplete="off">
+                        </div>
+
+                        <div class="signUpInputRow">
+                            <input type="text" placeholder="Förnamn*" name="firstname" required autocomplete="off">
+                            <input type="text" placeholder="Efternamn*" name="surname" required autocomplete="off">
+                        </div>
+
+                        <div class="signUpInputRow">
+                            <input type="text" placeholder="Email Address*" name="emailAddress" required
+                                autocomplete="off">
+                            <input type="number" placeholder="Telefonnummer*" name="phoneNumber" required
+                                autocomplete="off">
+                        </div>
+
+                        <div class="signUpInputRow">
+                            <button type="submit">Skapa Konto</i></i></button>
+                        </div>
+
+                        <div class="signUpInputRow">
+                            <span>Har du redan ett företagskonto?</span>
                             <ul>
-                                <li><a href="#">Bli Medlem</a></li>
+                                <li><a href="logIn.html">Logga In</a></li>
                             </ul>
                         </div>
                     </form>
                 </div>
 
             </div>
-
         </div>
 
     </main>
+
 </body>
 
 </html>
