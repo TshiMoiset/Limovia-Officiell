@@ -137,26 +137,26 @@
 
 @media screen and (max-width: 769px) {
 
-		/* -------------------- Log In -------------------- */
-		
-			.loginRight {
-				flex-basis: 99%;
-				padding: 40px;
-			}
-		
-			.loginLeft {
-				flex-basis: 1%;
-				min-height: 60vh;
-				width: 300px !important;
-				background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-					url("../IMAGES/VolvoOceanSmallScreen.jpg");
-				background-position: right;
-				background-repeat: no-repeat;
-				background-size: cover;
-				position: relative;
-				padding: 40px !important;
-				display: none;
-			}
+	/* -------------------- Log In -------------------- */
+
+	.loginRight {
+		flex-basis: 99%;
+		padding: 40px;
+	}
+
+	.loginLeft {
+		flex-basis: 1%;
+		min-height: 60vh;
+		width: 300px !important;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+			url("../IMAGES/VolvoOceanSmallScreen.jpg");
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		padding: 40px !important;
+		display: none;
+	}
 
 	/* -------------------- Section 1 Limovia Number Show-------------------- */
 
@@ -370,46 +370,112 @@
 
 @media screen and (max-width: 426px) {
 
-	/* -------------------- Section 1 About Limovia -------------------- */
-	.aboutLimoviaInfo img {
-		width: 300px !important;
-		height: auto;
-	}
+	/* -------------------- Log In -------------------- */
 
-	.aboutLimoviaText1 {
-		font-size: 18px !important;
-	}
-
-
-	/* -------------------- Common Questions -------------------- */
-
-	.searchBar input[type="text"] {
-		width: 250px !important;
-	}
-
-	.searchBar button {
-		width: 49px;
-	}
-
-	/* -------------------- Contact -------------------- */
-
-	.contact {
-		padding: 50px 10px !important;
-	}
-
-	.profile img {
-		width: 350px !important;
+	.logInContainer {
+		flex-direction: column;
 		max-width: 100%;
-		height: 250px !important;
+		box-shadow: none !important;
 	}
 
-	.contactLeft {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr) !important;
-		grid-gap: 30px;
-		text-align: centers;
+	.loginRight {
+		padding: 20px;
 	}
 
+	.loginForm {
+		padding: 20px;
+	}
+
+	.loginInputRow.checkboxAndText {
+		display: flex;
+		align-items: center;
+	}
+
+	.logoAndText {
+		font-size: smaller;
+	}
+
+	.signUp {
+		flex-wrap: wrap;
+	}
+}
+
+/*.logoAndText h1 {
+		font-size: 2em;
+		letter-spacing: 2px;
+		font-weight: lighter;
+		user-select: none;
+	}
+
+	.logoAndText span {
+		color: white;
+		font-size: 30px;
+		padding-left: 5px;
+		font-family: 'Raleway', sans-serif;
+	}
+
+	.loginInputRow input[type="email"],
+	.loginInputRow input[type="password"] {
+		width: 200px !important;
+		font-size: 16px;
+		outline: none;
+		font-style: oblique;
+		color: aliceblue;
+		font-family: 'Roboto', sans-serif;
+		display: flex;
+		justify-content: center;
+	}
+
+	.loginInputRow button {
+		background-color: white;
+		color: black;
+		border: none;
+		cursor: pointer;
+		font-size: larger;
+		border: solid 2px white;
+		transition: 500ms;
+		padding: 13px;
+		font-style: oblique;
+		width: 200px !important;
+		font-family: 'Raleway', sans-serif;
+	}*/
+
+/* -------------------- Section 1 About Limovia -------------------- */
+.aboutLimoviaInfo img {
+	width: 300px !important;
+	height: auto;
+}
+
+.aboutLimoviaText1 {
+	font-size: 18px !important;
+}
 
 
+/* -------------------- Common Questions -------------------- */
+
+.searchBar input[type="text"] {
+	width: 250px !important;
+}
+
+.searchBar button {
+	width: 49px;
+}
+
+/* -------------------- Contact -------------------- */
+
+.contact {
+	padding: 50px 10px !important;
+}
+
+.profile img {
+	width: 350px !important;
+	max-width: 100%;
+	height: 250px !important;
+}
+
+.contactLeft {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr) !important;
+	grid-gap: 30px;
+	text-align: centers;
 }
