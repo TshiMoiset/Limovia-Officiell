@@ -1,3 +1,73 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .signUpCompanyContainer {
     display: none;
+}
+
+.signUpAndText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUpAndText h1 {
+    color: white;
+    font-weight: lighter;
+    font-size: 2.5em;
+    font-family: "Isabel Thin";
+    background: rgb(148, 101, 43);
+    background: linear-gradient(90deg, rgba(148, 101, 43, 1) 0%, rgba(214, 192, 118, 1) 50%, rgba(148, 101, 43, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    user-select: none;
+}
+
+.signUpAndText span {
+    color: white;
+    font-size: 30px;
+    padding-left: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.signUpPrivateContainer,
+.signUpCompanyContainer {
+    padding: 20px;
+}
+
+.accountChangeButtons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.accountChangeButtons button {
+    width: 180px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    background-color: white;
+    border: solid 2px white;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    transition: 500ms;
+    font-size: large;
+    border-radius: 5px;
+}
+
+.accountChangeButtons button:hover {
+    background-color: black;
+    color: white;
 }
