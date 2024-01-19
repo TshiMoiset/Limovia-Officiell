@@ -2,8 +2,6 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: black;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +16,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .signUpAndText h1 {
@@ -70,4 +69,85 @@ body {
 .accountChangeButtons button:hover {
     background-color: black;
     color: white;
+}
+
+.formContainer {
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 600ms;
+    width: 550px;
+    box-shadow: 5px 5px 10px #191919, -5px 5px 10px #191919, 0px 5px 10px #191919, 5px 0px 10px #191919;
+}
+
+.formContainer:hover {
+    box-shadow: 5px 5px 10px #373b4d77, -5px 5px 10px #373b4d77, 0px 5px 10px #373b4d77, 5px 0px 10px #373b4d77;
+}
+
+.signUpInputRow {
+    padding-bottom: 10px;
+}
+
+.signUpInputRow input {
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    font-style: oblique;
+    color: aliceblue;
+    transition: 500ms;
+    font-family: 'Roboto', sans-serif;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: black;
+    border: solid 2px #373B4D;
+}
+
+.signUpInputGroup input {
+    margin: 5px;
+}
+
+.signUpInputGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.select-wheel {
+    margin: 5px;
+    position: relative;
+    width: 120px;
+    padding-bottom: 10px;
+}
+
+.select-wheel select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 13px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.select-wheel::before {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
 }

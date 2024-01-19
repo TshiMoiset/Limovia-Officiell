@@ -59,53 +59,68 @@
                 <div class="signUpForm">
 
                     <form>
+                
+                        <div class="select-wheel">
+                            <select>
+                                <option value="" disabled selected>Title*</option>
+                                <option value="option1">Mr.</option>
+                                <option value="option2">Ms.</option>
+                            </select>
+                        </div>
+
                         <div class="signUpInputRow">
-                            <div class="titleSelection">
-                                <label>Title*</label>
-                                <select id="title" name="title">
-                                    <option value="selectTitle"></option>
-                                    <option value="Mr">Mr.</option>
-                                    <option value="Ms">Ms.</option>
-                                </select>
+                            <div class="signUpInputGroup">
+                                <input type="text" placeholder="Förnamn*" name="firstname" required autocomplete="off">
+                                <input type="text" placeholder="Efternamn*" name="Surname" required autocomplete="off">
                             </div>
                         </div>
 
                         <div class="signUpInputRow">
-                            <input type="text" placeholder="Förnamn*" name="firstname" required autocomplete="off">
-                            <input type="text" placeholder="Efternamn*" name="Surname" required autocomplete="off">
-                            <input type="number" placeholder="Personnummer*" name="socialSecurityNumber" required
-                                autocomplete="off">
-                        </div>
-
-                        <div class="signUpInputRow">
-                            <input type="email" placeholder="Email Address*" name="emailAddress" required
-                                autocomplete="off">
-                            <input type="number" placeholder="Telefonnummer*" name="phoneNumber" required
-                                autocomplete="off">
-                        </div>
-
-                        <div class="signUpInputRow">
-                            <div class="regionContainer">
-                                <label>Region*</label>
-                                <select id="region" name="region">
-                                    <option value="allRegion"></option>
-                                    <option value="regionStockholm">Stockholms Län</option>
-                                    <option value="regionVästerås">Uppsala Län</option>
-                                    <option value="regionVäst">Västmanlands Län</option>
-                                    <option value="regionVäst">Södermanlands Län</option>
-                                    <option value="region">Örebro Län</option>
-                                    <option value="region">Värmlands Län</option>
-                                    <option value="region">Västra Gotlands Län</option>
-                                    <option value="region">Hallands Län</option>
-                                    <option value="region">Östergötlands Län</option>
-                                    <option value="region">Jönköpings Län</option>
-                                    <option value="region">Kronobergs Län</option>
-                                    <option value="region">Kalmar Län</option>
-                                </select>
+                            <div class="signUpInputGroup">
+                                <input type="number" placeholder="Personnummer*" name="socialSecurityNumber" required
+                                    autocomplete="off">
                             </div>
-                            <input type="text" placeholder="Adress*" name="address" required autocomplete="off">
-                            <input type="number" placeholder="Postnummer*" name="ZIPcode" required autocomplete="off">
-                            <input type="text" placeholder="Stad*" name="password" required autocomplete="off">
+                        </div>
+
+                        <div class="signUpInputRow">
+                            <div class="signUpInputGroup">
+                                <input type="email" placeholder="Email Address*" name="emailAddress" required
+                                    autocomplete="off">
+                                <input type="number" placeholder="Telefonnummer*" name="phoneNumber" required
+                                    autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="signUpInputRow">
+                            <div class="signUpInputGroup">
+                                <div class="regionContainer">
+                                    <label>Region*</label>
+                                    <select id="region" name="region">
+                                        <option value="allRegion"></option>
+                                        <option value="regionStockholm">Stockholms Län</option>
+                                        <option value="regionVästerås">Uppsala Län</option>
+                                        <option value="regionVäst">Västmanlands Län</option>
+                                        <option value="regionVäst">Södermanlands Län</option>
+                                        <option value="region">Örebro Län</option>
+                                        <option value="region">Värmlands Län</option>
+                                        <option value="region">Västra Gotlands Län</option>
+                                        <option value="region">Hallands Län</option>
+                                        <option value="region">Östergötlands Län</option>
+                                        <option value="region">Jönköpings Län</option>
+                                        <option value="region">Kronobergs Län</option>
+                                        <option value="region">Kalmar Län</option>
+                                    </select>
+                                </div>
+                                <input type="text" placeholder="Adress*" name="address" required autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="signUpInputRow">
+                            <div class="signUpInputGroup">
+                                <input type="number" placeholder="Postnummer*" name="ZIPcode" required
+                                    autocomplete="off">
+                                <input type="text" placeholder="Stad*" name="password" required autocomplete="off">
+                            </div>
                         </div>
 
                         <div class="signUpInputRow">
