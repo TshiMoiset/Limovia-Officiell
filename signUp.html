@@ -92,24 +92,28 @@
                         </div>
 
                         <div class="signUpInputRow">
+                            <div class="selectWheelRegion">
+                                <select required>
+                                    <option value="" disabled selected>Region*</option>
+                                    <option value="option1">Hallands Län</option>
+                                    <option value="option2">Jönköpings Län</option>
+                                    <option value="option3">Kalmar Län</option>
+                                    <option value="option4">Kronobergs Län</option>
+                                    <option value="option5">Stockholms Län</option>
+                                    <option value="option6">Södermanlands Län</option>
+                                    <option value="option7">Uppsala Län</option>
+                                    <option value="option8">Värmlands Län</option>
+                                    <option value="option9">Västmanlands Län</option>
+                                    <option value="option10">Västra Gotlands Län</option>
+                                    <option value="option11">Örebro Län</option>
+                                    <option value="option12">Östergötlands Län</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="signUpInputRow">
                             <div class="signUpInputGroup">
-                                <div class="selectWheelRegion">
-                                    <select required>
-                                        <option value="" disabled selected>Region*</option>
-                                        <option value="option1">Hallands Län</option>
-                                        <option value="option2">Jönköpings Län</option>
-                                        <option value="option3">Kalmar Län</option>
-                                        <option value="option4">Kronobergs Län</option>
-                                        <option value="option5">Stockholms Län</option>
-                                        <option value="option6">Södermanlands Län</option>
-                                        <option value="option7">Uppsala Län</option>
-                                        <option value="option8">Värmlands Län</option>
-                                        <option value="option9">Västmanlands Län</option>
-                                        <option value="option10">Västra Gotlands Län</option>
-                                        <option value="option11">Örebros Län</option>
-                                        <option value="option12">Östergötlands Län</option>
-                                    </select>
-                                </div>
+                                
                                 <input type="text" placeholder="Adress*" name="address" required autocomplete="off">
                             </div>
                         </div>
@@ -152,31 +156,70 @@
 
                     <form>
                         <div class="signUpInputRow">
-                            <input type="text" placeholder="Företagsnamn*" name="companyName" required
-                                autocomplete="off">
-                            <input type="text" placeholder="Org. Nr.*" name="companyName" required autocomplete="off">
+                            <label>Företagsuppgifter</label>
+                            <div class="signUpInputGroup">
+                                <input type="text" placeholder="Företagsnamn*" name="companyName" required
+                                    autocomplete="off">
+                                <input type="text" placeholder="Org. Nr.*" name="companyName" required
+                                    autocomplete="off">
+                            </div>
                         </div>
 
                         <div class="signUpInputRow">
-                            <input type="text" placeholder="Adress*" name="address" required autocomplete="off">
-                            <input type="number" placeholder="Postnummer*" name="ZIPcode" required autocomplete="off">
-                            <input type="text" placeholder="Stad*" name="password" required autocomplete="off">
+                            <div class="selectWheelRegion">
+                                <select required>
+                                    <option value="" disabled selected>Region*</option>
+                                    <option value="option1">Hallands Län</option>
+                                    <option value="option2">Jönköpings Län</option>
+                                    <option value="option3">Kalmar Län</option>
+                                    <option value="option4">Kronobergs Län</option>
+                                    <option value="option5">Stockholms Län</option>
+                                    <option value="option6">Södermanlands Län</option>
+                                    <option value="option7">Uppsala Län</option>
+                                    <option value="option8">Värmlands Län</option>
+                                    <option value="option9">Västmanlands Län</option>
+                                    <option value="option10">Västra Gotlands Län</option>
+                                    <option value="option11">Örebro Län</option>
+                                    <option value="option12">Östergötlands Län</option>
+                                </select>
+                            </div>
                         </div>
 
                         <div class="signUpInputRow">
-                            <input type="text" placeholder="Förnamn*" name="firstname" required autocomplete="off">
-                            <input type="text" placeholder="Efternamn*" name="surname" required autocomplete="off">
+                            <div class="signUpInputGroup">
+                                <input type="text" placeholder="Adress*" name="address" required autocomplete="off">
+                            </div>
                         </div>
 
                         <div class="signUpInputRow">
-                            <input type="text" placeholder="Email Address*" name="emailAddress" required
-                                autocomplete="off">
-                            <input type="number" placeholder="Telefonnummer*" name="phoneNumber" required
-                                autocomplete="off">
+                            <div class="signUpInputGroup">
+                                <input type="number" placeholder="Postnummer*" name="ZIPcode" required
+                                    autocomplete="off">
+                                <input type="text" placeholder="Stad*" name="password" required autocomplete="off">
+                            </div>
                         </div>
 
                         <div class="signUpInputRow">
-                            <button type="submit">Skapa Konto</i></i></button>
+                            <label>Kontaktperson</label>
+                            <div class="signUpInputGroup">
+                                <input type="text" placeholder="Förnamn*" name="firstname" required autocomplete="off">
+                                <input type="text" placeholder="Efternamn*" name="surname" required autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="signUpInputRow">
+                            <div class="signUpInputGroup">
+                                <input type="text" placeholder="Email Address*" name="emailAddress" required
+                                    autocomplete="off">
+                                <input type="number" placeholder="Telefonnummer*" name="phoneNumber" required
+                                    autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="signUpInputRow">
+                            <div class="signUpInputGroup">
+                                <button type="submit">Skapa Konto</i></i></button>
+                            </div>
                         </div>
 
                         <div class="signUpInputRow logIn">

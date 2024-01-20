@@ -170,18 +170,19 @@ input[type=number] {
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 13px;
-    width: 100%;
     font-size: 16px;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     outline: none;
+    width: 245px;
 }
 
 .selectWheelRegion::before {
     content: '\25BC';
     position: absolute;
     top: 50%;
-    right: 10px;
+    width: 150px;
+    right: -10px;
     transform: translateY(-50%);
     font-size: 14px;
 }
@@ -242,4 +243,11 @@ input[type=number] {
 .logIn a:hover {
     color: #E6D8D7;
     border-bottom: solid 2px;
+}
+
+.signUpInputRow label {
+    margin: 5px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Raleway', sans-serif;
 }
