@@ -30,19 +30,19 @@ function startAutoPlay() {
 }
 
 function fadeInNextSlide() {
-    var slides = document.getElementsByClassName("slides");
-    var currentSlide = slides[slideIndex];
+  var slides = document.getElementsByClassName("slides");
+  var currentSlide = slides[slideIndex];
 
-    // After a short delay, start fading out the current slide
-    setTimeout(function () {
-        currentSlide.style.opacity = 0;
-    }, 500); // Adjust the delay to your preference
+  // After a short delay, start fading out the current slide
+  setTimeout(function () {
+    currentSlide.style.opacity = 0;
+  }, 500); // Adjust the delay to your preference
 
-    // After another short delay, advance to the next slide
-    setTimeout(function () {
-        plusSlides(1);
-        showSlides(slideIndex);
-    }, 1000); // Adjust the delay to your preference
+  // After another short delay, advance to the next slide
+  setTimeout(function () {
+    plusSlides(1);
+    showSlides(slideIndex);
+  }, 1000); // Adjust the delay to your preference
 }
 
 function stopAutoPlay() {
