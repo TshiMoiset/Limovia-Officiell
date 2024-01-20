@@ -141,6 +141,7 @@ input[type=number] {
     font-size: 16px;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
+    outline: none;
 }
 
 .selectWheelTitle::before {
@@ -169,6 +170,7 @@ input[type=number] {
     font-size: 16px;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
+    outline: none;
 }
 
 .selectWheelRegion::before {
@@ -178,4 +180,62 @@ input[type=number] {
     right: 10px;
     transform: translateY(-50%);
     font-size: 14px;
+}
+
+.signUpButton {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.signUpInputRow button {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    border: solid 2px white;
+    transition: 500ms;
+    padding: 13px;
+    font-style: oblique;
+    width: 50%;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.signUpInputRow button:hover {
+    color: white;
+    background-color: black;
+}
+
+.logIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logIn span {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logIn ul,
+.logIn li {
+    list-style: none;
+    padding-left: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logIn a {
+    color: #E6D8D7;
+    transition: 500ms;
+    text-decoration: none;
+    border-bottom: solid 2px black;
+}
+
+.logIn a:hover {
+    color: #E6D8D7;
+    border-bottom: solid 2px;
 }
