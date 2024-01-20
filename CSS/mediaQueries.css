@@ -493,6 +493,9 @@
 		width: 40%;
 	}
 
+	.signUpAndText span {
+		font-size: 25px;
+	}
 
 	/* -------------------- Section 1 About Limovia -------------------- */
 	.aboutLimoviaInfo img {
