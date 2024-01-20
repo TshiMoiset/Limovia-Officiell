@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 .signUpCompanyContainer {
@@ -182,10 +183,12 @@ input[type=number] {
     position: absolute;
     top: 50%;
     width: 150px;
-    right: -10px;
+    right: 10px;
     transform: translateY(-50%);
     font-size: 14px;
 }
+
+
 
 .signUpButton {
     display: flex;
