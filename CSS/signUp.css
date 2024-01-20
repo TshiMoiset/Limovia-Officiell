@@ -123,14 +123,14 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.select-wheel {
+.selectWheelTitle {
     margin: 5px;
     position: relative;
     width: 120px;
     padding-bottom: 10px;
 }
 
-.select-wheel select {
+.selectWheelTitle select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -143,7 +143,35 @@ input[type=number] {
     font-family: 'Raleway', sans-serif;
 }
 
-.select-wheel::before {
+.selectWheelTitle::before {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.selectWheelRegion {
+    margin: 5px;
+    position: relative;
+    width: 70%;
+}
+
+.selectWheelRegion select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 13px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.selectWheelRegion::before {
     content: '\25BC';
     position: absolute;
     top: 50%;
