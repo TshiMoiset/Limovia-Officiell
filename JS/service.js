@@ -37,3 +37,63 @@ function updateServiceName(service) {
     serviceNameElement.textContent = "Stad till Stad-transfer";
   }
 }
+
+// JavaScript for the slideshow functionality
+const slideshowContainers = document.querySelectorAll(".slideshow-container");
+let intervalID;
+
+function showSlides(containerIndex) {
+  return function () {
+    let i;
+    const slides =
+      slideshowContainers[containerIndex].getElementsByClassName("mySlides");
+    const dots =
+      slideshowContainers[containerIndex].getElementsByClassName("dot");
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  };
+}
+
+function currentSlide(n, containerIndex) {
+  clearInterval(intervalID); // Clear the interval when a dot is clicked
+  slideIndex = n;
+  showSlides(containerIndex)();
+  setTimeout(() => {
+    intervalID = setInterval(() => {
+      slideIndex++;
+      if (slideIndex > 4) {
+        slideIndex = 1;
+      }
+      slideshowContainers.forEach((container, index) => {
+        showSlides(index)();
+      });
+    }, 2000);
+  }, 5000); // Pause for 10 seconds
+}
+
+let slideIndex = 1;
+
+// Initialize each slideshow
+slideshowContainers.forEach((container, containerIndex) => {
+  showSlides(containerIndex)();
+});
+
+// Automatic slideshow change
+intervalID = setInterval(() => {
+  slideIndex++;
+  if (slideIndex > 4) {
+    slideIndex = 1;
+  }
+  slideshowContainers.forEach((container, containerIndex) => {
+    showSlides(containerIndex)();
+  });
+}, 3000);

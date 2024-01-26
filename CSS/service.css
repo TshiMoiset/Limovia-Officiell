@@ -53,7 +53,7 @@
     list-style: none;
 }
 
-.serviceInfoContent a {
+.serviceBookButton a {
     color: white;
     text-decoration: none;
     color: black;
@@ -71,4 +71,62 @@
 
 .serviceInfoContent .addressRow p {
     padding-bottom: 0px;
+}
+
+.serviceLength {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+
+/* ---------------- Car slideshow gallery ----------------*/
+/* Basic styling for the slideshow container */
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* Style for individual slides */
+.mySlides {
+    display: none;
+}
+
+/* Style for navigation dots */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+    border: solid 2px white;
+}
+
+.active {
+    background-color: black;
+}
+
+.serviceSlideshowMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding-top: 20px;
+}
+
+.mySlides img {
+    width: 500px;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.slideshowTitle h3 {
+    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
 }
