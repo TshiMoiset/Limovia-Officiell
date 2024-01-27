@@ -82,7 +82,7 @@
 
 
 /* ---------------- Car slideshow gallery ----------------*/
-/* Basic styling for the slideshow container */
+
 .slideshow-container {
     max-width: 600px;
     position: relative;
@@ -90,12 +90,10 @@
     margin-bottom: 20px;
 }
 
-/* Style for individual slides */
 .mySlides {
     display: none;
 }
 
-/* Style for navigation dots */
 .dot {
     height: 15px;
     width: 15px;
