@@ -73,7 +73,6 @@ function updateCalendar() {
   }
 }
 
-
 function selectDate(day) {
   selectedDay = day;
   updateCalendar();
@@ -93,3 +92,33 @@ function nextMonth() {
 
 // Initial update
 updateCalendar();
+
+//Price random generator
+let previousSelectedDay = null;
+
+function updateDynamicPrice() {
+  // If the selected date is the same as the previous one, do nothing
+  if (selectedDay === previousSelectedDay) {
+    return;
+  }
+
+  // Generate a random price between 1000 and 5000
+  const randomPrice = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
+
+  // Update the price in the HTML
+  const priceElement = document.getElementById("dynamicPrice");
+  priceElement.textContent = randomPrice.toFixed(1) + " kr";
+
+  // Update the previous selected day
+  previousSelectedDay = selectedDay;
+}
+
+function selectDate(day) {
+  selectedDay = day;
+  updateCalendar();
+  const selectedDateElement = document.getElementById("selectedDate");
+  selectedDateElement.textContent = `${day} ${monthNames[currentMonth]} 2024`;
+
+  // Call the function to update the dynamic price
+  updateDynamicPrice();
+}
