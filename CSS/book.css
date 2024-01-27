@@ -12,6 +12,21 @@
     overflow: hidden;
 }
 
+/* Add this style in your existing CSS */
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.weekday {
+    padding: 10px;
+    border-radius: 4px;
+}
+
 .header {
     background-color: #3498db;
     color: #fff;

@@ -22,6 +22,30 @@ function updateCalendar() {
   const calendarMonth = document.getElementById("calendarMonth");
   calendarMonth.innerHTML = ""; // Clear previous month's days
 
+  // Only create weekdays if they are not already present
+  if (!document.querySelector(".weekdays")) {
+    const weekdaysContainer = document.createElement("div");
+    weekdaysContainer.classList.add("weekdays");
+
+    // Display the days of the week
+    for (let i = 0; i < 7; i++) {
+      const weekdayElement = document.createElement("div");
+      weekdayElement.textContent = [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+      ][i];
+      weekdayElement.classList.add("weekday");
+      weekdaysContainer.appendChild(weekdayElement);
+    }
+
+    calendarMonth.appendChild(weekdaysContainer);
+  }
+
   const daysInMonth = new Date(2024, currentMonth + 1, 0).getDate();
 
   // Get the day of the week for the first day of the month (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
@@ -48,6 +72,7 @@ function updateCalendar() {
     calendarMonth.appendChild(dayElement);
   }
 }
+
 
 function selectDate(day) {
   selectedDay = day;
