@@ -1,0 +1,60 @@
+.bookHR {
+    border: solid 1px white;
+    border-radius: 5px;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.calendar {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.month {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.day {
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #e0e0e0;
+}
+
+.day.active {
+    background-color: #3498db;
+    /* Set your desired background color for the active day */
+    color: #fff;
+    /* Set your desired text color for the active day */
+}
+
+.month-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.month-navigation button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}

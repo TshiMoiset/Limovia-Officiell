@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Limovia grundad 2023, är ett lokalt företag som erbjuder privata chaufförer dygnet runt.">
+
+    <title>Limovia | Bokning</title>
+
+    <link rel="shortcut icon" href="LOGOS/LimoviaFavicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="CSS/mediaQueries.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+
+    <link rel="stylesheet" href="CSS/book.css">
+    <link rel="stylesheet" href="CSS/mediaQueries.css">
+
+    <script defer src="JS/index.js"></script>
+    <script defer src="JS/book.js"></script>
+
+    <!--  Raleway  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!--  Roboto  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet"> -->
+
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header id="top">
+        <div class="navigation" id="navigation">
+
+            <div class="logo">
+                <ul>
+                    <li><a href="index.html">
+                            <h1>Limovia</h1>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="serviceInfo">
+            <h1 class="serviceName">Tjänstens namn</h1>
+            <p>Se tillgängliga tider och boka den eller de tider som passar dig</p>
+
+            <hr class="bookHR">
+
+            <div class="regions">
+                <div class="selectWheelRegion">
+                    <select required>
+                        <option value="" disabled selected>Region*</option>
+                        <option value="option1">Hallands Län</option>
+                        <option value="option2">Jönköpings Län</option>
+                        <option value="option3">Kalmar Län</option>
+                        <option value="option4">Kronobergs Län</option>
+                        <option value="option5">Stockholms Län</option>
+                        <option value="option6">Södermanlands Län</option>
+                        <option value="option7">Uppsala Län</option>
+                        <option value="option8">Värmlands Län</option>
+                        <option value="option9">Västmanlands Län</option>
+                        <option value="option10">Västra Gotlands Län</option>
+                        <option value="option11">Örebro Län</option>
+                        <option value="option12">Östergötlands Län</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <hr class="bookHR">
+
+        <section class="bookingCalendar">
+            <div class="bookingCalendarLeft">
+                <h2>Välj datum & Tid</h2>
+                <hr class="bookHR">
+
+                <div class="calendar">
+                    <div class="month-navigation">
+                        <button onclick="prevMonth()">Previous Month</button>
+                        <h2 id="currentMonth">January 2024</h2>
+                        <button onclick="nextMonth()">Next Month</button>
+                    </div>
+
+                    <div class="month" id="calendarMonth">
+                        <!-- Days of the week -->
+                        <div class="day">Sun</div>
+                        <div class="day">Mon</div>
+                        <div class="day">Tue</div>
+                        <div class="day">Wed</div>
+                        <div class="day">Thu</div>
+                        <div class="day">Fri</div>
+                        <div class="day">Sat</div>
+
+                        <!-- Dynamically generate days of the month -->
+                    </div>
+                </div>
+
+                <div class="time">
+                    <div class="date" id="selectedDate">27 Januari</div>
+
+                    <label for="pickupTime">Pick Up time</label>
+                    <input type="time" id="pickupTime" required>
+                </div>
+            </div>
+
+            <div class="bookingCalendarRight">
+                <div class="bookingInformation">
+                    <h2>Information om tjänsten</h2>
+                </div>
+
+                <div class="bookingInformationRow serviceName">
+                    <p>Tjänstens namn</p>
+                </div>
+
+                <div class="bookingInformationRow">
+                    <p class="place">Region</p>
+                </div>
+
+                <div class="bookingInformationRow time">
+                    <p class="time">00:00</p>
+                </div>
+
+                <div class="bookingInformationRow">
+                    <p class="price">00.0 kr</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="bookingForm"></section>
+        <section class="thankYouPage"></section>
+
+    </main>
+
+    <footer>
+
+        <div class="footerContent">
+
+            <div class="footerLeft">
+                <span class="footerLogo"><a href="index.html">
+                        <h3>Limovia</h3>
+                    </a></span>
+                <p>&copy; 2024 Limovia Ltd</p>
+            </div>
+
+            <div class="footerRight">
+                <ul>
+                    <li><a href="#">Allmänna villkor</a></li>
+                    <li><a href="#">Integritetspolicy</a></li>
+                    <li><a href="#">Tillgänglighet</a></li>
+                    <li><a href="#">Limovia karriär</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
