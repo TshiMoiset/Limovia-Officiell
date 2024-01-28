@@ -94,13 +94,16 @@
 .calendarContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: start;
+    align-items: baseline;
     grid-gap: 20px;
 }
 
 .selectedTime {
     padding: 20px;
+    font-size: 25px;
+    text-align: center;
 }
+
 
 .bookHR {
     border: solid .1px #373B4D;
@@ -183,4 +186,48 @@
 
 .bookingInformationRow span:nth-child(even) {
     font-size: 19px;
+}
+
+
+.selectTimeInput input {
+    width: 150px;
+    font-size: 18px;
+    outline: none;
+    font-style: oblique;
+    color: black;
+    transition: 500ms;
+    font-family: 'Roboto', sans-serif;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: white;
+    border: solid 2px #373B4D;
+}
+
+.selectTimeInput input:focus {
+    border: solid 2px white;
+}
+
+.selectTimeInput {
+    text-align: center;
+}
+
+.nextPage button {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    border: solid 2px white;
+    transition: 500ms;
+    padding: 13px;
+    font-style: oblique;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.nextPage button:hover {
+    color: white;
+    background-color: black;
 }

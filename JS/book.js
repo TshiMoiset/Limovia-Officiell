@@ -93,7 +93,7 @@ function nextMonth() {
 // Initial update
 updateCalendar();
 
-//Price random generator
+//Price random generator ------------------------------
 let selectedDayPrices = {};
 
 function updateDynamicPrice() {
@@ -125,7 +125,7 @@ function selectDate(day) {
   updateDynamicPrice();
 }
 
-// Region change
+// Region change ------------------------------------------
 
 // Function to update the place based on the selected region
 function updatePlace() {
@@ -183,7 +183,7 @@ document
   .querySelector(".selectWheelRegion select")
   .addEventListener("change", updatePlace);
 
-// Time
+// Time--------------------------------------------
 
 // Function to update the time based on the input
 function updateTime() {
@@ -199,3 +199,31 @@ function updateTime() {
 
 // Attach the updateTime function to the input event of the time field
 document.getElementById("pickupTime").addEventListener("input", updateTime);
+
+// Time wheel -----------------------------------
+
+// Function to update the time based on the input
+function updateTime() {
+  // Get the value of the time input
+  const inputTime = document.getElementById("pickupTime").value;
+
+  // Update the time element in the "bookingCalendarRight" section based on the input time
+  const timeElementBookingRight = document.querySelector(
+    ".bookingCalendarRight .time"
+  );
+  timeElementBookingRight.textContent = inputTime || "00:00"; // Use "00:00" if the input is empty
+}
+
+// Attach the updateTime function to the input event of the time field
+document.getElementById("pickupTime").addEventListener("input", updateTime);
+
+// Nexet Page Button -----------------------------------
+
+function nextPage() {
+  const bookingCalendar = document.querySelector(".bookingCalendar");
+  const serviceInfoText = document.querySelector(".serviceInfoText");
+  const serviceLocations = document.querySelector(".serviceLocations");
+  bookingCalendar.style.display = "none";
+  serviceInfoText.style.display = "none";
+  serviceLocations.style.display = "none";
+}

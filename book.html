@@ -72,7 +72,7 @@
 
                 <section class="serviceInfo">
                     <h1 class="serviceName">Tjänstens namn</h1>
-                    <p>Se tillgängliga tider och boka den eller de tider som passar dig</p>
+                    <p class="serviceInfoText">Se tillgängliga tider och boka den eller de tider som passar dig</p>
                 </section>
 
                 <hr class="bookHR">
@@ -98,7 +98,6 @@
                         </div>
                     </div>
                 </section>
-
 
                 <section class="bookingCalendar">
 
@@ -135,10 +134,13 @@
 
                             <div class="selectTime">
                                 <div class="selectedTime">
-                                    <div class="date" id="selectedDate">27 Januari</div>
+                                    <div>Tid</div>
                                 </div>
 
-                                <input type="time" id="pickupTime" required>
+                                <div class="selectTimeInput">
+                                    <input type="time" id="pickupTime" required>
+                                </div>
+
                             </div>
 
                         </div>
@@ -158,7 +160,13 @@
 
                         <div class="bookingInformationRow">
                             <span>Plats: </span>
-                            <span class="place">Region</span>
+                            <span class="place">*****</span>
+                        </div>
+
+                        <div class="bookingInformationRow">
+                            <span>Datum: </span>
+                            <span class="date" id="selectedDate">xx Januari 2024</span>
+
                         </div>
 
                         <div class="bookingInformationRow">
@@ -173,14 +181,21 @@
 
                         <hr class="bookHR">
 
-                        <button onclick="nextBookingPage()">Nästa</button>
+                        <div class="nextPage">
+                            <button onclick="nextPage()">Nästa</button>
+                        </div>
 
                     </div>
 
                 </section>
 
-                <section class="bookingForm"></section>
+                <section class="bookingForm">
+
+
+                </section>
+
                 <section class="thankYouPage"></section>
+
             </div>
 
             <div class="mainContainerRight"></div>
