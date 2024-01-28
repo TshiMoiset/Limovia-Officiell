@@ -1,16 +1,16 @@
 let currentMonth = 0; // 0 represents January
 let selectedDay = 0;
 const monthNames = [
-  "January",
-  "February",
-  "March",
+  "Januari",
+  "Februari",
+  "Mars",
   "April",
-  "May",
-  "June",
-  "July",
-  "August",
+  "Maj",
+  "Juni",
+  "Juli",
+  "Augusti",
   "September",
-  "October",
+  "Oktober",
   "November",
   "December",
 ];
@@ -31,13 +31,13 @@ function updateCalendar() {
     for (let i = 0; i < 7; i++) {
       const weekdayElement = document.createElement("div");
       weekdayElement.textContent = [
-        "Sun",
+        "Sön",
         "Mon",
-        "Tue",
-        "Wed",
-        "Thu",
-        "Fri",
-        "Sat",
+        "Tis",
+        "Ons",
+        "Tor",
+        "Fre",
+        "Lör",
       ][i];
       weekdayElement.classList.add("weekday");
       weekdaysContainer.appendChild(weekdayElement);

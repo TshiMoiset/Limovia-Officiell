@@ -62,95 +62,130 @@
 
     <main>
 
-        <section class="serviceInfo">
-            <h1 class="serviceName">Tjänstens namn</h1>
-            <p>Se tillgängliga tider och boka den eller de tider som passar dig</p>
+        <div class="bookHeroImage"></div>
 
-            <hr class="bookHR">
+        <div class="headMainContainer">
 
-            <div class="regions">
-                <div class="selectWheelRegion">
-                    <select required>
-                        <option value="" disabled selected>Region*</option>
-                        <option value="option1">Hallands Län</option>
-                        <option value="option2">Jönköpings Län</option>
-                        <option value="option3">Kalmar Län</option>
-                        <option value="option4">Kronobergs Län</option>
-                        <option value="option5">Stockholms Län</option>
-                        <option value="option6">Södermanlands Län</option>
-                        <option value="option7">Uppsala Län</option>
-                        <option value="option8">Värmlands Län</option>
-                        <option value="option9">Västmanlands Län</option>
-                        <option value="option10">Västra Gotlands Län</option>
-                        <option value="option11">Örebro Län</option>
-                        <option value="option12">Östergötlands Län</option>
-                    </select>
-                </div>
-            </div>
-        </section>
+            <div class="mainContainerLeft"></div>
 
-        <hr class="bookHR">
+            <div class="mainContainerMiddle">
 
-        <section class="bookingCalendar">
-            <div class="bookingCalendarLeft">
-                <h2>Välj datum & Tid</h2>
+                <section class="serviceInfo">
+                    <h1 class="serviceName">Tjänstens namn</h1>
+                    <p>Se tillgängliga tider och boka den eller de tider som passar dig</p>
+                </section>
+
                 <hr class="bookHR">
 
-                <div class="calendar">
-                    <div class="month-navigation">
-                        <button onclick="prevMonth()">Previous Month</button>
-                        <h2 id="currentMonth">January 2024</h2>
-                        <button onclick="nextMonth()">Next Month</button>
+                <section class="serviceLocations">
+                    <div class="regions">
+                        <div class="selectWheelRegion">
+                            <select required>
+                                <option value="" disabled selected>Region*</option>
+                                <option value="option1">Hallands Län</option>
+                                <option value="option2">Jönköpings Län</option>
+                                <option value="option3">Kalmar Län</option>
+                                <option value="option4">Kronobergs Län</option>
+                                <option value="option5">Stockholms Län</option>
+                                <option value="option6">Södermanlands Län</option>
+                                <option value="option7">Uppsala Län</option>
+                                <option value="option8">Värmlands Län</option>
+                                <option value="option9">Västmanlands Län</option>
+                                <option value="option10">Västra Gotlands Län</option>
+                                <option value="option11">Örebro Län</option>
+                                <option value="option12">Östergötlands Län</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="bookingCalendar">
+
+                    <div class="bookingCalendarLeft">
+                        <div class="bookingCalendarLeftTitle">
+                            <h2>Välj datum & Tid</h2>
+                            <p>centraleuropeisk normaltid (CET)</p>
+                        </div>
+
+                        <hr class="bookHR">
+
+                        <div class="calendarContainer">
+                            <div class="calendar">
+
+                                <div class="month-navigation">
+                                    <button onclick="prevMonth()">❮</button>
+                                    <h2 id="currentMonth">Januari 2024</h2>
+                                    <button onclick="nextMonth()">❯</button>
+                                </div>
+
+                                <div class="weekdays">
+                                    <div class="weekday">Sön</div>
+                                    <div class="weekday">Mon</div>
+                                    <div class="weekday">Tis</div>
+                                    <div class="weekday">Ons</div>
+                                    <div class="weekday">Tor</div>
+                                    <div class="weekday">Fre</div>
+                                    <div class="weekday">Lör</div>
+                                </div>
+
+                                <div class="month" id="calendarMonth"></div>
+
+                            </div>
+
+                            <div class="selectTime">
+                                <div class="selectedTime">
+                                    <div class="date" id="selectedDate">27 Januari</div>
+                                </div>
+
+                                <input type="time" id="pickupTime" required>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="weekdays">
-                        <div class="weekday">Sun</div>
-                        <div class="weekday">Mon</div>
-                        <div class="weekday">Tue</div>
-                        <div class="weekday">Wed</div>
-                        <div class="weekday">Thu</div>
-                        <div class="weekday">Fri</div>
-                        <div class="weekday">Sat</div>
+                    <div class="bookingCalendarRight">
+
+                        <div class="bookingInformation">
+                            <h2>Information om tjänsten</h2>
+                            <hr class="bookHR">
+                        </div>
+
+                        <div class="bookingInformationRow">
+                            <p class="serviceName">Tjänstens namn</p>
+                        </div>
+
+                        <div class="bookingInformationRow">
+                            <span>Plats: </span>
+                            <span class="place">Region</span>
+                        </div>
+
+                        <div class="bookingInformationRow">
+                            <span>Tid: </span>
+                            <span class="time">00:00</span>
+                        </div>
+
+                        <div class="bookingInformationRow">
+                            <span>Pris: </span>
+                            <span class="price" id="dynamicPrice">00.0 kr</span>
+                        </div>
+
+                        <hr class="bookHR">
+
+                        <button onclick="nextBookingPage()">Nästa</button>
+
                     </div>
 
-                    <div class="month" id="calendarMonth">
-                        <!-- Dynamically generate days of the month -->
-                    </div>
-                </div>
+                </section>
 
-                <div class="selectTime">
-                    <div class="date" id="selectedDate">27 Januari</div>
-
-                    <label for="pickupTime">Pick Up time</label>
-                    <input type="time" id="pickupTime" required>
-                </div>
+                <section class="bookingForm"></section>
+                <section class="thankYouPage"></section>
             </div>
 
-            <div class="bookingCalendarRight">
-                <div class="bookingInformation">
-                    <h2>Information om tjänsten</h2>
-                </div>
+            <div class="mainContainerRight"></div>
 
-                <div class="bookingInformationRow serviceName">
-                    <p>Tjänstens namn</p>
-                </div>
-
-                <div class="bookingInformationRow">
-                    <p class="place">Region</p>
-                </div>
-
-                <div class="bookingInformationRow time">
-                    <p class="time">00:00</p>
-                </div>
-
-                <div class="bookingInformationRow">
-                    <p class="price" id="dynamicPrice">00.0 kr</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="bookingForm"></section>
-        <section class="thankYouPage"></section>
+        </div>
 
     </main>
 

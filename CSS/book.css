@@ -1,25 +1,37 @@
-.bookHR {
-    border: solid 1px white;
-    border-radius: 5px;
+.bookHeroImage {
+    min-height: 60vh;
     width: 100%;
-    margin: 20px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
+.headMainContainer {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    background-color: black;
+    padding: 50px 0px;
+
+
+    /* ta bort */
+    color: white;
+}
+
+
 .calendar {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: black;
     overflow: hidden;
+    color: white;
+    transition: 500ms;
 }
 
 /* Add this style in your existing CSS */
 .weekdays {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 8px;
-    padding: 10px;
     text-align: center;
-    font-weight: bold;
+    transition: 500ms;
 }
 
 .weekday {
@@ -28,48 +40,147 @@
 }
 
 .header {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
+    color: white;
     text-align: center;
 }
 
 .month {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 8px;
-    padding: 10px;
     text-align: center;
+    font-size: large;
+    grid-gap: 10px;
 }
 
 .day {
     padding: 10px;
-    border-radius: 4px;
+    font-size: large;
     cursor: pointer;
 }
 
 .day:hover {
-    background-color: #e0e0e0;
+    background-color: #E6D8D7;
+    color: black;
 }
 
 .day.active {
-    background-color: #3498db;
-    /* Set your desired background color for the active day */
-    color: #fff;
-    /* Set your desired text color for the active day */
+    background-color: #E6D8D7;
+    color: black;
 }
 
 .month-navigation {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
 }
 
 .month-navigation button {
-    background-color: #3498db;
-    color: #fff;
+    background-color: black;
+    color: white;
     border: none;
     padding: 8px 12px;
-    border-radius: 4px;
+    font-size: 30px;
     cursor: pointer;
+}
+
+.bookingCalendar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    padding-top: 50px;
+}
+
+.calendarContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    grid-gap: 20px;
+}
+
+.selectedTime {
+    padding: 20px;
+}
+
+.bookHR {
+    border: solid .1px #373B4D;
+    border-radius: 5px;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.serviceInfo h1 {
+    font-weight: lighter;
+    font-size: 2.5em;
+    color: #E6D8D7;
+    padding-bottom: 15px;
+}
+
+.serviceInfo p {
+    line-height: 25px;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 1px;
+    font-style: oblique;
+}
+
+.selectWheelRegion {
+    margin: 5px;
+    position: relative;
+    width: 65%;
+}
+
+.selectWheelRegion select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: black;
+    color: white;
+    border: 1px solid #373B4D;
+    padding: 13px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-style: oblique;
+    width: 35%;
+    outline: none;
+    cursor: pointer;
+}
+
+.selectWheelRegion::before {
+    content: '\25BC';
+    color: white;
+    position: absolute;
+    top: 50%;
+    width: 68%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.bookingCalendarLeft h2,
+.bookingInformation h2 {
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.bookingCalendarLeftTitle p {
+    font-style: oblique;
+}
+
+.bookingCalendarLeftTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bookingInformationRow {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.bookingInformationRow span:nth-child(odd) {
+    font-style: oblique;
+}
+
+.bookingInformationRow span:nth-child(even) {
+    font-size: 19px;
 }
