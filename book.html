@@ -189,7 +189,173 @@
 
                 </section>
 
-                <section class="bookingForm">
+
+
+                <section class="checkoutForm">
+
+                    <div class="bookingFromContainer">
+
+                        <div class="checkoutFormTitle">
+                            <h2>Kunduppgifter</h2>
+                        </div>
+
+                        <hr class="bookHR">
+
+                        <div class="bookingFormLeft">
+
+                            <div class="bookInputRow">
+                                <div class="bookInputGroup">
+                                    <label>Förnamn*</label>
+                                    <input type="text" placeholder="" name="firstname" required autocomplete="off">
+
+                                    <label>Efternamn*</label>
+                                    <input type="text" placeholder="" name="Surname" required autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="bookInputRow">
+                                <div class="bookInputGroup">
+                                    <label>Personnummer*</label>
+                                    <input type="number" placeholder="" name="socialSecurityNumber" required
+                                        autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="bookInputRow">
+                                <div class="bookInputGroup">
+                                    <label>Email Address*</label>
+                                    <input type="email" placeholder="" name="emailAddress" required autocomplete="off">
+
+                                    <label>Telefonnummer*</label>
+                                    <input type="number" placeholder="" name="phoneNumber" required autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="checkoutFormTitle">
+                                <h2>Betalning</h2>
+                            </div>
+
+                            <hr class="bookHR">
+
+                            <div class="regions">
+                                <div class="selectPaymentWheel">
+                                    <select required>
+                                        <option value="" disabled selected>Betalningsalternativ</option>
+                                        <option value="option2">Betala Nu</option>
+                                        <option value="option1">Faktura</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="cardPayment">
+                                <div class="bookInputRow">
+                                    <!--<img src="ICONS/cc-discover.svg" alt="">
+                                    <img src="ICONS/cc-mastercard.svg" alt="">
+                                    <img src="ICONS/cc-paypal.svg" alt="">
+                                    <img src="ICONS/cc-visa.svg" alt="">
+                                    <img src="ICONS/cc-amex.svg" alt="">
+                                    <img src="ICONS/cc-apple-pay.svg" alt="">
+                                    <img src="ICONS/cc-amazon-pay.svg" alt="">-->
+
+                                    <img src="ICONS/cc-visa.svg" alt="">
+                                    <img src="ICONS/cc-mastercard.svg" alt="">
+                                    <img src="ICONS/cc-amex.svg" alt="">
+                                    <img src="ICONS/cc-discover.svg" alt="">
+                                    <img src="ICONS/cc-paypal.svg" alt="">
+                                    <img src="ICONS/cc-apple-pay.svg" alt="">
+                                    <img src="ICONS/cc-amazon-pay.svg" alt="">
+                                </div>
+
+                                <div class="bookInputRow">
+                                    <div class="bookInputGroup">
+
+                                        <label>Kortnamn*</label>
+                                        <input type="text" placeholder="" name="cardname" required autocomplete="off">
+
+                                        <label>Kortnummer*</label>
+                                        <input type="number" placeholder="" name="cardnumber" required
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+
+                                <div class="bookInputRow">
+                                    <div class="bookInputGroup">
+                                        <label>Utgångsdatum*</label>
+                                        <input type="number" placeholder="" name="emailAddress" required
+                                            autocomplete="off">
+
+                                        <label>CVV*</label>
+                                        <input type="number" placeholder="" name="phoneNumber" required
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="invoicePayment">
+                                <div class="bookInputRow">
+                                    <div class="bookInputGroup">
+                                        <label>Adress*</label>
+                                        <input type="text" placeholder="" name="emailAddress" required
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+
+                                <div class="bookInputRow">
+                                    <div class="bookInputGroup">
+                                        <label>Postnummer*</label>
+                                        <input type="number" placeholder="" name="emailAddress" required
+                                            autocomplete="off">
+
+                                        <label>Stad*</label>
+                                        <input type="text" placeholder="" name="phoneNumber" required
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="bookingFormRight">
+
+                            <div class="bookingInformation">
+                                <h2>Bokningsuppgifter</h2>
+                                <hr class="bookHR">
+                            </div>
+
+                            <div class="bookingInformationRow">
+                                <p class="serviceName">Tjänstens namn</p>
+                            </div>
+
+                            <div class="bookingInformationRow">
+                                <span>Plats: </span>
+                                <span class="place">*****</span>
+                            </div>
+
+                            <div class="bookingInformationRow">
+                                <span>Datum: </span>
+                                <span class="date" id="selectedDate">xx Januari 2024</span>
+
+                            </div>
+
+                            <div class="bookingInformationRow">
+                                <span>Tid: </span>
+                                <span class="time">00:00</span>
+                            </div>
+
+                            <div class="bookingInformationRow">
+                                <span>Total: </span>
+                                <span class="price" id="dynamicPrice">00.0 kr</span>
+                            </div>
+
+                            <hr class="bookHR">
+
+                            <div class="confirm">
+                                <button onclick="goBack()">Bekräfta bokning</button>
+                                <button onclick="confirmBooking()">Tillbaka</button>
+                            </div>
+
+                        </div>
+                    </div>
 
 
                 </section>
