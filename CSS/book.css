@@ -305,6 +305,10 @@ input[type=number] {}
     width: 100%;
 }
 
+.cardPayment, .invoicePayment {
+    padding-top: 20px;
+}
+
 .selectPaymentWheel select {
     appearance: none;
     -webkit-appearance: none;
@@ -382,6 +386,10 @@ input[type=number] {}
 }
 
 .cancellationPolicy {
- margin-bottom: 20px;
- font-style: oblique;
+    margin-bottom: 20px;
+    font-style: oblique;
+}
+
+.hidden {
+    display: none;
 }
