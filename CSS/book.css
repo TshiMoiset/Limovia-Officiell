@@ -127,7 +127,6 @@
 }
 
 .selectWheelRegion {
-    margin: 5px;
     position: relative;
     width: 65%;
 }
@@ -230,4 +229,159 @@
 .nextPage button:hover {
     color: white;
     background-color: black;
+}
+
+
+/* ----------------------- Customer info --------------------------*/
+
+.bookingFromContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 60px;
+    padding-top: 50px;
+}
+
+.bookInputRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.bookInputGroup {
+    display: block;
+}
+
+.bookInputRow .bookInputGroup {
+    flex-basis: 48%;
+}
+
+.bookInputGroupFullWidth {
+    flex-basis: 100%;
+}
+
+.bookInputRow input {
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    color: aliceblue;
+    transition: 500ms;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: black;
+    border: solid 1px white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {}
+
+.bookInputRow label {
+    font-size: larger;
+    font-style: oblique;
+}
+
+/* ----------------------- Payment info --------------------------*/
+.paymentCards img {
+    width: 50px;
+    height: auto;
+}
+
+.paymentCards {
+    display: flex;
+}
+
+.paymentIcons {
+    padding: 5px;
+}
+
+.selectPaymentWheel {
+    position: relative;
+    width: 100%;
+}
+
+.selectPaymentWheel select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: black;
+    border: 1px solid white;
+    padding: 13px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    font-style: oblique;
+    outline: none;
+    color: white;
+}
+
+.selectPaymentWheel::before {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.checkoutFormTitle h2 {
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.confirmBackButtons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.confirmButton {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    border: solid 2px white;
+    transition: 500ms;
+    padding: 13px;
+    font-style: oblique;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.confirmButton:hover {
+    color: white;
+    background-color: black;
+}
+
+.backButton {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    transition: 500ms;
+    padding: 10px;
+    font-style: oblique;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 15px;
+    /*margin-bottom: 10px;*/
+}
+
+.backButton:hover {
+    color: #E6D8D7;
+}
+
+.cancellationPolicy {
+ margin-bottom: 20px;
+ font-style: oblique;
 }

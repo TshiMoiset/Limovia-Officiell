@@ -195,41 +195,53 @@
 
                     <div class="bookingFromContainer">
 
-                        <div class="checkoutFormTitle">
-                            <h2>Kunduppgifter</h2>
-                        </div>
-
-                        <hr class="bookHR">
-
                         <div class="bookingFormLeft">
 
-                            <div class="bookInputRow">
-                                <div class="bookInputGroup">
-                                    <label>Förnamn*</label>
-                                    <input type="text" placeholder="" name="firstname" required autocomplete="off">
-
-                                    <label>Efternamn*</label>
-                                    <input type="text" placeholder="" name="Surname" required autocomplete="off">
-                                </div>
+                            <div class="checkoutFormTitle">
+                                <h2>Kunduppgifter</h2>
                             </div>
 
-                            <div class="bookInputRow">
-                                <div class="bookInputGroup">
-                                    <label>Personnummer*</label>
-                                    <input type="number" placeholder="" name="socialSecurityNumber" required
-                                        autocomplete="off">
-                                </div>
-                            </div>
+                            <hr class="bookHR">
 
-                            <div class="bookInputRow">
-                                <div class="bookInputGroup">
-                                    <label>Email Address*</label>
-                                    <input type="email" placeholder="" name="emailAddress" required autocomplete="off">
 
-                                    <label>Telefonnummer*</label>
-                                    <input type="number" placeholder="" name="phoneNumber" required autocomplete="off">
+                            <form>
+
+                                <div class="bookInputRow">
+                                    <div class="bookInputGroup">
+                                        <label>Förnamn*</label>
+                                        <input type="text" placeholder="" name="firstname" required autocomplete="off">
+                                    </div>
+
+                                    <div class="bookInputGroup">
+                                        <label>Efternamn*</label>
+                                        <input type="text" placeholder="" name="Surname" required autocomplete="off">
+                                    </div>
+
                                 </div>
-                            </div>
+
+                                <div class="bookInputRow">
+                                    <div class="bookInputGroupFullWidth">
+                                        <label>Personnummer*</label>
+                                        <input type="number" placeholder="" name="socialSecurityNumber" required
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+
+                                <div class="bookInputRow">
+                                    <div class="bookInputGroup">
+
+                                        <label>Email Address*</label>
+                                        <input type="email" placeholder="" name="emailAddress" required
+                                            autocomplete="off">
+                                    </div>
+
+                                    <div class="bookInputGroup">
+                                        <label>Telefonnummer*</label>
+                                        <input type="number" placeholder="" name="phoneNumber" required
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                            </form>
 
                             <div class="checkoutFormTitle">
                                 <h2>Betalning</h2>
@@ -237,7 +249,7 @@
 
                             <hr class="bookHR">
 
-                            <div class="regions">
+                            <div class="paymentWheel">
                                 <div class="selectPaymentWheel">
                                     <select required>
                                         <option value="" disabled selected>Betalningsalternativ</option>
@@ -248,69 +260,105 @@
                             </div>
 
                             <div class="cardPayment">
-                                <div class="bookInputRow">
-                                    <!--<img src="ICONS/cc-discover.svg" alt="">
-                                    <img src="ICONS/cc-mastercard.svg" alt="">
-                                    <img src="ICONS/cc-paypal.svg" alt="">
-                                    <img src="ICONS/cc-visa.svg" alt="">
-                                    <img src="ICONS/cc-amex.svg" alt="">
-                                    <img src="ICONS/cc-apple-pay.svg" alt="">
-                                    <img src="ICONS/cc-amazon-pay.svg" alt="">-->
-
-                                    <img src="ICONS/cc-visa.svg" alt="">
-                                    <img src="ICONS/cc-mastercard.svg" alt="">
-                                    <img src="ICONS/cc-amex.svg" alt="">
-                                    <img src="ICONS/cc-discover.svg" alt="">
-                                    <img src="ICONS/cc-paypal.svg" alt="">
-                                    <img src="ICONS/cc-apple-pay.svg" alt="">
-                                    <img src="ICONS/cc-amazon-pay.svg" alt="">
-                                </div>
 
                                 <div class="bookInputRow">
-                                    <div class="bookInputGroup">
+                                    <div class="paymentCards">
+                                        <!--<img src="ICONS/cc-discover.svg" alt="">
+                                        <img src="ICONS/cc-mastercard.svg" alt="">
+                                        <img src="ICONS/cc-paypal.svg" alt="">
+                                        <img src="ICONS/cc-visa.svg" alt="">
+                                        <img src="ICONS/cc-amex.svg" alt="">
+                                        <img src="ICONS/cc-apple-pay.svg" alt="">
+                                        <img src="ICONS/cc-amazon-pay.svg" alt="">-->
 
-                                        <label>Kortnamn*</label>
-                                        <input type="text" placeholder="" name="cardname" required autocomplete="off">
+                                        <div class="paymentIcons">
+                                            <img src="ICONS/cc-visa.svg" alt="visa">
+                                        </div>
+                                        <div class="paymentIcons">
+                                            <img src="ICONS/cc-mastercard.svg" alt="mastercard">
+                                        </div>
+                                        <div class="paymentIcons">
+                                            <img src="ICONS/cc-amex.svg" alt="amex">
+                                        </div>
+                                        <div class="paymentIcons">
+                                            <img src="ICONS/cc-discover.svg" alt="discover">
+                                        </div>
+                                        <div class="paymentIcons">
+                                            <img src="ICONS/cc-paypal.svg" alt="paypal">
+                                        </div>
+                                        <div class="paymentIcons">
+                                            <img src="ICONS/cc-apple-pay.svg" alt="apple pay">
+                                        </div>
+                                        <div class="paymentIcons">
+                                            <img src="ICONS/cc-amazon-pay.svg" alt="amazon pay">
 
-                                        <label>Kortnummer*</label>
-                                        <input type="number" placeholder="" name="cardnumber" required
-                                            autocomplete="off">
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="bookInputRow">
-                                    <div class="bookInputGroup">
-                                        <label>Utgångsdatum*</label>
-                                        <input type="number" placeholder="" name="emailAddress" required
-                                            autocomplete="off">
 
-                                        <label>CVV*</label>
-                                        <input type="number" placeholder="" name="phoneNumber" required
-                                            autocomplete="off">
+                                <form>
+
+                                    <div class="bookInputRow">
+                                        <div class="bookInputGroup">
+                                            <label>Kortnamn*</label>
+                                            <input type="text" placeholder="" name="cardname" required
+                                                autocomplete="off">
+                                        </div>
+
+                                        <div class="bookInputGroup">
+                                            <label>Kortnummer*</label>
+                                            <input type="number" placeholder="" name="cardnumber" required
+                                                autocomplete="off">
+                                        </div>
                                     </div>
-                                </div>
+
+                                    <div class="bookInputRow">
+                                        <div class="bookInputGroup">
+                                            <label>Utgångsdatum*</label>
+                                            <input type="number" placeholder="" name="emailAddress" required
+                                                autocomplete="off">
+                                        </div>
+
+                                        <div class="bookInputGroup">
+                                            <label>CVV*</label>
+                                            <input type="number" placeholder="" name="phoneNumber" required
+                                                autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                </form>
+
                             </div>
 
                             <div class="invoicePayment">
-                                <div class="bookInputRow">
-                                    <div class="bookInputGroup">
-                                        <label>Adress*</label>
-                                        <input type="text" placeholder="" name="emailAddress" required
-                                            autocomplete="off">
-                                    </div>
-                                </div>
 
-                                <div class="bookInputRow">
-                                    <div class="bookInputGroup">
-                                        <label>Postnummer*</label>
-                                        <input type="number" placeholder="" name="emailAddress" required
-                                            autocomplete="off">
+                                <form>
 
-                                        <label>Stad*</label>
-                                        <input type="text" placeholder="" name="phoneNumber" required
-                                            autocomplete="off">
+                                    <div class="bookInputRow">
+                                        <div class="bookInputGroupFullWidth">
+                                            <label>Adress*</label>
+                                            <input type="text" placeholder="" name="emailAddress" required
+                                                autocomplete="off">
+                                        </div>
                                     </div>
-                                </div>
+
+                                    <div class="bookInputRow">
+                                        <div class="bookInputGroup">
+                                            <label>Postnummer*</label>
+                                            <input type="number" placeholder="" name="emailAddress" required
+                                                autocomplete="off">
+                                        </div>
+
+                                        <div class="bookInputGroup">
+                                            <label>Stad*</label>
+                                            <input type="text" placeholder="" name="phoneNumber" required
+                                                autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                </form>
+
                             </div>
 
                         </div>
@@ -358,13 +406,15 @@
                                 <div>kr</div>
                             </div>
 
-                            <div class="confirm">
-                                <button onclick="goBack()">Bekräfta Bokning</button>
-                                <button onclick="confirmBooking()">Tillbaka</button>
+                            <div class="confirmBackButtons">
+                                <button class="confirmButton" onclick="goBack()">Bekräfta Bokning</button>
+                                <button class="backButton" onclick="confirmBooking()">❮ Tillbaka</button>
                             </div>
 
+                            <hr class="bookHR">
+
                             <div class="bookingInformationRow">
-                                <h2>Avbokningspolicy</h2>
+                                <div class="cancellationPolicy">Avbokningspolicy</div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iure error sapiente
                                     incidunt,
                                     sed
@@ -372,12 +422,10 @@
                                     adipisci vitae
                                     earum
                                     explicabo ab aliquid ratione suscipit illo.</p>
-
                             </div>
 
                         </div>
                     </div>
-
 
                 </section>
 
