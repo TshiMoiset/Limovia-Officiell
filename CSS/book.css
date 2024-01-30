@@ -238,7 +238,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 60px;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 
 .bookInputRow {
@@ -305,7 +305,8 @@ input[type=number] {}
     width: 100%;
 }
 
-.cardPayment, .invoicePayment {
+.cardPayment,
+.invoicePayment {
     padding-top: 20px;
 }
 
