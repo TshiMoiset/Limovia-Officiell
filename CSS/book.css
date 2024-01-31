@@ -339,6 +339,11 @@ input[type=number] {}
     font-size: 25px;
 }
 
+.checkoutForm,
+.paymentInfoText {
+    display: none;
+}
+
 .confirmBackButtons {
     display: flex;
     justify-content: center;
