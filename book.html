@@ -314,7 +314,7 @@
                                         <div class="bookInputGroup">
                                             <label for="cardNumber">Kortnummer*</label>
                                             <input type="number" placeholder="XXXX XXXX XXXX XXXX" name="cardnumber"
-                                                id="cardNumber" required autocomplete="off">
+                                                id="cardNumber" maxlength="8" required autocomplete="off">
                                         </div>
                                     </div>
 
@@ -322,12 +322,12 @@
                                         <div class="bookInputGroup">
                                             <label for="expirationDate">Utgångsdatum*</label>
                                             <input type="number" placeholder="XX/XX" name="expirationdate"
-                                                id="expirationDate" required autocomplete="off">
+                                                id="expirationDate" maxlength="4" required autocomplete="off">
                                         </div>
 
                                         <div class="bookInputGroup">
                                             <label for="CVV">CVV*</label>
-                                            <input type="number" placeholder="XXX" name="cvv" id="CVV" required
+                                            <input type="number" placeholder="XXX" name="cvv" id="CVV" maxlength="3" required
                                                 autocomplete="off">
                                         </div>
                                     </div>
@@ -350,7 +350,7 @@
                                     <div class="bookInputRow">
                                         <div class="bookInputGroup">
                                             <label for="postalCode">Postnummer*</label>
-                                            <input type="number" placeholder="" name="zipcode" id="postalCode" required
+                                            <input type="number" placeholder="" name="zipcode" id="postalCode" maxlength="5" required
                                                 autocomplete="off">
                                         </div>
 
