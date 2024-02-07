@@ -438,6 +438,11 @@ input[type=number] {}
     font-family: 'Raleway', sans-serif;
 }
 
+.thankYouPageContentRow2 h1 {
+    font-weight: lighter;
+    font-size: 25px;
+}
+
 .totalPrices {
     display: flex;
     justify-content: space-between;
@@ -450,12 +455,20 @@ input[type=number] {}
 
 .returnButton {
     background-color: white;
-    color: black;
     cursor: pointer;
     border: 2px solid white;
     transition: all 500ms ease 0s;
     font-style: oblique;
     width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: larger;
+}
+
+.returnButton a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
 }
 
 .returnButton li {
@@ -464,4 +477,9 @@ input[type=number] {}
 
 .returnButton ul {
     padding: 20px 30px;
+}
+
+.thankYouTitle h1 {
+    font-size: 33px;
+    font-weight: lighter;
 }
