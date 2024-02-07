@@ -351,8 +351,9 @@ input[type=number] {}
 }
 
 .checkoutForm,
-.paymentInfoText {
-    /*  display: none;*/
+.paymentInfoText,
+.thankYouPage {
+    display: none;
 }
 
 .confirmBackButtons {
