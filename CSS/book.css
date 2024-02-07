@@ -341,7 +341,7 @@ input[type=number] {}
 
 .checkoutForm,
 .paymentInfoText {
-    display: none;
+    /*  display: none;*/
 }
 
 .confirmBackButtons {
@@ -398,4 +398,70 @@ input[type=number] {}
 
 .hidden {
     display: none;
+}
+
+/* ----------------------- Thank you page --------------------------*/
+.thankYouPageContentLeft img {
+    width: 200px;
+    height: 200px;
+}
+
+.thankYouPageContainer {
+    padding: 50px;
+    border: solid 2px #373B4D;
+    width: 100%;
+}
+
+.thankYouPageContent {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.thankYouPageContent2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.thankyouPageText {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.thankYouPageContentRow2 {
+    padding: 5px 0px;
+}
+
+.thankYouPageContentRow2 p,
+.thankYouPageContentRow2 span {
+    font-family: 'Raleway', sans-serif;
+}
+
+.totalPrices {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.thankYouPageContentLeft h1 {
+    padding: 10px 0px;
+}
+
+.returnButton {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: all 500ms ease 0s;
+    font-style: oblique;
+    width: 100%;
+}
+
+.returnButton li {
+    list-style: none;
+}
+
+.returnButton ul {
+    padding: 20px 30px;
 }

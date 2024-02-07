@@ -22,7 +22,6 @@
     <script defer src="JS/index.js"></script>
     <script defer src="JS/book.js"></script>
     <script defer src="JS/calendar.js"></script>
-    <script defer src="JS/priceGenerator.js"></script>
     <script defer src="JS/regionUpdate.js"></script>
     <script defer src="JS/time.js"></script>
     <script defer src="JS/payment.js"></script>
@@ -119,9 +118,9 @@
                             <div class="calendar">
 
                                 <div class="month-navigation">
-                                    <button onclick="prevMonth()">❮</button>
+                                    <button id="prevMonthButton">❮</button>
                                     <h2 id="currentMonth">Januari 2024</h2>
-                                    <button onclick="nextMonth()">❯</button>
+                                    <button id="nextMonthButton">❯</button>
                                 </div>
 
                                 <div class="weekdays">
@@ -172,7 +171,6 @@
                         <div class="bookingInformationRow">
                             <span>Datum: </span>
                             <span class="date" id="selectedDate">xx Januari 2024</span>
-
                         </div>
 
                         <div class="bookingInformationRow">
@@ -301,7 +299,6 @@
                                     </div>
                                 </div>
 
-
                                 <form>
 
                                     <div class="bookInputRow">
@@ -327,8 +324,8 @@
 
                                         <div class="bookInputGroup">
                                             <label for="CVV">CVV*</label>
-                                            <input type="number" placeholder="XXX" name="cvv" id="CVV" maxlength="3" required
-                                                autocomplete="off">
+                                            <input type="number" placeholder="XXX" name="cvv" id="CVV" maxlength="3"
+                                                required autocomplete="off">
                                         </div>
                                     </div>
                                 </form>
@@ -350,8 +347,8 @@
                                     <div class="bookInputRow">
                                         <div class="bookInputGroup">
                                             <label for="postalCode">Postnummer*</label>
-                                            <input type="number" placeholder="" name="zipcode" id="postalCode" maxlength="5" required
-                                                autocomplete="off">
+                                            <input type="number" placeholder="" name="zipcode" id="postalCode"
+                                                maxlength="5" required autocomplete="off">
                                         </div>
 
                                         <div class="bookInputGroup">
@@ -385,7 +382,7 @@
 
                             <div class="bookingInformationRow">
                                 <span>Datum: </span>
-                                <span class="date" id="selectedDate">xx Januari 2024</span>
+                                <span class="date" id="selectedDate2">xx Januari 2024</span>
 
                             </div>
 
@@ -396,7 +393,7 @@
 
                             <div class="bookingInformationRow">
                                 <span>Total: </span>
-                                <span class="price" id="dynamicPrice">00.0 kr</span>
+                                <span class="price" id="dynamicPrice2">00.0 kr</span>
                             </div>
 
                             <hr class="bookHR">
@@ -433,7 +430,124 @@
 
                 </section>
 
-                <section class="thankYouPage"></section>
+                <section class="thankYouPage">
+
+                    <div class="thankyouPageText">
+
+                        <div class="thankYouPageContentRow2">
+                            <h1>Tack för din bokning, Kundens namn</h1>
+                        </div>
+
+                        <div class="thankYouPageContentRow2">
+                            <p>En bokningbekräftelse har skickats till din mail och SMS.</p>
+                        </div>
+
+                        <div class="thankYouPageContentRow2">
+                            <span>Bokningsnummer:</span>
+                            <span class="bookningNumber">905357558</span>
+                        </div>
+                    </div>
+
+                    <div class="thankYouPageContainer">
+
+                        <div class="thankYouPageContent">
+
+                            <div class="thankYouPageContentLeft">
+                                <img src="ICONS/calendar-check-solid.svg" alt="">
+                            </div>
+
+                            <div class="thankYouPageContentRight">
+
+                                <div class="thankYouPageContentRow2">
+                                    <h1 class="serviceName4">Tjänstens namn</h1>
+                                </div>
+
+                                <div class="thankYouPageContentRow2">
+                                    <span class="price" id="dynamicPrice3">0 kr</span>
+                                </div>
+
+                                <div class="thankYouPageContentRow2">
+                                    <span class="date" id="selectedDate3">xx Januari 2024</span>
+                                    <span class="time">00:00</span>
+                                </div>
+
+                                <div class="thankYouPageContentRow2">
+                                    <span>Plats: </span>
+                                    <span class="place">*****</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <hr class="bookHR">
+
+                        <div class="thankYouPageContent2">
+
+                            <div class="thankYouPageContentLeft">
+
+                                <h1>Faktureringsadressen</h1>
+
+                                <div class="thankYouPageContentRow2">
+                                </div>
+
+                                <div class="thankYouPageContentRow2">
+                                    <p>Kundens Namn</p>
+                                </div>
+
+                                <div class="thankYouPageContentRow2">
+                                    <p>Gatuadress, Postnr, Postort</p>
+                                </div>
+
+                                <div class="thankYouPageContentRow2">
+                                    <p>Telefonnummer</p>
+                                </div>
+
+                                <div class="thankYouPageContentRow2">
+                                    <p>E-post addres</p>
+                                </div>
+
+                            </div>
+
+                            <div class="thankYouPageContentRight">
+
+                                <div class="thankYouPageContentRow2 totalPrices">
+                                    <span>Betalningsvärde </span>
+                                    <span class="price" id="dynamicPrice">00.0 kr</span>
+                                </div>
+
+                                <div class="thankYouPageContentRow2 totalPrices">
+                                    <span>Moms </span>
+                                    <span class="price" id="dynamicPrice">00.0 kr</span>
+                                </div>
+
+                                <hr class="bookHR">
+
+                                <div class="thankYouPageContentRow2 totalPrices">
+                                    <span>Total </span>
+                                    <span class="price" id="dynamicPrice">00.0 kr</span>
+                                </div>
+
+                                <div class="returnButton">
+                                    <ul>
+                                        <li><a href="index.html">Startsidan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="thankYouPageContent">
+                            <div class="thankYouPageContentLeft"></div>
+                            <div class="thankYouPageContentRight"></div>
+                        </div>
+
+                    </div>
+
+
+                </section>
 
             </div>
 
