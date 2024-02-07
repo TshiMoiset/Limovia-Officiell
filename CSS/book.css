@@ -26,7 +26,17 @@
     transition: 500ms;
 }
 
+.month-navigation h2 {
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
 /* Add this style in your existing CSS */
+.month,
+.selectTime {
+    font-family: 'Raleway', sans-serif;
+}
+
 .weekdays {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -35,6 +45,7 @@
 }
 
 .weekday {
+    font-family: 'Raleway', sans-serif;
     padding: 10px;
     border-radius: 4px;
 }
@@ -454,15 +465,15 @@ input[type=number] {}
 }
 
 .returnButton {
-    background-color: white;
+    color: white;
+    border: none;
     cursor: pointer;
-    border: 2px solid white;
-    transition: all 500ms ease 0s;
-    font-style: oblique;
-    width: 100%;
-    margin-top: 20px;
-    text-align: center;
     font-size: larger;
+    transition: 500ms;
+    padding: 10px;
+    font-style: oblique;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
 }
 
 .returnButton a {
