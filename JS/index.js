@@ -39,3 +39,45 @@ document.addEventListener("DOMContentLoaded", function () {
       "Stad till Stad-transfer";
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the service parameter from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const book = urlParams.get("book");
+
+  // Update the hero image based on the service parameter
+  if (book === "Privatleasing") {
+    document.querySelector(".bookHeroImage").style.backgroundImage =
+      "url('IMAGES/3VolvosInRow.jpg')";
+    document.querySelector(".heroImageTitle").textContent =
+      "Privatleasing Title";
+  } else if (book === "Abonnemang") {
+    document.querySelector(".bookHeroImage").style.backgroundImage =
+      "url('IMAGES/VolvoInterior.jpg')";
+    document.querySelector(".heroImageTitle").textContent = "Abonnemang Title";
+  } else if (book === "Flygplatstransfer") {
+    document.querySelector(".bookHeroImage").style.backgroundImage =
+      "url('IMAGES/Airport.jpg')";
+    document.querySelector(".heroImageTitle").textContent =
+      "Flygplatstransfer Title";
+  } else if (book === "Evenemangstransfer") {
+    document.querySelector(".bookHeroImage").style.backgroundImage =
+      "url('IMAGES/WeddingRings.jpg')";
+    document.querySelector(".heroImageTitle").textContent =
+      "Evenemangstransfer Title";
+  } else if (book === "Timbokning") {
+    document.querySelector(".bookHeroImage").style.backgroundImage =
+      "url('IMAGES/CarWindowView.png')";
+    document.querySelector(".heroImageTitle").textContent = "Timbokning Title";
+  } else if (book === "Lokal Transfer") {
+    document.querySelector(".bookHeroImage").style.backgroundImage =
+      "url('IMAGES/GuyOpensDoorForWoman.jpg')";
+    document.querySelector(".heroImageTitle").textContent =
+      "Lokal Transfer Title";
+  } else if (book === "Stad till Stad-transfer") {
+    document.querySelector(".bookHeroImage").style.backgroundImage =
+      "url('IMAGES/VolvoXC60BridgeUp.jpg')";
+    document.querySelector(".heroImageTitle").textContent =
+      "Stad till Stad-transfer";
+  }
+});

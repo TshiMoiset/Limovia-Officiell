@@ -62,3 +62,45 @@ function confirmBooking() {
   // Display the thank you page
   document.querySelector(".thankYouPage").style.display = "block";
 }
+
+// ----- Change html file name //
+
+// Read the query parameter to get the selected service
+const urlParams = new URLSearchParams(window.location.search);
+const selectedBook = urlParams.get("book");
+
+// Update the title based on the selected service
+if (selectedBook) {
+  document.title = `Limovia | ${selectedBook}`;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the service parameter from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const book = urlParams.get("book");
+
+  // Update the book name based on the selected service
+  updateBookName(book);
+});
+
+function updateBookName(book) {
+  // Get the element with the id "bookName"
+  const bookNameElement = document.getElementById("bookName");
+
+  // Update the content based on the selected service
+  if (book === "Privatleasing") {
+    bookNameElement.textContent = "Privatleasing";
+  } else if (book === "Abonnemang") {
+    bookNameElement.textContent = "Abonnemang";
+  } else if (book === "Flygplatstransfer") {
+    bookNameElement.textContent = "Flygplatstransfer";
+  } else if (book === "Evenemangstransfer") {
+    bookNameElement.textContent = "Evenemangstransfer";
+  } else if (book === "Timbokning") {
+    bookNameElement.textContent = "Timbokning";
+  } else if (book === "Lokal Transfer") {
+    bookNameElement.textContent = "Lokal Transfer";
+  } else if (book === "Stad till Stad-transfer") {
+    bookNameElement.textContent = "Stad till Stad-transfer";
+  }
+}
