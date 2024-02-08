@@ -2,7 +2,7 @@
 
     .headMainContainer {
         display: grid !important;
-        grid-template-columns: 15% 70% 15%;
+        grid-template-columns: 10% 80% 10%;
     }
 
     .serviceInfo {
@@ -21,7 +21,12 @@
 
 @media screen and (max-width: 821px) {}
 
-@media screen and (max-width: 769px) {}
+@media screen and (max-width: 769px) {
+    .headMainContainer {
+        display: grid !important;
+        grid-template-columns: 4% 92% 4%;
+    }
+}
 
 @media screen and (max-width: 541px) {
     .headMainContainer {
@@ -51,9 +56,9 @@
         padding: 20px !important;
     }
 
-        .smallScreenHR {
-            display: block;
-        }
+    .smallScreenHR {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 426px) {
