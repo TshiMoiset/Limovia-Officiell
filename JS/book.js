@@ -123,8 +123,8 @@ function updateBookName(book) {
     bookNameElement4.textContent = "Lokal Transfer";
   } else if (book === "Stad till Stad-transfer") {
     bookNameElement.textContent = "Stad till Stad-transfer";
-     bookNameElement2.textContent = "Timbokning";
-     bookNameElement3.textContent = "Timbokning";
-     bookNameElement4.textContent = "Timbokning";
+     bookNameElement2.textContent = "Stad till Stad-transfer";
+     bookNameElement3.textContent = "Stad till Stad-transfer";
+     bookNameElement4.textContent = "Stad till Stad-transfer";
   }
 }
