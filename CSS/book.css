@@ -474,6 +474,42 @@ input[type=number] {}
     padding: 10px 0px;
 }
 
+.thankYouTitle h1 {
+    font-size: 33px;
+    font-weight: lighter;
+}
+
+.hidden {
+    display: none;
+}
+
+.returnBtn button {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    border: solid 2px white;
+    transition: 500ms;
+    padding: 13px;
+    font-style: oblique;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.returnButton a {
+    text-decoration: none;
+    color: black;
+}
+
+.returnBtn button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/*
 .returnButton {
     color: white;
     border: none;
@@ -492,19 +528,6 @@ input[type=number] {}
     font-family: 'Raleway', sans-serif;
 }
 
-.returnButton li {
-    list-style: none;
-}
 
-.returnButton ul {
-    padding: 20px 30px;
-}
 
-.thankYouTitle h1 {
-    font-size: 33px;
-    font-weight: lighter;
-}
-
-.hidden {
-    display: none;
-}
+*/
