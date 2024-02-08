@@ -86,21 +86,45 @@ document.addEventListener("DOMContentLoaded", function () {
 function updateBookName(book) {
   // Get the element with the id "bookName"
   const bookNameElement = document.getElementById("bookName");
+  const bookNameElement2 = document.getElementById("bookName2");
+  const bookNameElement3 = document.getElementById("bookName3");
+  const bookNameElement4 = document.getElementById("bookName4");
 
   // Update the content based on the selected service
   if (book === "Privatleasing") {
     bookNameElement.textContent = "Privatleasing";
+    bookNameElement2.textContent = "Privatleasing";
+    bookNameElement3.textContent = "Privatleasing";
+    bookNameElement4.textContent = "Privatleasing";
   } else if (book === "Abonnemang") {
     bookNameElement.textContent = "Abonnemang";
+     bookNameElement2.textContent = "Abonnemang";
+     bookNameElement3.textContent = "Abonnemang";
+     bookNameElement4.textContent = "Abonnemang";
   } else if (book === "Flygplatstransfer") {
     bookNameElement.textContent = "Flygplatstransfer";
+      bookNameElement2.textContent = "Flygplatstransfer";
+      bookNameElement3.textContent = "Flygplatstransfer";
+      bookNameElement4.textContent = "Flygplatstransfer";
   } else if (book === "Evenemangstransfer") {
     bookNameElement.textContent = "Evenemangstransfer";
+    bookNameElement2.textContent = "Evenemangstransfer";
+    bookNameElement3.textContent = "Evenemangstransfer";
+    bookNameElement4.textContent = "Evenemangstransfer";
   } else if (book === "Timbokning") {
     bookNameElement.textContent = "Timbokning";
+      bookNameElement2.textContent = "Timbokning";
+      bookNameElement3.textContent = "Timbokning";
+      bookNameElement4.textContent = "Timbokning";
   } else if (book === "Lokal Transfer") {
     bookNameElement.textContent = "Lokal Transfer";
+    bookNameElement2.textContent = "Lokal Transfer";
+    bookNameElement3.textContent = "Lokal Transfer";
+    bookNameElement4.textContent = "Lokal Transfer";
   } else if (book === "Stad till Stad-transfer") {
     bookNameElement.textContent = "Stad till Stad-transfer";
+     bookNameElement2.textContent = "Timbokning";
+     bookNameElement3.textContent = "Timbokning";
+     bookNameElement4.textContent = "Timbokning";
   }
 }
