@@ -1,0 +1,31 @@
+@media screen and (max-width: 1025px) {
+    .errorMessage img {
+        width: 440px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .errorMessage img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    .errorMessage img {
+        width: 350px;
+        height: auto;
+    }
+
+    .pBreak {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .errorMessage img {
+        width: 270px;
+        height: auto;
+    }
+}
