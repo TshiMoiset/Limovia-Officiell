@@ -1,0 +1,76 @@
+@media screen and (max-width: 1025px) {
+
+    .headMainContainer {
+        display: grid !important;
+        grid-template-columns: 15% 70% 15%;
+    }
+
+    .serviceInfo {
+        display: block;
+    }
+
+    .bookingCalendar,
+    .bookingFromContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 913px) {}
+
+@media screen and (max-width: 821px) {}
+
+@media screen and (max-width: 769px) {}
+
+@media screen and (max-width: 541px) {
+    .headMainContainer {
+        display: grid !important;
+        grid-template-columns: 5% 90% 5%;
+    }
+
+    .paymentCards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .calendarContainer {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .thankYouPageContent2 {
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .thankYouPageContainer {
+        padding: 20px !important;
+    }
+
+        .smallScreenHR {
+            display: block;
+        }
+}
+
+@media screen and (max-width: 426px) {
+
+    .headMainContainer {
+        display: grid !important;
+        grid-template-columns: 2% 96% 2%;
+    }
+
+    .thankYouPageContainer {
+        padding: 20px !important;
+    }
+
+    .thankYouPageContent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center !important;
+
+    }
+}

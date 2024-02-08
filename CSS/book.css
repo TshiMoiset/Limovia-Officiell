@@ -12,8 +12,6 @@
     grid-template-columns: 20% 60% 20%;
     background-color: black;
     padding: 50px 0px;
-
-
     /* ta bort */
     color: white;
 }
@@ -115,12 +113,15 @@
     text-align: center;
 }
 
-
 .bookHR {
     border: solid .1px #373B4D;
     border-radius: 5px;
     width: 100%;
     margin: 20px 0px;
+}
+
+.smallScreenHR {
+    display: none;
 }
 
 .serviceInfo h1 {
@@ -135,6 +136,12 @@
     font-family: 'Raleway', sans-serif;
     padding-bottom: 1px;
     font-style: oblique;
+}
+
+.serviceInfo {
+
+    width: 100%;
+
 }
 
 .selectWheelRegion {
@@ -305,6 +312,8 @@ input[type=number] {}
 
 .paymentCards {
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .paymentIcons {
@@ -494,4 +503,8 @@ input[type=number] {}
 .thankYouTitle h1 {
     font-size: 33px;
     font-weight: lighter;
+}
+
+.hidden {
+    display: none;
 }
