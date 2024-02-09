@@ -20,6 +20,7 @@ body {
 
 .errorMessage img {
     width: 510px;
+    /*width: 550px;*/
     height: auto;
 }
 
