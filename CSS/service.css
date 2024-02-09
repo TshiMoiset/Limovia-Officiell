@@ -82,6 +82,10 @@
     transition: 500ms;
 }
 
+.serviceBookButton {
+    margin-top: 20px;
+}
+
 .serviceInfoContent a:hover {
     color: white;
     background-color: transparent;
