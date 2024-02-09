@@ -70,34 +70,55 @@ document.addEventListener("DOMContentLoaded", function () {
   if (book === "Privatleasing") {
     document.querySelector(".bookHeroImage").style.backgroundImage =
       "url('IMAGES/3VolvosInRow.jpg')";
+    document.querySelectorAll(".bookHeroImage2").forEach((element) => {
+      element.style.display = "none";
+    });
     document.querySelector(".heroImageTitle").textContent =
       "Privatleasing Title";
   } else if (book === "Abonnemang") {
     document.querySelector(".bookHeroImage").style.backgroundImage =
       "url('IMAGES/VolvoInterior.jpg')";
+    document.querySelectorAll(".bookHeroImage2").forEach((element) => {
+      element.style.display = "none";
+    });
     document.querySelector(".heroImageTitle").textContent = "Abonnemang Title";
   } else if (book === "Flygplatstransfer") {
     document.querySelector(".bookHeroImage").style.backgroundImage =
       "url('IMAGES/Airport.jpg')";
+    document.querySelectorAll(".bookHeroImage2").forEach((element) => {
+      element.style.display = "none";
+    });
     document.querySelector(".heroImageTitle").textContent =
       "Flygplatstransfer Title";
   } else if (book === "Evenemangstransfer") {
     document.querySelector(".bookHeroImage").style.backgroundImage =
       "url('IMAGES/WeddingRings.jpg')";
+    document.querySelectorAll(".bookHeroImage2").forEach((element) => {
+      element.style.display = "none";
+    });
     document.querySelector(".heroImageTitle").textContent =
       "Evenemangstransfer Title";
   } else if (book === "Timbokning") {
     document.querySelector(".bookHeroImage").style.backgroundImage =
       "url('IMAGES/CarWindowView.png')";
+    document.querySelectorAll(".bookHeroImage2").forEach((element) => {
+      element.style.display = "none";
+    });
     document.querySelector(".heroImageTitle").textContent = "Timbokning Title";
   } else if (book === "Lokal Transfer") {
-    document.querySelector(".bookHeroImage").style.backgroundImage =
+    document.querySelector(".bookHeroImage2").style.backgroundImage =
       "url('IMAGES/GuyOpensDoorForWoman.jpg')";
+    document.querySelectorAll(".bookHeroImage").forEach((element) => {
+      element.style.display = "none";
+    });
     document.querySelector(".heroImageTitle").textContent =
       "Lokal Transfer Title";
   } else if (book === "Stad till Stad-transfer") {
     document.querySelector(".bookHeroImage").style.backgroundImage =
       "url('IMAGES/VolvoXC60BridgeUp.jpg')";
+    document.querySelectorAll(".bookHeroImage2").forEach((element) => {
+      element.style.display = "none";
+    });
     document.querySelector(".heroImageTitle").textContent =
       "Stad till Stad-transfer";
   }
