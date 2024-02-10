@@ -32,3 +32,19 @@ document.addEventListener("DOMContentLoaded", function () {
     updateDynamicPrice();
   }
 });
+
+// Booking confirmation number
+document.addEventListener("DOMContentLoaded", function () {
+  // Function to generate a random 9-digit number
+  function generateRandomBookingNumber() {
+    return Math.floor(Math.random() * 900000000 + 100000000);
+  }
+
+  // Get the booking number element
+  const bookingNumberElement = document.querySelector(".bookningNumber");
+
+  // Update the booking number with a random value on page load
+  if (bookingNumberElement) {
+    bookingNumberElement.textContent = generateRandomBookingNumber();
+  }
+});
