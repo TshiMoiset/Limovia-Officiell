@@ -91,6 +91,12 @@ document.addEventListener("DOMContentLoaded", function () {
       selectedDateElement2.textContent = `${day} ${monthNames[currentMonth]} 2024`;
     }
 
+    // Update the third selectedDate element
+    const selectedDateElement3 = document.getElementById("selectedDate3");
+    if (selectedDateElement3) {
+      selectedDateElement3.textContent = `${day} ${monthNames[currentMonth]} 2024`;
+    }
+
     // Call the function to update the dynamic price
     updateDynamicPrice();
   }
