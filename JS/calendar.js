@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let currentMonth = 0; // 0 represents January
+  let currentDate = new Date(); // Get the current date
+  let currentMonth = currentDate.getMonth(); // Get the current month (0-indexed)
   let selectedDay = 0; // This should be declared only once, in the global scope
   const monthNames = [
     "Januari",
@@ -18,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateCalendar() {
     const currentMonthElement = document.getElementById("currentMonth");
-    currentMonthElement.textContent = monthNames[currentMonth] + " 2024";
+    currentMonthElement.textContent =
+      monthNames[currentMonth] + " " + currentDate.getFullYear(); // Update the current month with the current year
 
     const calendarMonth = document.getElementById("calendarMonth");
     calendarMonth.innerHTML = ""; // Clear previous month's days
@@ -47,10 +49,18 @@ document.addEventListener("DOMContentLoaded", function () {
       calendarMonth.appendChild(weekdaysContainer);
     }
 
-    const daysInMonth = new Date(2024, currentMonth + 1, 0).getDate();
+    const daysInMonth = new Date(
+      currentDate.getFullYear(),
+      currentMonth + 1,
+      0
+    ).getDate();
 
     // Get the day of the week for the first day of the month (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
-    const firstDayOfWeek = new Date(2024, currentMonth, 1).getDay();
+    const firstDayOfWeek = new Date(
+      currentDate.getFullYear(),
+      currentMonth,
+      1
+    ).getDay();
 
     // Create placeholders for the days before the first day of the month
     for (let i = 0; i < firstDayOfWeek; i++) {
@@ -82,19 +92,25 @@ document.addEventListener("DOMContentLoaded", function () {
     // Update the first selectedDate element
     const selectedDateElement = document.getElementById("selectedDate");
     if (selectedDateElement) {
-      selectedDateElement.textContent = `${day} ${monthNames[currentMonth]} 2024`;
+      selectedDateElement.textContent = `${day} ${
+        monthNames[currentMonth]
+      } ${currentDate.getFullYear()}`;
     }
 
     // Update the second selectedDate element
     const selectedDateElement2 = document.getElementById("selectedDate2");
     if (selectedDateElement2) {
-      selectedDateElement2.textContent = `${day} ${monthNames[currentMonth]} 2024`;
+      selectedDateElement2.textContent = `${day} ${
+        monthNames[currentMonth]
+      } ${currentDate.getFullYear()}`;
     }
 
     // Update the third selectedDate element
     const selectedDateElement3 = document.getElementById("selectedDate3");
     if (selectedDateElement3) {
-      selectedDateElement3.textContent = `${day} ${monthNames[currentMonth]} 2024`;
+      selectedDateElement3.textContent = `${day} ${
+        monthNames[currentMonth]
+      } ${currentDate.getFullYear()}`;
     }
 
     // Call the function to update the dynamic price
@@ -103,13 +119,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function prevMonth() {
     // Update the current month
-    currentMonth = (currentMonth - 1 + 12) % 12; // Handle wrap-around to December
+    currentDate.setMonth(currentDate.getMonth() - 1);
 
     // Update the calendar without triggering selectDate
     updateCalendar();
 
     // Update the selected date to the last day of the previous month
-    selectedDay = new Date(2024, currentMonth + 1, 0).getDate();
+    selectedDay = new Date(
+      currentDate.getFullYear(),
+      currentMonth + 1,
+      0
+    ).getDate();
 
     // Update the dynamic price
     updateDynamicPrice();
@@ -117,13 +137,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function nextMonth() {
     // Update the current month
-    currentMonth = (currentMonth + 1) % 12; // Handle wrap-around to January
+    currentDate.setMonth(currentDate.getMonth() + 1);
 
     // Update the calendar without triggering selectDate
     updateCalendar();
 
     // Update the selected date to the last day of the next month
-    selectedDay = new Date(2024, currentMonth + 1, 0).getDate();
+    selectedDay = new Date(
+      currentDate.getFullYear(),
+      currentMonth + 1,
+      0
+    ).getDate();
 
     // Update the dynamic price
     updateDynamicPrice();
