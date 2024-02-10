@@ -140,7 +140,32 @@ document.addEventListener("DOMContentLoaded", function () {
     // If the selected date has a stored price, display it
     if (selectedDayPrices[selectedDay] !== undefined) {
       const priceElement = document.getElementById("dynamicPrice");
+      const priceElement2 = document.getElementById("dynamicPrice2");
+      const priceElement3 = document.getElementById("dynamicPrice3");
+      const priceElement4 = document.getElementById("dynamicPrice4");
+      const priceElement5 = document.getElementById("dynamicPrice5");
+      const priceElement6 = document.getElementById("dynamicPrice6");
+      const priceElement7 = document.getElementById("dynamicPrice7");
+
       priceElement.textContent =
+        selectedDayPrices[selectedDay].toFixed(1) + " kr";
+
+      priceElement2.textContent =
+        selectedDayPrices[selectedDay].toFixed(1) + " kr";
+
+      priceElement3.textContent =
+        selectedDayPrices[selectedDay].toFixed(1) + " kr";
+
+      priceElement4.textContent =
+        selectedDayPrices[selectedDay].toFixed(1) + " kr";
+
+      priceElement5.textContent =
+        selectedDayPrices[selectedDay].toFixed(1) + " kr";
+
+      priceElement6.textContent =
+        selectedDayPrices[selectedDay].toFixed(1) + " kr";
+
+      priceElement7.textContent =
         selectedDayPrices[selectedDay].toFixed(1) + " kr";
     } else {
       // Otherwise, generate a new random price between 1000 and 5000
@@ -149,6 +174,24 @@ document.addEventListener("DOMContentLoaded", function () {
       // Update the price in the HTML
       const priceElement = document.getElementById("dynamicPrice");
       priceElement.textContent = randomPrice.toFixed(1) + " kr";
+
+      const priceElement2 = document.getElementById("dynamicPrice2");
+      priceElement2.textContent = randomPrice.toFixed(1) + " kr";
+
+      const priceElement3 = document.getElementById("dynamicPrice3");
+      priceElement3.textContent = randomPrice.toFixed(1) + " kr";
+
+      const priceElement4 = document.getElementById("dynamicPrice4");
+      priceElement4.textContent = randomPrice.toFixed(1) + " kr";
+      
+      const priceElement5 = document.getElementById("dynamicPrice5");
+      priceElement5.textContent = randomPrice.toFixed(1) + " kr";
+
+      const priceElement6 = document.getElementById("dynamicPrice6");
+      priceElement6.textContent = randomPrice.toFixed(1) + " kr";
+
+      const priceElement7 = document.getElementById("dynamicPrice7");
+      priceElement7.textContent = randomPrice.toFixed(1) + " kr";
 
       // Store the generated price for the selected date
       selectedDayPrices[selectedDay] = randomPrice;
