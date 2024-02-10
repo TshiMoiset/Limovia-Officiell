@@ -1,8 +1,7 @@
 .aboutLimovia {
     display: grid;
-    /*grid-template-columns: 22% 56% 22%;*/
     grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 50px;
+    padding: 20px 0px;
 }
 
 .aboutLimoviaInfo:nth-child(2) {
@@ -32,7 +31,6 @@
     font-size: larger;
     font-style: oblique;
     padding: 20px 0;
-
 }
 
 .aboutLimoviaText3 {
@@ -95,7 +93,6 @@
 }
 
 .slides {
-    /*display: none;*/
     padding: 75px;
     text-align: center;
     position: absolute;
@@ -103,15 +100,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
-    /* Start with 0 opacity */
     transition: opacity 1s ease;
-    /* Add a smooth transition effect */
 }
-
-/*.slides.active {
-    opacity: 3;
-    /* Set the opacity of the active slide to 1 
-}*/
 
 .prev,
 .next {
