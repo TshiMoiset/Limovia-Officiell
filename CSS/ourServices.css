@@ -14,6 +14,7 @@
 
 .servicesContainer h2 {
     font-weight: lighter;
+    font-size: 28px;
     color: #E6D8D7;
     padding-bottom: 15px;
 }
@@ -21,7 +22,7 @@
 .servicesContainer p {
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .ourServicesCard img {
@@ -57,6 +58,8 @@
     padding: 15px 50px;
     transition: 500ms;
     border: 1px solid white;
+    font-family: 'Raleway', sans-serif;
+    font-style: oblique;
 }
 
 .bookServicesButton:hover {
@@ -70,6 +73,7 @@
     transition: 500ms;
     margin: 30px;
     padding: 5px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .readMoreServicesButton:hover {
