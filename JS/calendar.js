@@ -162,8 +162,8 @@ document.addEventListener("DOMContentLoaded", function () {
       priceElement5.textContent =
         selectedDayPrices[selectedDay].toFixed(1) + " kr";
 
-      priceElement6.textContent =
-        selectedDayPrices[selectedDay].toFixed(1) + " kr";
+      const vatPrice = (price * 0.25).toFixed(1);
+      priceElement6.textContent = vatPrice + " kr";
 
       priceElement7.textContent =
         selectedDayPrices[selectedDay].toFixed(1) + " kr";
@@ -183,12 +183,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const priceElement4 = document.getElementById("dynamicPrice4");
       priceElement4.textContent = randomPrice.toFixed(1) + " kr";
-      
+
       const priceElement5 = document.getElementById("dynamicPrice5");
       priceElement5.textContent = randomPrice.toFixed(1) + " kr";
 
+      const vatPrice = (randomPrice * 0.25).toFixed(1);
       const priceElement6 = document.getElementById("dynamicPrice6");
-      priceElement6.textContent = randomPrice.toFixed(1) + " kr";
+      priceElement6.textContent = vatPrice + " kr";
 
       const priceElement7 = document.getElementById("dynamicPrice7");
       priceElement7.textContent = randomPrice.toFixed(1) + " kr";
