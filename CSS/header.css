@@ -9,7 +9,6 @@ header {
     transition: 500ms;
     z-index: 1;
     background-color: black;
-    /* border-bottom: solid 2px #94652B;*/
 }
 
 .navigation {
@@ -18,7 +17,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /*padding: 8px 0;*/
     box-sizing: border-box;
     transition: 500ms;
 }
@@ -35,13 +33,11 @@ header {
 .navigation a {
     text-decoration: none;
     color: white;
-    /*padding: 5px 20px;*/
 }
 
 .navigationLinks a,
 .login a {
-    font-family: "Montserrat", sans-serif;
-    /*font-family: "Montserrat";*/
+    font-family: "Montserrat";
 }
 
 .logo {
@@ -49,7 +45,6 @@ header {
 }
 
 .logo h1 {
-    /* color: #bfa35e;*/
     font-size: 2em;
     font-family: "Isabel Thin";
     background: rgb(148, 101, 43);
