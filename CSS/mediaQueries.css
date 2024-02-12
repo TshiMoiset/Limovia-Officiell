@@ -303,52 +303,6 @@
 
 	.formContainer {
 		width: 100%;
-		/* Adjust width for smaller screens */
-	}
-
-	/* -------------------- Service -------------------- */
-
-	.serviceSlideshowMain {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr) !important;
-	}
-
-	.selectWheelRegion select {
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		background-color: #fff;
-		border: 1px solid #ccc;
-		padding: 13px;
-		font-size: 16px;
-		cursor: pointer;
-		font-family: 'Raleway', sans-serif;
-		outline: none;
-		width: 245px;
-	}
-
-	.selectWheelRegion::before {
-		content: '\25BC';
-		width: 25px;
-	}
-
-	.selectWheelTitle::before {
-		content: '\25BC';
-		width: 20px;
-	}
-
-	.selectWheelRegion select,
-	.selectWheelTitle select {
-		width: 100%;
-	}
-
-	.accountChangeButtons {
-		align-items: center;
-		justify-content: center;
-	}
-
-	.accountChangeButtons button {
-		width: 40%;
 	}
 
 	/* -------------------- Section 1 About Limovia -------------------- */
