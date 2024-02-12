@@ -46,7 +46,7 @@ header {
 
 .logo h1 {
     font-size: 2em;
-    font-family: "Isabel Thin";
+    font-family: "Isabel Light";
     background: rgb(148, 101, 43);
     background: linear-gradient(90deg, rgba(148, 101, 43, 1) 0%, rgba(214, 192, 118, 1) 50%, rgba(148, 101, 43, 1) 100%);
     -webkit-background-clip: text;

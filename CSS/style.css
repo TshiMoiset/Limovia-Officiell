@@ -38,13 +38,6 @@ img {
 }
 
 @font-face {
-    font-family: "Isabel Thin";
-    src: url("../FONTS/Fontspring-DEMO-isabel-light.otf");
-}
-
-@font-face {
     font-family: "Montserrat";
     src: url("../FONTS/Montserrat-VariableFont_wght.ttf");
 }
-
-/*@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");*/

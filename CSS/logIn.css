@@ -1,9 +1,7 @@
 body {
-    /*background-color: #191919;*/
     background-color: black;
     padding: 0px;
     margin: 0px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +14,6 @@ body {
     justify-content: center;
     border-radius: 10px;
     transition: 600ms;
-
-    /* box-shadow: 5px 5px 10px #191919;*/
     box-shadow: 5px 5px 10px #191919, -5px 5px 10px #191919, 0px 5px 10px #191919, 5px 0px 10px #191919;
 }
 
@@ -59,7 +55,6 @@ body {
     padding: 13px;
     box-sizing: border-box;
     background-color: black;
-    /*border: solid 2px #191919;*/
     border: solid 2px #373B4D;
 }
 

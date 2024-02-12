@@ -131,27 +131,6 @@ input[type=number] {
    -moz-appearance: textfield;
 }
 
-/* -------------------- Contact Left -------------------- */
-.addressRow {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
-   padding: 2px;
-}
-
-.addressRow h1 {
-   font-weight: lighter;
-   color: #E6D8D7;
-   font-size: 30px;
-}
-
-.addressRow p {
-   font-size: 20px;
-   font-family: 'Raleway', sans-serif;
-   letter-spacing: 1px;
-}
-
 /* -------------------- CEO contact -------------------- */
 
 .profile img {
@@ -168,11 +147,7 @@ input[type=number] {
 .profile {
    padding: 15px;
    transition: 500ms;
-   box-shadow: 0px 8px 8px -4px rgb(25, 25, 25);
-}
-
-.profile:hover {
-   box-shadow: 0px 4px 8px rgb(45, 45, 45);
+   box-shadow: 0px 8px 10px -5px rgba(25, 25, 25);
 }
 
 .profile .figcaptionOne {
@@ -190,4 +165,3 @@ input[type=number] {
    font-size: 15px;
    font-family: 'Raleway', sans-serif;
 }
-
