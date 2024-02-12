@@ -63,3 +63,68 @@ header {
 .logo:hover {
     transform: scale(1.1);
 }
+
+/* ----------------------- Small Navigation  -------------------------- */
+
+#openNavbutton img,
+#closeNavbutton img {
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#openNavbutton {
+    /* Updated to target IDs */
+    display: none;
+    top: 85%;
+    right: 2%;
+    position: fixed;
+    background-color: #191919;
+    border-radius: 50%;
+    padding: 15px;
+    border: solid .5px white;
+}
+
+#closeNavbutton {
+    display: none;
+    top: 85%;
+    right: 2%;
+    position: fixed;
+    background-color: #191919;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+#openNavbutton {}
+
+#closeNavbutton {}
+
+
+
+.smallNavigation {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.smallNavigation a {
+    display: block;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    transition: 0.3s;
+    font-family: "Montserrat";
+}
+
+#main {
+    transition: margin-left .5s;
+}

@@ -3,6 +3,10 @@
 		overflow-x: hidden;
 	}
 
+	#openNavbutton {
+		display: block !important;
+	}
+
 	.heroImageText {
 		width: 100%;
 	}
@@ -303,6 +307,11 @@
 
 	.formContainer {
 		width: 100%;
+	}
+
+	/* ------------------------- Main Hero Image --------------------------- */
+	.heroImageQuote {
+		padding: 0px  !important;
 	}
 
 	/* -------------------- Section 1 About Limovia -------------------- */

@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="CSS/fleet.css">
     <link rel="stylesheet" href="CSS/contact.css">
 
+    <script defer src="JS/smallMenu.js"></script>
     <script defer src="JS/index.js"></script>
     <script defer src="JS/quoteSlide.js"></script>
     <script defer src="JS/fleetSlide.js"></script>
@@ -79,9 +80,31 @@
 
         </div>
 
+
+        <div class="openNavbutton" id="openNavbutton" onclick="openNavbar()">
+            <img src="ICONS/bars-solid.svg" alt="bars-solid">
+        </div>
+
+        <nav class="smallNavigation" id="smallNavigation">
+
+            <ul>
+                <li><a href="#aboutLimovia">Om Limovia</a></li>
+                <li><a href="#ourServices">Våra Tjänster</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#fleet">Flotta</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="logIn.html">Logga In</a></li>
+                <li><a href="signUp.html">Bli medlem</a></li>
+            </ul>
+
+            <div class="closeNavbutton" id="closeNavbutton" onclick="closeNavbar()">
+                <img src="ICONS/xmark-solid.svg" alt="xmark-solid">
+            </div>
+        </nav>
+
     </header>
 
-    <main>
+    <main id="main">
 
         <div class="mainHeroImage">
             <div class="heroImageText">
