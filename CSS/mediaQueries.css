@@ -131,6 +131,16 @@
 		display: flex;
 		flex-direction: column-reverse;
 	}
+
+		/* -------------------- Footer -------------------- */
+
+	.footerContent {
+		flex-direction: column;
+	}
+
+	.footerLeft, .footerRight {
+		padding: 5px;
+	}
 }
 
 @media screen and (max-width: 913px) {

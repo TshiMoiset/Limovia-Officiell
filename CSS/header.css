@@ -68,39 +68,45 @@ header {
 
 #openNavbutton img,
 #closeNavbutton img {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+#openNavbutton span,
+#closeNavbutton span {
     width: 25px;
     height: 25px;
-    margin: 0px;
-    padding: 0px;
+    color: white;
+    line-height: 10px;
 }
 
 #openNavbutton {
-    /* Updated to target IDs */
     display: none;
-    top: 85%;
+    top: 93%;
     right: 2%;
     position: fixed;
     background-color: #191919;
     border-radius: 50%;
-    padding: 15px;
+    padding: 10px;
     border: solid .5px white;
+    justify-content: center;
+    margin: 0px;
 }
 
 #closeNavbutton {
     display: none;
-    top: 85%;
+    top: 93%;
     right: 2%;
     position: fixed;
     background-color: #191919;
     border-radius: 50%;
-    padding: 15px;
+    padding: 10px;
+    border: solid .5px white;
+    justify-content: center;
+    margin: 0px;
 }
-
-#openNavbutton {}
-
-#closeNavbutton {}
-
-
 
 .smallNavigation {
     height: 100%;
