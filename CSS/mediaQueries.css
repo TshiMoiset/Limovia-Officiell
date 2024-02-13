@@ -132,13 +132,14 @@
 		flex-direction: column-reverse;
 	}
 
-		/* -------------------- Footer -------------------- */
+	/* -------------------- Footer -------------------- */
 
 	.footerContent {
 		flex-direction: column;
 	}
 
-	.footerLeft, .footerRight {
+	.footerLeft,
+	.footerRight {
 		padding: 5px;
 	}
 }
@@ -321,7 +322,7 @@
 
 	/* ------------------------- Main Hero Image --------------------------- */
 	.heroImageQuote {
-		padding: 0px  !important;
+		padding: 0px !important;
 	}
 
 	/* -------------------- Section 1 About Limovia -------------------- */
