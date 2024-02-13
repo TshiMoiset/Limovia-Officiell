@@ -76,7 +76,7 @@ header {
 
 #openNavbutton {
     display: none;
-    top: 93%;
+    bottom: 7%;
     right: 2%;
     position: fixed;
     background-color: #191919;
@@ -88,7 +88,7 @@ header {
 
 #closeNavbutton {
     display: none;
-    top: 93%;
+    bottom: 7%;
     right: 2%;
     position: fixed;
     background-color: #191919;
