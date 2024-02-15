@@ -82,6 +82,8 @@ header {
     bottom: 27px;
     right: 19px;
     position: fixed;
+
+    border: solid 1px white;
 }
 
 .smallNavigation {
@@ -107,7 +109,6 @@ header {
     transition: 500ms;
     font-family: "Montserrat";
 }
-
 
 /*
 #openNavbutton span,

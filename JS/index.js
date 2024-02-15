@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "Evenemangstransfer Title";
   } else if (service === "Timbokning") {
     document.querySelector(".serviceHeroImage").style.backgroundImage =
-      "url('IMAGES/CarWindowView.png')";
+      "url('IMAGES/CarRainWindow.jpg')";
     document.querySelectorAll(".serviceHeroImage2").forEach((element) => {
       element.style.display = "none";
     });
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "Evenemangstransfer Title";
   } else if (book === "Timbokning") {
     document.querySelector(".bookHeroImage").style.backgroundImage =
-      "url('IMAGES/CarWindowView.png')";
+      "url('IMAGES/CarRainWindow.jpg')";
     document.querySelectorAll(".bookHeroImage2").forEach((element) => {
       element.style.display = "none";
     });
