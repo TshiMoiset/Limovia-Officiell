@@ -32,8 +32,3 @@ img {
     font-family: "Isabel Light";
     src: url("../FONTS/Fontspring-DEMO-isabel-light.otf");
 }
-
-@font-face {
-    font-family: "Montserrat";
-    src: url("../FONTS/Montserrat-VariableFont_wght.ttf");
-}
