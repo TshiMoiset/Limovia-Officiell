@@ -2,6 +2,7 @@
     padding: 60px;
     position: relative;
     overflow: hidden;
+    background-color: #191919;
 }
 
 .carousel-slide {
@@ -14,12 +15,10 @@
 
 .carousel-slide.active {
     display: flex;
-    /* Assuming you want to display them as flex containers */
 }
 
 .fleetSlideImage {
     display: flex;
-    /* Stretch the image to take full height */
 }
 
 .fleetSlideImage img {

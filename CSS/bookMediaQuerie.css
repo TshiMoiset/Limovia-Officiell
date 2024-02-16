@@ -17,10 +17,6 @@
     }
 }
 
-@media screen and (max-width: 913px) {}
-
-@media screen and (max-width: 821px) {}
-
 @media screen and (max-width: 769px) {
     .headMainContainer {
         display: grid !important;
