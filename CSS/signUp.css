@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
 }
 
 .signUpCompanyContainer {
@@ -67,7 +67,7 @@ body {
     border-radius: 5px;
 }
 
-.accountChangeButtons button:hover {
+.accountChangeButtons button:hover { 
     background-color: black;
     color: white;
 }
