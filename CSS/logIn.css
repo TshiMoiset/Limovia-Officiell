@@ -17,10 +17,6 @@ body {
     box-shadow: 5px 5px 10px #191919, -5px 5px 10px #191919, 0px 5px 10px #191919, 5px 0px 10px #191919;
 }
 
-.logInContainer:hover {
-    box-shadow: 5px 5px 10px #373b4d77, -5px 5px 10px #373b4d77, 0px 5px 10px #373b4d77, 5px 0px 10px #373b4d77;
-}
-
 .loginLeft {
     flex-basis: 65%;
     min-height: 60vh;
