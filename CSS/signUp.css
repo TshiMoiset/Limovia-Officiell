@@ -45,6 +45,14 @@ body {
     text-decoration: none;
 }
 
+.signUpAndText ul {
+    padding: 0px;
+}
+
+.signUpAndText li {
+    list-style: none;
+}
+
 .signUpPrivateContainer,
 .signUpCompanyContainer {
     padding: 20px;

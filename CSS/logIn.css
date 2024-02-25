@@ -131,6 +131,14 @@ body {
     text-decoration: none;
 }
 
+.logoAndText ul {
+    padding: 0px;
+}
+
+.logoAndText li {
+    list-style: none;
+}
+
 .loginText {
     color: white;
     font-family: 'Raleway', sans-serif;

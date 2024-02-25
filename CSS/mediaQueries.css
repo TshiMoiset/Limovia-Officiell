@@ -464,7 +464,11 @@
 	}
 
 	.signUpInputRow {
-		padding: 10px;
+		padding: 0px 10px;
+	}
+
+	.signUpExtraPadding {
+		padding-top: 20px;
 	}
 
 	.selectWheelTitle,
