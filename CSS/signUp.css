@@ -64,10 +64,9 @@ body {
     cursor: pointer;
     transition: 500ms;
     font-size: large;
-    border-radius: 5px;
 }
 
-.accountChangeButtons button:hover { 
+.accountChangeButtons button:hover {
     background-color: black;
     color: white;
 }
@@ -101,6 +100,10 @@ body {
 
 .signUpInputRow input:focus {
     border: solid 2px white;
+}
+
+.signUpInputRow ::placeholder {
+    color: rgba(255, 255, 255, 0.788);
 }
 
 .signUpInputGroup input {
@@ -240,6 +243,10 @@ input[type=number] {
 .logIn a:hover {
     color: #E6D8D7;
     border-bottom: solid 2px;
+}
+
+.signUpExtraPadding {
+    padding-top:10px;
 }
 
 .signUpInputRow label {

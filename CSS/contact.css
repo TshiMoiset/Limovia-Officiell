@@ -67,7 +67,7 @@
    outline: none;
    background-color: black;
    font-style: oblique;
-   color: aliceblue;
+   color: white;
    padding: 10px;
    transition: 500ms;
    font-family: 'Roboto', sans-serif;
@@ -83,7 +83,7 @@
    outline: none;
    background-color: black;
    font-style: oblique;
-   color: aliceblue;
+   color: white;
    padding: 10px;
    transition: 500ms;
    font-family: 'Roboto', sans-serif;
@@ -122,7 +122,6 @@
 
 .contactRight ::placeholder {
    color: rgba(255, 255, 255, 0.788);
-   font-size: 15px;
 }
 
 input::-webkit-outer-spin-button,

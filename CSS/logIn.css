@@ -45,7 +45,7 @@ body {
     font-size: 16px;
     outline: none;
     font-style: oblique;
-    color: aliceblue;
+    color: white;
     transition: 500ms;
     font-family: 'Roboto', sans-serif;
     padding: 13px;
@@ -57,6 +57,10 @@ body {
 .loginInputRow input[type="email"]:focus,
 .loginInputRow input[type="password"]:focus {
     border: solid 2px white;
+}
+
+.loginInputRow ::placeholder {
+    color: rgba(255, 255, 255, 0.788);
 }
 
 .loginInputRow button {
