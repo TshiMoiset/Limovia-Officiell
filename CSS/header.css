@@ -70,18 +70,15 @@ header {
     display: none;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     background-color: #191919;
     color: white;
-    border: none;
     cursor: pointer;
     font-size: 16px;
     line-height: 10px;
-
     bottom: 27px;
     right: 19px;
     position: fixed;
-
+    border-radius: 50%;
     border: solid 1px white;
 }
 
@@ -94,17 +91,32 @@ header {
     right: 0;
     background-color: rgba(0, 0, 0, 0.895);
     overflow-x: hidden;
-    padding-top: 60px;
+    padding-top: 60px; 
     transition: 500ms;
     border-left: solid 1px #E6D8D7;
 }
 
+.smallNavigation ul {
+    padding: 0px 20px; 
+}
+
+.smallNavigation li {
+    list-style: none;
+}
+
 .smallNavigation a {
     display: block;
-    padding: 8px 8px 8px 32px;
+    padding: 8px 0px;
     text-decoration: none;
     font-size: 25px;
     color: white;
     transition: 500ms;
     font-family: "Montserrat";
+}
+
+.smallNavHR {
+    border: solid .1px #373B4D;
+    border-radius: 5px;
+    width: 100%;
+    margin: 20px 0px;
 }
