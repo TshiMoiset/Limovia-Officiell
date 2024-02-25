@@ -127,6 +127,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.logoAndText a {
+    text-decoration: none;
+}
+
 .loginText {
     color: white;
     font-family: 'Raleway', sans-serif;

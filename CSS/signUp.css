@@ -41,6 +41,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.signUpAndText a {
+    text-decoration: none;
+}
+
 .signUpPrivateContainer,
 .signUpCompanyContainer {
     padding: 20px;
@@ -246,7 +250,7 @@ input[type=number] {
 }
 
 .signUpExtraPadding {
-    padding-top:10px;
+    padding-top: 10px;
 }
 
 .signUpInputRow label {
