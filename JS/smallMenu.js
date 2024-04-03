@@ -14,7 +14,7 @@ document
   .addEventListener("click", function () {
     closeNavbar();
   });
-
+ 
 // Add event listeners to buttons and links within the navbar to close the navbar when clicked
 let navbarElements = smallNavigation.querySelectorAll("button, a");
 for (let i = 0; i < navbarElements.length; i++) {
