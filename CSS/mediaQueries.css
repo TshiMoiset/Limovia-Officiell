@@ -335,6 +335,12 @@
 		font-size: 20px !important;
 	}
 
+	/* -------------------- Section 1 Limovia Number Show-------------------- */
+
+	.section1 .numberShowContainer {
+		display: flex;
+	}
+
 	/* -------------------- About Limovia Slideshow -------------------- */
 	.prev,
 	.next {
