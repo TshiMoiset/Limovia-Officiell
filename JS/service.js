@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function updateServiceName(service) {
   // Get the element with the id "serviceName"
   const serviceNameElement = document.getElementById("serviceName");
+  const serviceExplanationIntro = document.getElementById("serviceIntro");
+  const serviceExplanation = document.getElementById("serviceExplanation");
+  const cancellationPolicy = document.getElementById("serviceCancellation");
 
   // Update the content based on the selected service
   if (service === "Privatleasing") {
