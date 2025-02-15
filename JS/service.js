@@ -37,7 +37,20 @@ function updateServiceName(service) {
       "<li>Exklusiv komfort – Tillgång till de senaste högklassiga fordonen med överlägsen bekvämlighet.</li>" +
       "</ul>";
     cancellationPolicy.innerHTML =
-      "Vi förstår att planer kan ändras och erbjuder därför en flexibel och rättvis avbokningspolicy. Nedan anges våra avbokningsvillkor för tjänsten.";
+      "Vi strävar efter att erbjuda en smidig och transparent leasingupplevelse. Nedan hittar du våra villkor för avbokning och uppsägning av ditt leasingavtal.<br><br>" +
+      "<strong>Avbokning innan leverans av fordon</strong><br>" +
+      "<ul>" +
+      "<li>Avbokning inom 14 dagar efter bokning: Full återbetalning av eventuella förskottsbetalningar.</li>" +
+      "<li>Avbokning efter 14 dagar men före leverans: Administrationsavgift på XX kr debiteras.</li>" +
+      "<li>Avbokning efter att bilen har registrerats och förberetts för leverans: En avgift på upp till 50 % av leasing värdet kan tillkomma.</li>" +
+      "</ul><br>" +
+      "<strong>Uppsägning av leasingavtal i förtid</strong><br>" +
+      "Ditt leasingavtal löper under den avtalade perioden (6, 12, 24 eller 36 månader). Om du behöver avsluta avtalet i förtid gäller följande:<br><br>" +
+      "<ul>" +
+      "<li>En slutavgift kan tillkomma, motsvarande en del av de återstående leasing kostnaderna.</li>" +
+      "</ul><br>" +
+      "<strong>Uppsägning vid sjukdom eller force majeure</strong><br>" +
+      "Vid sjukdom eller oförutsedda händelser (force majeure) ber vi dig att kontakta vår kundtjänst så snart som möjligt. Vi hanterar dessa fall individuellt och strävar efter en rättvis lösning.";
   } else if (service === "Abonnemang") {
     serviceNameElement.innerHTML = "Abonnemang";
     serviceExplanationIntro.innerHTML =
