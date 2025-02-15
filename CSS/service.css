@@ -102,6 +102,18 @@
     width: 50%;
 }
 
+#serviceCancellation ul li,
+#serviceCancellation2 ul li,
+#serviceExplanation ul li {
+    list-style: disc;
+}
+
+#serviceCancellation ul,
+#serviceCancellation2 ul,
+#serviceExplanation ul {
+    padding-left: 20px;
+}
+
 /* ---------------- Car slideshow gallery ----------------*/
 
 .slideshow-container {
