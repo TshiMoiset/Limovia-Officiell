@@ -26,7 +26,6 @@ function updateServiceName(service) {
   // Update the content based on the selected service
   if (service === "Privatleasing") {
     serviceNameElement.innerHTML = "Privatleasing";
-    /*
     serviceExplanationIntro.innerHTML =
       "Drömmer du om att köra en exklusiv bil utan krångel? Med Limovia Privatleasing får du överlägsen komfort och fast månadskostnad utan kontantinsats eller oro för värdeminskning.";
     serviceExplanation.innerHTML =
@@ -52,10 +51,8 @@ function updateServiceName(service) {
       "</ul><br>" +
       "<strong>Uppsägning vid sjukdom eller force majeure</strong><br>" +
       "Vid sjukdom eller oförutsedda händelser (force majeure) ber vi dig att kontakta vår kundtjänst så snart som möjligt. Vi hanterar dessa fall individuellt och strävar efter en rättvis lösning.";
-      */
   } else if (service === "Abonnemang") {
     serviceNameElement.innerHTML = "Abonnemang";
-    /*
     serviceExplanationIntro.innerHTML =
       "Vill du resa utan att tänka på kilometerkostnader? Med Limovia Abonnemang får du ett fast antal kilometer per månad till ett förmånligt pris, vilket ger dig friheten att resa när du vill – utan överraskningar.";
     serviceExplanation.innerHTML =
@@ -72,10 +69,8 @@ function updateServiceName(service) {
       "<li>Månatliga abonnemang kan sägas upp när som helst.</li>" +
       "<li>Ingen återbetalning ges för innevarande månad vid uppsägning.</li>" +
       "</ul>";
-      */
   } else if (service === "Flygplatstransfer") {
     serviceNameElement.innerHTML = "Flygplatstransfer";
-    /*
     serviceExplanationIntro.innerHTML =
       "Res enkelt mellan flygplatsen och din destination med Limovia Flygplatstransfer. Våra professionella chaufförer och exklusiva fordon garanterar en avslappnad och trygg resa, oavsett om du ska resa bort eller precis har landat.";
     serviceExplanation.innerHTML =
@@ -103,10 +98,8 @@ function updateServiceName(service) {
       "</ul><br>" +
       "<strong>Avbokning vid sjukdom eller force majeure</strong><br>" +
       "Vid sjukdom eller oförutsedda händelser (force majeure) ber vi dig att kontakta vår kundtjänst så snart som möjligt. Vi hanterar dessa fall individuellt och strävar efter en rättvis lösning.";
-      */
   } else if (service === "Evenemangstransfer") {
     serviceNameElement.innerHTML = "Evenemangstransfer";
-    /*
     serviceExplanationIntro.innerHTML =
       "Låt resan bli en del av upplevelsen. Med Limovia får du en stilren och bekväm transportlösning för galor, bröllop, företagsevent och exklusiva kvällar. ";
     serviceExplanation.innerHTML =
@@ -126,10 +119,8 @@ function updateServiceName(service) {
       "</ul><br>" +
       "<strong>Avbokning vid sjukdom eller force majeure</strong><br>" +
       "Vid sjukdom eller oförutsedda händelser (force majeure) ber vi dig att kontakta vår kundtjänst så snart som möjligt. Vi hanterar dessa fall individuellt och strävar efter en rättvis lösning.";
-      */
   } else if (service === "Timbokning") {
     serviceNameElement.innerHTML = "Timbokning";
-    /*
     serviceExplanationIntro.innerHTML =
       "Med Limovia timbokning får du en exklusiv bil med professionell chaufför per timme, vilket ger dig full flexibilitet utan att behöva planera varje enskild resa.";
     serviceExplanation.innerHTML =
@@ -155,10 +146,8 @@ function updateServiceName(service) {
       "</ul><br>" +
       "<strong>Avbokning vid sjukdom eller force majeure</strong><br>" +
       "Vid sjukdom eller oförutsedda händelser (force majeure) ber vi dig att kontakta vår kundtjänst så snart som möjligt. Vi hanterar dessa fall individuellt och strävar efter en rättvis lösning.";
-      */
   } else if (service === "Lokal Transfer") {
     serviceNameElement.innerHTML = "Lokal Transfer";
-    /*
     serviceExplanationIntro.innerHTML =
       "Res tryggt och bekvämt med Limovia Lokal Transfer – en exklusiv transportlösning för dig som vill ta dig runt i staden utan krångel.";
     serviceExplanation.innerHTML =
@@ -184,10 +173,8 @@ function updateServiceName(service) {
       "</ul><br>" +
       "<strong>Avbokning vid sjukdom eller force majeure</strong><br>" +
       "Vid sjukdom eller oförutsedda händelser (force majeure) ber vi dig att kontakta vår kundtjänst så snart som möjligt. Vi hanterar dessa fall individuellt och strävar efter en rättvis lösning.";
-      */
   } else if (service === "Stad till Stad-transfer") {
     serviceNameElement.innerHTML = "Stad till Stad-transfer";
-    /*
     serviceExplanationIntro.innerHTML =
       "Res mellan städer med komfort, stil och smidighet. Med Limovia Stad-till-Stad Transfer slipper du stressen med tåg, flyg eller egen bil";
     serviceExplanation.innerHTML =
@@ -213,7 +200,6 @@ function updateServiceName(service) {
       "</ul><br>" +
       "<strong>Avbokning vid sjukdom eller force majeure</strong><br>" +
       "Vid sjukdom eller oförutsedda händelser (force majeure) ber vi dig att kontakta vår kundtjänst så snart som möjligt. Vi hanterar dessa fall individuellt och strävar efter en rättvis lösning.";
-      */
   }
 }
 
