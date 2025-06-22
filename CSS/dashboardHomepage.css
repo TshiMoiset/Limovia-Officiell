@@ -1,16 +1,18 @@
-main {
-    background-color: black;
+main {}
+
+.mainPageContainer {
+    background-color: green;
 }
 
-.mainPageContainer {}
-
 .mainProfileSideLinks {
-    padding: 100px 0px;
+    padding-top: 75px;
     width: 340px;
     background-color: black;
     position: fixed;
     height: 100%;
     overflow: auto;
+    top: 0;
+    left: 0;
 }
 
 .mainProfileLinks li {
@@ -24,4 +26,15 @@ main {
     font-family: "Montserrat";
     font-size: larger;
     padding: 20px;
+}
+
+.mainProfileLinks a:hover {
+    color: #D4A78C;
+}
+
+.mainProfileInfo {
+    padding: 95px 35px;
+    margin-left: 340px;
+    color: white;
+    background-color: #191919;
 }
