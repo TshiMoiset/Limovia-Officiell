@@ -1,0 +1,88 @@
+header {
+    position: fixed;
+    width: 100%;
+    padding: 16px 20px;
+    transition: 500ms;
+    z-index: 1;
+    background-color: black;
+}
+
+.dashboardNav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: 500ms;
+}
+
+.dashboardNav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.dashboardNav li {
+    list-style: none;
+}
+
+.dashboardNav a {
+    text-decoration: none;
+    color: white;
+}
+
+.dashboardNav a,
+.login a {
+    font-family: "Montserrat";
+}
+
+.logo {
+    transition: 500ms;
+}
+
+.logo h1 {
+    font-size: 2em;
+    font-family: "Isabel Light";
+    background: rgb(148, 101, 43);
+    background: linear-gradient(90deg, rgba(148, 101, 43, 1) 0%, rgba(214, 192, 118, 1) 50%, rgba(148, 101, 43, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.logo li {
+    padding: 0;
+    margin: 0;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+#dashboardNavbutton {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 10px;
+    border: none;
+}
+
+#closeNavbutton {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: #191919;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 10px;
+    bottom: 27px;
+    right: 19px;
+    position: fixed;
+    border-radius: 50%;
+    border: solid 1px white;
+}
