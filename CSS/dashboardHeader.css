@@ -1,10 +1,11 @@
 header {
     position: fixed;
     width: 100%;
-    padding: 16px 20px;
+    padding: 16px;
     transition: 500ms;
     z-index: 1;
     background-color: black;
+    border-bottom: 1px solid #F6DBC0;
 }
 
 .dashboardNav {
