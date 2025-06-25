@@ -38,3 +38,63 @@ main {}
     color: white;
     background-color: #191919;
 }
+
+.welcomeText h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+/* ----------------------------- Next trip section ------------------------ */
+
+
+.nextTripSection {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px 0px;
+    transition: 0.3s;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bookNewTrip li {
+    list-style: none;
+}
+
+.bookNewTrip ul {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0px 0px;
+}
+
+.bookNewTripButton {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 15px 50px;
+    transition: 500ms;
+    border: 1px solid white;
+    font-family: 'Raleway', sans-serif;
+    font-style: oblique;
+}
+
+.bookNewTripButton:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/*.nextTripTitleAndButton {
+    display: flex;
+    justify-content: space-between;
+}*/
+
+.nextTripText {
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nextTripText p {
+    padding-top: 20px;
+    padding-right: 20px;
+}
