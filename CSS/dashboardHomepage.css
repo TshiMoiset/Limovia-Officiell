@@ -74,67 +74,67 @@
 
 
 /* ------------------------------ Prevoius Trip Section ---------------------------- */
+.lastTripCard {
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px 0px;
+    max-width: 900px;
+}
 
-.prevoiusTrip {}
-
-.prevoiusTrip h2 {
+.lastTripCard h2 {
+    margin-bottom: 15px;
     font-weight: lighter;
     color: #E6D8D7;
-    padding: 0 0 20px 0;
 }
 
-.startPointEndPoint {
+.tripAddresses {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
     font-family: "Montserrat";
-    font-size: 15px;
 }
 
-.pointDivider hr {
-    border: solid 1px #D4A78C;
-    height: 20px;
+.tripAddresses .tripDivider {
+    padding: 0 20px;
+    font-size: 18px;
 }
 
-.tripInfo {
-    display: flex;
-    justify-content: space-between;
-    font-family: "Montserrat";
-    font-size: smaller;
+.tripEnd {
+    text-align: right;
 }
 
 .tripLine {
     display: flex;
     align-items: center;
-    padding: 5px 0;
+    justify-content: space-between;
+    margin-bottom: 12px;
 }
 
-.middleLine {
-    flex-grow: 1;
-}
-
-.gradientLine {
+.tripGradientLine {
     height: 4px;
     border: none;
     border-radius: 2px;
-    background: #D4A78C;
+    background: linear-gradient(90deg, #c2a77c 0%, #e0c28a 50%, #c2a77c 100%);
     width: 100%;
     margin: 0;
 }
 
 .dot {
-    height: 10px;
     width: 10px;
-    background-color: #D4A78C;
+    height: 10px;
+    background-color: #c2a77c;
     border-radius: 50%;
-    display: inline-block;
+    flex-shrink: 0;
+    display: block;
 }
 
-
-
-
-
-
-
+.tripDetails {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-family: "Montserrat";
+}
 
 
 
