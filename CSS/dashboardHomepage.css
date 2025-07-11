@@ -76,48 +76,66 @@
 /* ------------------------------ Prevoius Trip Section ---------------------------- */
 .lastTripCard {
     padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px 0px;
+    border-radius: 10px;
     max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
+
+
+/* Rubrik */
 .lastTripCard h2 {
     margin-bottom: 15px;
     font-weight: lighter;
     color: #E6D8D7;
 }
 
+/* Adresser */
 .tripAddresses {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
     margin-bottom: 10px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
 }
 
-.tripAddresses .tripDivider {
+.tripDivider {
     padding: 0 20px;
-    font-size: 18px;
+    color: #c2a77c;
+}
+
+.tripAddresses p {
+    margin: 0;
+}
+
+.tripAddresses i {
+    margin-right: 6px;
+    color: #c2a77c;
 }
 
 .tripEnd {
     text-align: right;
 }
 
-.tripLine {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+/* Linje + prickar */
+.tripLineWrapper {
+    position: relative;
+    height: 12px;
     margin-bottom: 12px;
 }
 
 .tripGradientLine {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
     height: 4px;
+    background: linear-gradient(90deg, #c2a77c 0%, #e0c28a 50%, #c2a77c 100%);
     border: none;
     border-radius: 2px;
-    background: linear-gradient(90deg, #c2a77c 0%, #e0c28a 50%, #c2a77c 100%);
-    width: 100%;
-    margin: 0;
+    transform: translateY(-50%);
+    box-shadow: 0 0 4px 1px rgba(198, 168, 100, 0.3);
 }
 
 .dot {
@@ -125,40 +143,48 @@
     height: 10px;
     background-color: #c2a77c;
     border-radius: 50%;
-    flex-shrink: 0;
-    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
 }
 
+.left-dot {
+    left: 0;
+}
+
+.right-dot {
+    right: 0;
+}
+
+
+/* Detaljer + chip */
 .tripDetails {
     display: flex;
     justify-content: space-between;
     font-size: 13px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
 }
 
+.tripDetails i {
+    margin-right: 4px;
+    color: #c2a77c;
+}
 
+.chip {
+    background-color: #c2a77c;
+    color: black;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.chip i {
+    margin-right: 4px;
+}
 
 /*
 .bookNewTrip li {
