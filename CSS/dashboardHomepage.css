@@ -66,6 +66,9 @@
 }
 
 .nextTripSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px 0px;
     padding: 20px;
@@ -73,6 +76,46 @@
     transition: 0.3s;
 }
 
+.nextTripTitle h2 {
+    margin-bottom: 15px;
+    font-weight: lighter;
+    color: #E6D8D7;
+}
+
+.nextTripText {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.nextTripRight li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.nextTripRight {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.bookNewTripButton {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 45px;
+    transition: 500ms;
+    border: 1px solid white;
+    font-style: oblique;
+}
+
+.nextTripText {
+    font-family: "Montserrat", sans-serif;
+}
+
+.cancelTripButton {
+    text-decoration: none;
+    color: white;
+}
 
 /* ------------------------------ Prevoius Trip Section ---------------------------- */
 .lastTripCard {
@@ -81,7 +124,6 @@
     max-width: 900px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
-
 
 .lastTripCard h2 {
     margin-bottom: 15px;
@@ -180,47 +222,3 @@
 .chip i {
     margin-right: 4px;
 }
-
-/*
-.bookNewTrip li {
-    list-style: none;
-}
-
-.bookNewTrip ul {
-    display: flex;
-    box-sizing: border-box;
-    padding: 0px 0px;
-}
-
-.bookNewTripButton {
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 15px 50px;
-    transition: 500ms;
-    border: 1px solid white;
-    font-family: 'Raleway', sans-serif;
-    font-style: oblique;
-}
-
-.bookNewTripButton:hover {
-    background-color: transparent;
-    color: white;
-}
-
-
-.nextTripText {
-    display: flex;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-}
-
-.nextTripText p {
-    padding-top: 20px;
-    padding-right: 20px;
-}
-
-/*.nextTripTitleAndButton {
-    display: flex;
-    justify-content: space-between;
-}*/
