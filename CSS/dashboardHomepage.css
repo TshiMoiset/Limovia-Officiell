@@ -62,59 +62,76 @@
 .tripSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
+/* NY GRID FÖR INNEHÅLLET I KORTET */
 .nextTripSection {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px 0px;
     padding: 20px;
     border-radius: 10px;
-    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
-.nextTripTitle h2 {
-    margin-bottom: 15px;
+/* VÄNSTERSIDA: TITEL + INFO */
+.nextTripTitle {
+    margin: 0 0 12px;
+    font-size: 1.5rem;
     font-weight: lighter;
     color: #E6D8D7;
 }
 
-.nextTripText {
+.nextTripInfo {
     display: flex;
-    justify-content: space-between;
-    width: 200px;
-}
-
-.nextTripRight li {
-    list-style: none;
-    margin: 20px 0;
-}
-
-.nextTripRight {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-}
-
-.bookNewTripButton {
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 10px 45px;
-    transition: 500ms;
-    border: 1px solid white;
-    font-style: oblique;
-}
-
-.nextTripText {
+    gap: 24px;
+    font-size: 1rem;
+    color: #F4E4D4;
     font-family: "Montserrat", sans-serif;
 }
 
-.cancelTripButton {
+.nextTripInfo span {
+    white-space: nowrap;
+}
+
+/* HÖGERSIDA: KNAPPAR */
+.nextTripRight {
+    display: grid;
+    gap: 12px;
+    text-align: center;
+}
+
+/* KNAPP-STILAR */
+.btn {
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn-primary {
+    background-color: #c2a77c;
+    color: black;
+    border: solid 1px #c2a77c;
+    padding: 15px 45px;
+    font-size: 0.95rem;
     text-decoration: none;
+    font-style: oblique;
+    transition: 500ms;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: #c2a77c;
+}
+
+.btn-secondary {
     color: white;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.btn-secondary:hover {
+    color: #D4A78C;
 }
 
 /* ------------------------------ Prevoius Trip Section ---------------------------- */
