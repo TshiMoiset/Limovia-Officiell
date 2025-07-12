@@ -351,3 +351,32 @@
     color: #c2a77c;
     cursor: pointer;
 }
+
+.bonusLevels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-usePoints {
+    background-color: #c2a77c;
+    color: #1e1e1e;
+    border: none;
+    padding: 8px 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 1px solid #c2a77c;
+    transition: 500ms;
+}
+
+.btn-usePoints:hover {
+    background-color: transparent;
+    color: #c2a77c;
+}
+
+.bonusLevelsRight {
+    display: flex;
+    gap: 16px;
+}
