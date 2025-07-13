@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function prevMonth() {
     // Update the current month
     currentDate.setMonth(currentDate.getMonth() - 1);
-
+    currentMonth = currentDate.getMonth();
     // Update the calendar without triggering selectDate
     updateCalendar();
 
@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function nextMonth() {
     // Update the current month
     currentDate.setMonth(currentDate.getMonth() + 1);
+    currentMonth = currentDate.getMonth();
 
     // Update the calendar without triggering selectDate
     updateCalendar();
