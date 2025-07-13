@@ -70,7 +70,6 @@
 
 .weekday {
     font-family: 'Raleway', sans-serif;
-    padding: 10px;
     border-radius: 4px;
 }
 
@@ -88,15 +87,16 @@
 }
 
 .day {
-    padding: 10px;
-    font-size: large;
-    cursor: pointer;
-
-    aspect-ratio: 1 / 1;
+    display: flex;
     align-items: center;
     justify-content: center;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 8%;
+    aspect-ratio: 1 / 1;
     box-sizing: border-box;
     overflow: hidden;
+    background-color: transparent;
 }
 
 .day:hover {
