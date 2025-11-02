@@ -242,85 +242,189 @@
 }
 
 /* ----------------------------- Next trip section ------------------------ */
+/* ====== Kortet ====== */
+.card--nextTrip {
+    border-radius: 16px;
+    padding: 20px 24px;
+    border: 1px solid rgba(212, 167, 140, .18);
+    background:
+        radial-gradient(120% 140% at 0% 0%, rgba(212, 167, 140, .07), transparent 60%),
+        #121212;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25), inset 0 1px 0 rgba(255, 255, 255, .02);
+    color: #EAEAEA;
+}
+
+/* rubrik i kortet */
+.card--nextTrip h3 {
+    margin: 0 0 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .2px;
+}
+
+/* ====== Layout ====== */
+.nextTripLayout {
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    gap: 24px;
+    align-items: center;
+}
+
+/* ====== Driver ====== */
+.driverPicture {
+    margin: 0;
+    text-align: center
+}
+
 .driverPicture img {
     height: 90px;
     width: 90px;
-    border-radius: 100%;
+    border-radius: 50%;
+    padding: 2px;
+    /* ring-effekt */
+    background:
+        linear-gradient(#121212, #121212) padding-box,
+        linear-gradient(130deg, #D4A78C, rgba(212, 167, 140, 0.1) 70%) border-box;
+    border: 2px solid transparent;
 }
 
 .driverAvatarName {
-    text-align: center;
-    padding: 10px 0px 5px;
-    font-size: larger;
-    color: white;
+    margin: 10px 0 4px;
+    font-size: 1rem;
+    color: #fff
 }
 
 .driverTitle {
-    text-align: center;
-    font-size: small;
+    font-size: .85rem;
+    opacity: .75
 }
 
-.nextTripInfoContent {
+/* ====== Trip info ====== */
+.tripHeadline {
+    margin: 0 0 8px;
+    font-size: 1.15rem;
+    letter-spacing: .2px;
+    color: #fff;
+}
+
+.tripHeadline .arrow {
+    opacity: .85
+}
+
+.tripMeta {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 12px;
     align-items: center;
-    position: relative;
-    /* eller relative beroende på layout */
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: .95rem;
+    opacity: .9;
 }
 
-.tripTime {
-    margin-bottom: 20px;
+.tripMeta i {
+    margin-right: 6px
 }
 
-.tripVehicle {
-    display: inline-flex;
-    align-items: center;
+.tripBadges {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap
 }
 
-.tripVehicle span {
-    margin: 0px 8px 0px 0px;
+.badge {
+    font-size: .8rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(212, 167, 140, .12);
+    border: 1px solid rgba(212, 167, 140, .22);
 }
 
+/* Progressbar (valfri) */
+.tripProgress {
+    margin-top: 12px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(212, 167, 140, .12);
+    overflow: hidden;
+}
+
+.tripProgress>span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #D4A78C, #B88F76);
+    transition: width .6s ease;
+}
+
+/* ====== Knappar ====== */
 .nextTripButtons {
     display: flex;
     flex-direction: column;
+    gap: 14px;
     align-items: center;
 }
 
-
-.rescheduleButton {
-    background-color: #D4A78C;
-    padding: 15px 45px;
-    border: none;
-    cursor: pointer;
-    margin: 0px 0px 20px;
-    font-size: 18px;
+.btn {
     font-family: 'Raleway', sans-serif;
-    transition: 500ms;
+    cursor: pointer;
+    transition: 200ms;
+    border-radius: 10px
+}
+
+.btn.primary {
+    background: #D4A78C;
+    color: #121212;
     border: 2px solid #D4A78C;
+    padding: 12px 28px;
+    font-size: 16px;
     font-style: oblique;
+    box-shadow: 0 6px 16px rgba(212, 167, 140, .25);
 }
 
-.rescheduleButton:hover {
-    color: white;
-    background-color: transparent;
+.btn.primary:hover {
+    background: transparent;
+    color: #fff
 }
 
-.cancelButton {
-    color: white;
-    background-color: transparent;
+.btn.ghost {
+    background: transparent;
+    color: #fff;
     border: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 500ms;
+    font-size: 14px;
+    opacity: .9;
 }
 
-.cancelButton:hover {
+.btn.ghost:hover {
+    opacity: 1;
+    text-decoration: underline
+}
 
+/* ====== Tillgänglig animation-preferens ====== */
+@media (prefers-reduced-motion: reduce) {
+    .tripProgress>span {
+        transition: none
+    }
+}
+
+/* ====== Mobil (≤ 768px) ====== */
+@media (max-width: 768px) {
+    .nextTripLayout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        align-items: start;
+    }
+
+    .nextTripButtons {
+        align-items: stretch
+    }
+
+    .btn.primary {
+        width: 100%
+    }
+
+    .driverPicture img {
+        height: 80px;
+        width: 80px
+    }
 }
 
 /*
