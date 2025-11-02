@@ -1,7 +1,8 @@
 .mainPageContainer {
     color: white;
-        background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);
-        background: #0c0c0c;
+    background: #0c0c0c;
+    height: 100%;
+    /*background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);*/
 }
 
 .dashboardNavigation {
@@ -97,11 +98,150 @@
 }
 
 .overViewContainer {
-padding: 95px 30px 10px 30px;
+    box-sizing: border-box;
+    min-height: 100vh;
     margin-left: 340px;
+    background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);
+    padding: 95px 30px 10px 30px;
+
+    /* fyll hela höjden även om gridens innehåll är kort */
+    /* säkerställ att padding räknas rätt */
 }
 
-.welcomeImage button
+.dashboardGrid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+/* Card-bas – diskret, tät look */
+.card {
+    background: rgba(20, 20, 20, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    padding: 16px;
+    color: #EDEDED;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-weight: 500;
+    color: #F3F3F3;
+}
+
+.card a {
+    color: #c2a77c;
+    text-decoration: none;
+}
+
+.card a:hover {
+    opacity: .9;
+}
+
+/* Desktop-span – rad 1: nextTrip + points */
+.card--nextTrip {
+    grid-column: 1 / span 5;
+}
+
+.card--points {
+    grid-column: 6 / span 7;
+}
+
+/* Rad 2: leasing + kampanj */
+.card--leasing {
+    grid-column: 1 / span 6;
+}
+
+.card--campaigns {
+    grid-column: 7 / span 6;
+}
+
+/* Rad 3: extra kampanj + support */
+.card--campaigns2 {
+    grid-column: 1 / span 6;
+}
+
+.card--support {
+    grid-column: 7 / span 6;
+}
+
+/* Poäng-komponenter (enkel ring + progress) */
+.pointsRow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 6px 0 10px;
+}
+
+.ring {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 3px solid #c2a77c;
+    font-size: .9rem;
+    color: #c2a77c;
+}
+
+.pointsBig {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.progress .bar {
+    width: 100%;
+    height: 8px;
+    background: #2b2b2b;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, .4);
+    margin: 6px 0 4px;
+}
+
+.progress .bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #c2a77c, #e0c28a);
+}
+
+/* Typografi: mindre, tätare */
+.card p {
+    margin: 6px 0;
+}
+
+/* Responsivitet */
+@media (max-width: 1200px) {
+    .dashboardGrid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .card--nextTrip,
+    .card--points,
+    .card--leasing,
+    .card--campaigns,
+    .card--campaigns2,
+    .card--support {
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 640px) {
+    .dashboardGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        padding: 14px;
+        border-radius: 12px;
+    }
+}
+
+/*.welcomeImage button {}*/
 /*.welcomeMessage img {
     width: 200px;
     height: auto;
