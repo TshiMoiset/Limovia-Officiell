@@ -101,18 +101,18 @@
     box-sizing: border-box;
     min-height: 100vh;
     margin-left: 340px;
-   /* background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);*/
+    /* background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);*/
     padding: 95px 30px 10px 30px;
-
-    /* fyll hela höjden även om gridens innehåll är kort */
-    /* säkerställ att padding räknas rätt */
 }
 
 .dashboardGrid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 16px;
-    padding: 16px;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 150px);
+    /* tar bort lite för header */
 }
 
 /* Card-bas – diskret, tät look */
@@ -143,11 +143,11 @@
 
 /* Desktop-span – rad 1: nextTrip + points */
 .card--nextTrip {
-    grid-column: 1 / span 5;
+    grid-column: 1 / span 6;
 }
 
 .card--points {
-    grid-column: 6 / span 7;
+    grid-column: 7 / span 6;
 }
 
 /* Rad 2: leasing + kampanj */
