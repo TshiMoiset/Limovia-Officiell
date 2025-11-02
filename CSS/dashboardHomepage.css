@@ -72,6 +72,42 @@
     background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);
 }
 
+.welcomeMessage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    /*gap: 20px;*/
+}
+
+.welcomeMessage h1 {
+    font-weight: 400;
+}
+
+.welcomeImage button {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.notificationsButton:hover {
+    color: #E6D8D7;
+}
+
+.settingsButton:hover {
+    color: #E6D8D7;
+}
+
+.welcomeImage button
+
+/*.welcomeMessage img {
+    width: 200px;
+    height: auto;
+}*/
+
 /**
 .profileAvatar img {
     width: 100px;
@@ -79,32 +115,12 @@
     border-radius: 50%;
 }
 
-.mainProfileInfo {
-    padding: 95px 35px;
-    margin-left: 340px;
-    color: white;
-    background-color: #191919;
-}
+*/
 
-.welcomeMessage {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
-}
 
-.welcomeMessage h1 {
-    font-weight: 400;
-    text-align: center;
-    color: #E6D8D7;
-}
 
-.welcomeMessage img {
-    width: 200px;
-    height: auto;
-}
 
-/* ----------------------------- Next trip section ------------------------ 
+/* ----------------------------- Next trip section ------------------------ */
 
 .tripSection {
     display: grid;
