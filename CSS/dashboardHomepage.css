@@ -1,6 +1,7 @@
 .mainPageContainer {
     color: white;
         background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);
+        background: #0c0c0c;
 }
 
 .dashboardNavigation {
