@@ -241,66 +241,92 @@
     }
 }
 
-/*.welcomeImage button {}*/
-/*.welcomeMessage img {
-    width: 200px;
-    height: auto;
-}*/
-
-/**
-.profileAvatar img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-*/
-
-
-
-
 /* ----------------------------- Next trip section ------------------------ */
 
-.tripSection {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+.card--nextTrip {}
+
+.driverPicture img {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
 }
 
-.nextTripSection {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-}
-
-.nextTripTitle {
-    margin: 0 0 12px;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    color: #E6D8D7;
-}
-
-.nextTripInfo {
-    display: flex;
-    gap: 24px;
-    font-size: 1rem;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-}
-
-.nextTripInfo span {
-    white-space: nowrap;
-}
-
-.nextTripRight {
-    display: grid;
-    gap: 12px;
+.driverAvatarName {
     text-align: center;
+    padding: 10px 0px 5px;
+    font-size: larger;
+    color: white;
 }
 
+.driverTitle {
+    text-align: center;
+    font-size: small;
+}
+
+.nextTripInfoContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    /* eller relative beroende på layout */
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tripTime {
+    margin-bottom: 20px;
+}
+
+.tripVehicle {
+    display: inline-flex;
+    align-items: center;
+}
+
+.tripVehicle span {
+    margin: 0px 8px 0px 0px;
+}
+
+.nextTripButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.rescheduleButton {
+    background-color: #D4A78C;
+    padding: 15px 45px;
+    border: none;
+    cursor: pointer;
+    margin: 0px 0px 20px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    transition: 500ms;
+    border: 2px solid #D4A78C;
+    font-style: oblique;
+}
+
+.rescheduleButton:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.cancelButton {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.cancelButton:hover {
+    
+}
+
+/*
 .btn {
     font-family: "Montserrat", sans-serif;
 }
@@ -331,6 +357,7 @@
 .btn-secondary:hover {
     color: #D4A78C;
 }
+*/
 
 /* ------------------------------ Prevoius Trip Section ---------------------------- 
 .lastTripCard {
