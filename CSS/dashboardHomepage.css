@@ -242,9 +242,6 @@
 }
 
 /* ----------------------------- Next trip section ------------------------ */
-
-.card--nextTrip {}
-
 .driverPicture img {
     height: 90px;
     width: 90px;
@@ -323,7 +320,7 @@
 }
 
 .cancelButton:hover {
-    
+
 }
 
 /*
