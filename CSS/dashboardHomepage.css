@@ -246,12 +246,13 @@
 .card--nextTrip {
     border-radius: 16px;
     padding: 20px 24px;
-    border: 1px solid rgba(212, 167, 140, .18);
+    border: 1px solid rgba(212, 167, 140, 0.25);
     background:
-        radial-gradient(120% 140% at 0% 0%, rgba(212, 167, 140, .07), transparent 60%),
-        #121212;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .25), inset 0 1px 0 rgba(255, 255, 255, .02);
-    color: #EAEAEA;
+        radial-gradient(120% 140% at 0% 0%, rgba(212, 167, 140, .05), transparent 60%),
+        #191919;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.02);
+    color: #E6D8D7;
 }
 
 /* rubrik i kortet */
@@ -260,6 +261,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     letter-spacing: .2px;
+    color: #F6DBC0;
 }
 
 /* ====== Layout ====== */
@@ -273,7 +275,7 @@
 /* ====== Driver ====== */
 .driverPicture {
     margin: 0;
-    text-align: center
+    text-align: center;
 }
 
 .driverPicture img {
@@ -283,20 +285,22 @@
     padding: 2px;
     /* ring-effekt */
     background:
-        linear-gradient(#121212, #121212) padding-box,
-        linear-gradient(130deg, #D4A78C, rgba(212, 167, 140, 0.1) 70%) border-box;
+        linear-gradient(#191919, #191919) padding-box,
+        linear-gradient(135deg, #D4A78C, #c2a77c 85%) border-box;
     border: 2px solid transparent;
 }
 
 .driverAvatarName {
     margin: 10px 0 4px;
     font-size: 1rem;
-    color: #fff
+    color: #E6D8D7;
 }
 
 .driverTitle {
     font-size: .85rem;
-    opacity: .75
+    opacity: .75;
+    color: #c2a77c;
+
 }
 
 /* ====== Trip info ====== */
@@ -304,7 +308,7 @@
     margin: 0 0 8px;
     font-size: 1.15rem;
     letter-spacing: .2px;
-    color: #fff;
+    color: #F6DBC0;
 }
 
 .tripHeadline .arrow {
@@ -321,7 +325,8 @@
 }
 
 .tripMeta i {
-    margin-right: 6px
+    margin-right: 6px;
+    color: #D4A78C;
 }
 
 .tripBadges {
@@ -335,24 +340,9 @@
     font-size: .8rem;
     padding: 4px 10px;
     border-radius: 999px;
-    background: rgba(212, 167, 140, .12);
-    border: 1px solid rgba(212, 167, 140, .22);
-}
-
-/* Progressbar (valfri) */
-.tripProgress {
-    margin-top: 12px;
-    height: 6px;
-    border-radius: 999px;
-    background: rgba(212, 167, 140, .12);
-    overflow: hidden;
-}
-
-.tripProgress>span {
-    display: block;
-    height: 100%;
-    background: linear-gradient(90deg, #D4A78C, #B88F76);
-    transition: width .6s ease;
+    background: rgba(212, 167, 140, 0.12);
+    border: 1px solid rgba(212, 167, 140, 0.25);
+    color: #F6DBC0;
 }
 
 /* ====== Knappar ====== */
@@ -372,22 +362,22 @@
 
 .btn.primary {
     background: #D4A78C;
-    color: #121212;
+    color: #191919;
     border: 2px solid #D4A78C;
     padding: 12px 28px;
     font-size: 16px;
     font-style: oblique;
-    box-shadow: 0 6px 16px rgba(212, 167, 140, .25);
+    box-shadow: 0 6px 16px rgba(212, 167, 140, 0.25);
 }
 
 .btn.primary:hover {
     background: transparent;
-    color: #fff
+    color: #E6D8D7;
 }
 
 .btn.ghost {
     background: transparent;
-    color: #fff;
+    color: #E6D8D7;
     border: none;
     font-size: 14px;
     opacity: .9;
@@ -395,7 +385,8 @@
 
 .btn.ghost:hover {
     opacity: 1;
-    text-decoration: underline
+    color: #F6DBC0;
+    text-decoration: underline;
 }
 
 /* ====== Tillgänglig animation-preferens ====== */
@@ -414,16 +405,16 @@
     }
 
     .nextTripButtons {
-        align-items: stretch
+        align-items: stretch;
     }
 
     .btn.primary {
-        width: 100%
+        width: 100%;
     }
 
     .driverPicture img {
         height: 80px;
-        width: 80px
+        width: 80px;
     }
 }
 
