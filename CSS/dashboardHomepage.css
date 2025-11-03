@@ -299,7 +299,7 @@
 .driverTitle {
     font-size: .85rem;
     opacity: .75;
-    color: #c2a77c;
+    color: #D4A78C;
 
 }
 
@@ -368,6 +368,7 @@
     font-size: 16px;
     font-style: oblique;
     box-shadow: 0 6px 16px rgba(212, 167, 140, 0.25);
+    transition: 500ms;
 }
 
 .btn.primary:hover {
@@ -380,11 +381,11 @@
     color: #E6D8D7;
     border: none;
     font-size: 14px;
-    opacity: .9;
+    transition: 500ms;
 }
 
 .btn.ghost:hover {
-    opacity: 1;
+    transition: 500ms;
     color: #F6DBC0;
     text-decoration: underline;
 }
@@ -418,38 +419,254 @@
     }
 }
 
-/*
-.btn {
-    font-family: "Montserrat", sans-serif;
+
+/* ====== Kortet (samma känsla som Kommande resa) ====== */
+.card--points {
+  border-radius: 16px;
+  padding: 22px 26px;
+  border: 1px solid rgba(212,167,140,0.25);
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(212,167,140,.05), transparent 60%),
+    #191919;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25),
+              inset 0 1px 0 rgba(255,255,255,0.02);
+  color: #E6D8D7;
 }
 
-.btn-primary {
-    background-color: #c2a77c;
-    color: black;
-    border: solid 1px #c2a77c;
-    padding: 15px 45px;
-    font-size: 0.95rem;
-    text-decoration: none;
-    font-style: oblique;
-    transition: 500ms;
-    font-family: "Montserrat", sans-serif;
+.card--points > h3 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #F6DBC0;
 }
 
-.btn-primary:hover {
-    background-color: transparent;
-    color: #c2a77c;
+/* ====== Layout ====== */
+.pointsLayout {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 28px;
+  align-items: center;
 }
 
-.btn-secondary {
-    color: white;
-    text-decoration: none;
-    transition: 500ms;
+/* ====== Vänster: cirkel / nivå ====== */
+.pointsGauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
-.btn-secondary:hover {
-    color: #D4A78C;
+.gaugeCircle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  padding: 4px;
+  background:
+    conic-gradient(#D4A78C 0 226.8deg, rgba(212,167,140,0.12) 226.8deg 360deg),
+    #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-*/
+
+.gaugeInner {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 10%, rgba(246,219,192,0.2), #191919);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gaugePercent {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #F6DBC0;
+}
+
+.currentTier {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  color: #D4A78C;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.tierLink {
+  background: transparent;
+  border: none;
+  color: #c2a77c;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* ====== Höger: Move-U Miles, progress, nivåer ====== */
+.bonusPoints {
+  font-family: "Montserrat", sans-serif;
+  color: #F4E4D4;
+}
+
+/* rubrikrad */
+.bonusHeadingRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.bonusHeadingRow h2 {
+  margin: 0;
+  font-weight: 400;
+  color: #E6D8D7;
+  position: relative;
+  font-size: 1.15rem;
+}
+
+.bonusHeadingRow h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #c2a77c, #F6DBC0);
+  border-radius: 2px;
+}
+
+.pointsNumber {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.pointsValue {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #F6DBC0;
+}
+.pointsUnit {
+  font-size: 0.85rem;
+  color: #c2a77c;
+}
+
+/* progress */
+.bonusProgress {
+  position: relative;
+  margin: 18px 0 22px;
+}
+
+.progress-text {
+  display: block;
+  font-size: 0.85rem;
+  color: #c2a77c;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #232323;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.6);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #D4A78C, #F6DBC0);
+  border-radius: 999px;
+  transition: width 1s ease;
+}
+
+/* ====== Nivåer + knapp ====== */
+.bonusLevels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-usePoints {
+  background-color: #D4A78C;
+  color: #191919;
+  border: 1px solid #D4A78C;
+  padding: 9px 18px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 500ms;
+}
+.btn-usePoints:hover {
+  background-color: transparent;
+  color: #F6DBC0;
+}
+
+/* nivåprickar */
+.bonusLevelsRight {
+  display: flex;
+  gap: 18px;
+}
+
+.level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #A0A0A0;
+  transition: color 0.25s ease;
+}
+
+.level .bonusDot {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 5px;
+  background: #232323;
+  border: 2px solid #555;
+  border-radius: 50%;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+/* aktiv nivå – Guld */
+.level.active .bonusDot {
+  background: #D4A78C;
+  border-color: #F6DBC0;
+  transform: scale(1.1);
+}
+.level.active figcaption {
+  color: #D4A78C;
+}
+
+/* hover */
+.level:hover .bonusDot {
+  background: #c2a77c;
+  border-color: #F6DBC0;
+}
+.level:hover figcaption {
+  color: #F6DBC0;
+  cursor: pointer;
+}
+
+/* ====== Responsivt ====== */
+@media (max-width: 768px) {
+  .pointsLayout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .bonusLevels {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn-usePoints {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 
 /* ------------------------------ Prevoius Trip Section ---------------------------- 
 .lastTripCard {
@@ -564,144 +781,4 @@
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-gap: 20px;
     margin: 20px 0;
-}
-
-.bonusPoints {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-    font-family: "Montserrat", sans-serif;
-    color: #F4E4D4;
-}
-
-.bonusPointsTitle h2 {
-    margin: 0 0 12px;
-    font-weight: lighter;
-    color: #E6D8D7;
-    position: relative;
-}
-
-.bonusPointsTitle h2::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(90deg, #c2a77c, #e0c28a);
-    border-radius: 2px;
-}
-
-.bonusProgress {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.progress-text {
-    position: absolute;
-    right: 0;
-    top: -24px;
-    font-size: 1rem;
-    color: #c2a77c;
-    font-weight: 500;
-}
-
-.progress-bar {
-    width: 100%;
-    height: 12px;
-    background: #333;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.6);
-}
-
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #c2a77c, #e0c28a);
-    border-radius: 6px 0 0 6px;
-    transition: width 1s ease;
-}
-
-.bonusLevelsRight {
-    display: flex;
-    justify-content: right;
-}
-
-.bonusLevelsRight figure {
-    margin: 0 8px;
-}
-
-.level {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 0.85rem;
-    color: #bbb;
-    transition: color 0.3s;
-}
-
-.level .bonusDot {
-    width: 16px;
-    height: 16px;
-    margin-bottom: 6px;
-    background: #333;
-    border: 2px solid #555;
-    border-radius: 50%;
-    transition: background 0.3s, border-color 0.3s;
-}
-
-.level.member .bonusDot {
-    border-color: #444;
-}
-
-.level.silver .bonusDot {
-    background: #c2a77c;
-    border-color: #e0c28a;
-}
-
-.level.silver figcaption {
-    color: #c2a77c;
-}
-
-
-/* Gör övriga nivåer hover-aktiva */
-
-/*
-.level:hover .bonusDot {
-    background: #c2a77c;
-    border-color: #e0c28a;
-}
-
-.level:hover figcaption {
-    color: #c2a77c;
-    cursor: pointer;
-}
-
-.bonusLevels {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.btn-usePoints {
-    background-color: #c2a77c;
-    color: #1e1e1e;
-    border: none;
-    padding: 8px 16px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.9rem;
-    cursor: pointer;
-    border: 1px solid #c2a77c;
-    transition: 500ms;
-}
-
-.btn-usePoints:hover {
-    background-color: transparent;
-    color: #c2a77c;
-}
-
-.bonusLevelsRight {
-    display: flex;
-    gap: 16px;
 }
