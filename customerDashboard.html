@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="CSS/dashboardHeader.css">
     <link rel="stylesheet" href="CSS/dashboardHomepage.css">
     <link rel="stylesheet" href="CSS/dashboardFooter.css">
+    <link rel="stylesheet" href="CSS/dashboardMediaQuery.css">
 
-    <!--<script defer src="JS/"></script>-->
+    <script defer src="JS/dashboardNavigation.js"></script>
 
     <!--  Raleway  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,11 +39,11 @@
 
 <body>
     <header id="top">
+
         <div class="dashboardNav" id="dashboardNav">
 
-            <div class="dashboardNavbutton">
-                <button id="dashboardNavbutton" onclick="dashboardNavbutton()"><span>&#9776;</span></button>
-                <button id="closeNavbutton" onclick="closeNavbar()"><span>&#9932;</span></button>
+            <div class="navBarfakeButton">
+                <button><span>&#9932;</span></button>
             </div>
 
             <div class="logo">
@@ -60,6 +61,60 @@
             </div>
 
         </div>
+
+        <div class="smallDashboardNav" id="smallDashboardNav">
+
+            <div class="smallDashboard-Btn">
+                <button id="openDashboardNav" onclick="openDashboardNav()"><span>&#9776;</span></button>
+            </div>
+
+            <div class="logo">
+
+                <ul>
+                    <li><a href="index.html">
+                            <h1>Limovia</h1>
+                        </a></li>
+                </ul>
+
+            </div>
+
+            <div class="login">
+                <ul>
+                    <li><a href="#">Logga ut</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <nav class="smallDashboardLinks" id="smallDashboardLinks">
+            
+            <button id="closeDashboardNav" onclick="closeDashboardNav()"><span>&#9932;</span></button>
+
+            <div class="profileImageAndLevel">
+
+                <figure class="avatarProfile">
+                    <img src="IMAGES/womenProfilePicture.jpg" alt="Avatar">
+                    <figcaption class="avatarName">Miss. Beauchamp</figcaption>
+                    <figcaption class="avatarRank">Guld</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="profileLinks">
+
+                <ul>
+                    <li><a href="#">Översikt</a></li>
+                    <li><a href="#">Resor</a></li>
+                    <li><a href="#">Poäng</a></li>
+                    <li><a href="#">Leasing</a></li>
+                    <li><a href="#">Kampanjer</a></li>
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
 
     </header>
 
@@ -198,7 +253,7 @@
                                 </div>
 
                                 <div class="bonusLevels">
-                                    
+
                                     <button class="btn-usePoints">Använd poäng</button>
 
                                     <div class="bonusLevelsRight">
