@@ -168,16 +168,33 @@
 }
 
 @media screen and (max-width: 426px) {
-/* -------------------- overViewContainer -------------------- */
+
+    /* -------------------- overViewContainer -------------------- */
     .overViewContainer {
         padding: 95px 0px 10px;
 
+    }
+
+    .dashboardGrid,
+    .welcomeMessage {
+        padding: 15px;
+    }
+
+    .welcomeMessage h1 {
+        font-size: 28px;
     }
 
     /* ---------------------- Next trip ---------------------- */
     .nextTripLayout {
         display: flex;
         flex-direction: column;
+    }
+
+    .tripMeta,
+    .tripBadges {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     /* ---------------------- Points ---------------------- */
