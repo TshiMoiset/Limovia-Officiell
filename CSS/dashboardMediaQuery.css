@@ -114,23 +114,49 @@
 
     .nextTripButtons {
         grid-column: 1 / -1;
-        /* <- tar hela nedersta raden */
         display: flex;
         gap: 10px;
     }
 
     .nextTripButtons .btn {
         flex: 1;
-        /* gör så att knapparna delar på bredden */
     }
 
     /* ---------------------- Points ---------------------- */
 
     .pointsLayout {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .pointsGauge {
+        display: none;
+    }
+
+    .bonusPoints {
+        width: 100%;
+    }
+
+    .bonusHeadingRow {
+        gap: 6px;
+    }
+
+    .btn-usePoints {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .bonusLevels {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .bonusLevelsRight {
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
+        gap: 16px;
     }
 
     /* -------------------- Footer -------------------- */
@@ -138,6 +164,7 @@
         display: block;
         padding: 0.6rem;
     }
+    
 }
 
 @media screen and (max-width: 426px) {}

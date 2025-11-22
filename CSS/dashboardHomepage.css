@@ -397,10 +397,6 @@
     }
 }
 
-/* ====== Mobil (≤ 768px) ====== */
-@media (max-width: 768px) {}
-
-
 /* ====== Kortet (samma känsla som Kommande resa) ====== */
 .card--points {
     border-radius: 16px;
