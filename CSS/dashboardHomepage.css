@@ -353,14 +353,15 @@
     align-items: center;
 }
 
-.btn {
+.newTripButton,
+.cancelTripButton {
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
     transition: 200ms;
     border-radius: 10px
 }
 
-.btn.primary {
+.newTripButton {
     background: #D4A78C;
     color: #191919;
     border: 2px solid #D4A78C;
@@ -371,12 +372,12 @@
     transition: 500ms;
 }
 
-.btn.primary:hover {
+.newTripButton:hover {
     background: transparent;
     color: #E6D8D7;
 }
 
-.btn.ghost {
+.cancelTripButton {
     background: transparent;
     color: #E6D8D7;
     border: none;
@@ -384,7 +385,7 @@
     transition: 500ms;
 }
 
-.btn.ghost:hover {
+.cancelTripButton:hover {
     transition: 500ms;
     color: #F6DBC0;
     text-decoration: underline;

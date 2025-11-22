@@ -118,7 +118,7 @@
         gap: 10px;
     }
 
-    .nextTripButtons .btn {
+    .nextTripButtons {
         flex: 1;
     }
 
