@@ -164,7 +164,26 @@
         display: block;
         padding: 0.6rem;
     }
-    
+
 }
 
-@media screen and (max-width: 426px) {}
+@media screen and (max-width: 426px) {
+/* -------------------- overViewContainer -------------------- */
+    .overViewContainer {
+        padding: 95px 0px 10px;
+
+    }
+
+    /* ---------------------- Next trip ---------------------- */
+    .nextTripLayout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ---------------------- Points ---------------------- */
+    .bonusLevels {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+}
