@@ -550,7 +550,7 @@
 
 .pointsUnit {
     font-size: 0.85rem;
-    color: #c2a77c;
+    color: #e0c28a;
 }
 
 /* progress */
@@ -562,7 +562,7 @@
 .progress-text {
     display: block;
     font-size: 0.85rem;
-    color: #c2a77c;
+    color: #e0c28a;
     margin-bottom: 6px;
 }
 
