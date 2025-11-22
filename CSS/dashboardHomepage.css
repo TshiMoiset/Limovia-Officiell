@@ -474,11 +474,14 @@
 .tierLink {
     background: transparent;
     border: none;
-    color: #c2a77c;
-    font-size: 0.8rem;
-    text-decoration: underline;
+    color: #E6D8D7;
+    font-family: 'Raleway', sans-serif;
     cursor: pointer;
-    padding: 0;
+    font-size: 14px;
+}
+
+.tierLink:hover {
+    text-decoration: underline;
 }
 
 /* ====== Höger: Move-U Miles, progress, nivåer ====== */
