@@ -100,15 +100,28 @@
 
     /* ---------------------- Next trip ---------------------- */
     .nextTripLayout {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-gap: 15px;
+        align-items: center;
     }
 
     .tripMeta {
         flex-direction: column;
         align-items: baseline;
         grid-gap: 5px;
+    }
+
+    .nextTripButtons {
+        grid-column: 1 / -1;
+        /* <- tar hela nedersta raden */
+        display: flex;
+        gap: 10px;
+    }
+
+    .nextTripButtons .btn {
+        flex: 1;
+        /* gör så att knapparna delar på bredden */
     }
 
     /* ---------------------- Points ---------------------- */
