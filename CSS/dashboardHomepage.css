@@ -18,7 +18,7 @@
 
 .profileImageAndLevel {
     padding: 70px 0px 20px 0px;
-} 
+}
 
 .avatarProfile {
     display: flex;
@@ -398,275 +398,243 @@
 }
 
 /* ====== Mobil (≤ 768px) ====== */
-@media (max-width: 768px) {
-    .nextTripLayout {
-        grid-template-columns: 1fr;
-        gap: 16px;
-        align-items: start;
-    }
-
-    .nextTripButtons {
-        align-items: stretch;
-    }
-
-    .btn.primary {
-        width: 100%;
-    }
-
-    .driverPicture img {
-        height: 80px;
-        width: 80px;
-    }
-}
+@media (max-width: 768px) {}
 
 
 /* ====== Kortet (samma känsla som Kommande resa) ====== */
 .card--points {
-  border-radius: 16px;
-  padding: 22px 26px;
-  border: 1px solid rgba(212,167,140,0.25);
-  background:
-    radial-gradient(120% 140% at 0% 0%, rgba(212,167,140,.05), transparent 60%),
-    #191919;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25),
-              inset 0 1px 0 rgba(255,255,255,0.02);
-  color: #E6D8D7;
+    border-radius: 16px;
+    padding: 22px 26px;
+    border: 1px solid rgba(212, 167, 140, 0.25);
+    background:
+        radial-gradient(120% 140% at 0% 0%, rgba(212, 167, 140, .05), transparent 60%),
+        #191919;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.02);
+    color: #E6D8D7;
 }
 
-.card--points > h3 {
-  margin: 0 0 16px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  color: #F6DBC0;
+.card--points>h3 {
+    margin: 0 0 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #F6DBC0;
 }
 
 /* ====== Layout ====== */
 .pointsLayout {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 28px;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 28px;
+    align-items: center;
 }
 
 /* ====== Vänster: cirkel / nivå ====== */
 .pointsGauge {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .gaugeCircle {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  padding: 4px;
-  background:
-    conic-gradient(#D4A78C 0 226.8deg, rgba(212,167,140,0.12) 226.8deg 360deg),
-    #191919;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    padding: 4px;
+    background:
+        conic-gradient(#D4A78C 0 226.8deg, rgba(212, 167, 140, 0.12) 226.8deg 360deg),
+        #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gaugeInner {
-  width: 84px;
-  height: 84px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 10%, rgba(246,219,192,0.2), #191919);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 10%, rgba(246, 219, 192, 0.2), #191919);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gaugePercent {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #F6DBC0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #F6DBC0;
 }
 
 .currentTier {
-  margin: 4px 0 0;
-  font-size: 0.95rem;
-  color: #D4A78C;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    color: #D4A78C;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
 }
 
 .tierLink {
-  background: transparent;
-  border: none;
-  color: #c2a77c;
-  font-size: 0.8rem;
-  text-decoration: underline;
-  cursor: pointer;
-  padding: 0;
+    background: transparent;
+    border: none;
+    color: #c2a77c;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
 }
 
 /* ====== Höger: Move-U Miles, progress, nivåer ====== */
 .bonusPoints {
-  font-family: "Montserrat", sans-serif;
-  color: #F4E4D4;
+    font-family: "Montserrat", sans-serif;
+    color: #F4E4D4;
 }
 
 /* rubrikrad */
 .bonusHeadingRow {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
 }
 
 .bonusHeadingRow h2 {
-  margin: 0;
-  font-weight: 400;
-  color: #E6D8D7;
-  position: relative;
-  font-size: 1.15rem;
+    margin: 0;
+    font-weight: 400;
+    color: #E6D8D7;
+    position: relative;
+    font-size: 1.15rem;
 }
 
 .bonusHeadingRow h2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, #c2a77c, #F6DBC0);
-  border-radius: 2px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #c2a77c, #F6DBC0);
+    border-radius: 2px;
 }
 
 .pointsNumber {
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
 }
 
 .pointsValue {
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: #F6DBC0;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #F6DBC0;
 }
+
 .pointsUnit {
-  font-size: 0.85rem;
-  color: #c2a77c;
+    font-size: 0.85rem;
+    color: #c2a77c;
 }
 
 /* progress */
 .bonusProgress {
-  position: relative;
-  margin: 18px 0 22px;
+    position: relative;
+    margin: 18px 0 22px;
 }
 
 .progress-text {
-  display: block;
-  font-size: 0.85rem;
-  color: #c2a77c;
-  margin-bottom: 6px;
+    display: block;
+    font-size: 0.85rem;
+    color: #c2a77c;
+    margin-bottom: 6px;
 }
 
 .progress-bar {
-  width: 100%;
-  height: 10px;
-  background: #232323;
-  border-radius: 999px;
-  overflow: hidden;
-  box-shadow: inset 0 0 4px rgba(0,0,0,0.6);
+    width: 100%;
+    height: 10px;
+    background: #232323;
+    border-radius: 999px;
+    overflow: hidden;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.6);
 }
 
 .progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #D4A78C, #F6DBC0);
-  border-radius: 999px;
-  transition: width 1s ease;
+    height: 100%;
+    background: linear-gradient(90deg, #D4A78C, #F6DBC0);
+    border-radius: 999px;
+    transition: width 1s ease;
 }
 
 /* ====== Nivåer + knapp ====== */
 .bonusLevels {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
 }
 
 .btn-usePoints {
-  background-color: #D4A78C;
-  color: #191919;
-  border: 1px solid #D4A78C;
-  padding: 9px 18px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: 500ms;
+    background-color: #D4A78C;
+    color: #191919;
+    border: 1px solid #D4A78C;
+    padding: 9px 18px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 500ms;
 }
+
 .btn-usePoints:hover {
-  background-color: transparent;
-  color: #F6DBC0;
+    background-color: transparent;
+    color: #F6DBC0;
 }
 
 /* nivåprickar */
 .bonusLevelsRight {
-  display: flex;
-  gap: 18px;
+    display: flex;
+    gap: 18px;
 }
 
 .level {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 0.8rem;
-  color: #A0A0A0;
-  transition: color 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #A0A0A0;
+    transition: color 0.25s ease;
 }
 
 .level .bonusDot {
-  width: 16px;
-  height: 16px;
-  margin-bottom: 5px;
-  background: #232323;
-  border: 2px solid #555;
-  border-radius: 50%;
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 5px;
+    background: #232323;
+    border: 2px solid #555;
+    border-radius: 50%;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
 /* aktiv nivå – Guld */
 .level.active .bonusDot {
-  background: #D4A78C;
-  border-color: #F6DBC0;
-  transform: scale(1.1);
+    background: #D4A78C;
+    border-color: #F6DBC0;
+    transform: scale(1.1);
 }
+
 .level.active figcaption {
-  color: #D4A78C;
+    color: #D4A78C;
 }
 
 /* hover */
 .level:hover .bonusDot {
-  background: #c2a77c;
-  border-color: #F6DBC0;
+    background: #c2a77c;
+    border-color: #F6DBC0;
 }
+
 .level:hover figcaption {
-  color: #F6DBC0;
-  cursor: pointer;
+    color: #F6DBC0;
+    cursor: pointer;
 }
-
-/* ====== Responsivt ====== */
-@media (max-width: 768px) {
-  .pointsLayout {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .bonusLevels {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .btn-usePoints {
-    width: 100%;
-    text-align: center;
-  }
-}
-
 
 /* ------------------------------ Prevoius Trip Section ---------------------------- 
 .lastTripCard {
