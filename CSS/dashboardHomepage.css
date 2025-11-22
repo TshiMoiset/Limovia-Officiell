@@ -472,6 +472,13 @@
     text-transform: uppercase;
 }
 
+.bonusButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
 .tierLink {
     background: transparent;
     border: none;
@@ -483,6 +490,17 @@
 
 .tierLink:hover {
     text-decoration: underline;
+}
+
+.tierLink-SmallerScreens {
+    display: none;
+    padding-top: 10px;
+    background: transparent;
+    border: none;
+    color: #E6D8D7;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 /* ====== Höger: Move-U Miles, progress, nivåer ====== */
@@ -572,7 +590,7 @@
     gap: 16px;
 }
 
-.btn-usePoints {
+.usePointsButton {
     background-color: #D4A78C;
     color: #191919;
     border: 1px solid #D4A78C;
@@ -584,7 +602,7 @@
     transition: 500ms;
 }
 
-.btn-usePoints:hover {
+.usePointsButton:hover {
     background-color: transparent;
     color: #F6DBC0;
 }
