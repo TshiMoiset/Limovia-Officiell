@@ -345,7 +345,6 @@
     color: #F6DBC0;
 }
 
-/* ====== Knappar ====== */
 .nextTripButtons {
     display: flex;
     flex-direction: column;
@@ -398,6 +397,7 @@
     }
 }
 
+/* ====== Kortet (samma känsla som Kommande resa) ====== */
 /* ====== Kortet (samma känsla som Kommande resa) ====== */
 .card--points {
     border-radius: 16px;
@@ -655,3 +655,123 @@
 }
 
 /* ----------------------------- Leasing Page ------------------------ */
+.card--leasing {
+    border-radius: 16px;
+    padding: 22px 26px;
+    border: 1px solid rgba(212, 167, 140, 0.25);
+    background:
+        radial-gradient(120% 140% at 0% 0%, rgba(212, 167, 140, .05), transparent 60%),
+        #191919;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.02);
+    color: #E6D8D7;
+}
+
+.card--leasing h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #F6DBC0;
+}
+
+.leasingLayout {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    align-items: start;
+    gap: 20px;
+}
+
+.leasingCarImage img {
+    width: auto;
+    height: 150px;
+}
+
+.leasingHeadline {
+    margin: 0 0 10px;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    color: #F6DBC0;
+}
+
+.leasingPrice {
+    font-size: 15px;
+    font-weight: 600;
+    color: #F6DBC0;
+}
+
+.leasingCarDetails ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.leasingCarDetails li {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+.leasingCarDetails li span {
+    color: #F6DBC0;
+}
+
+.leasingUpgradeButton {
+    background: #D4A78C;
+    color: #191919;
+    border: 2px solid #D4A78C;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-style: oblique;
+    box-shadow: 0 6px 16px rgba(212, 167, 140, 0.25);
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    transition: 500ms;
+    border-radius: 10px;
+}
+
+.leasingUpgradeButton:hover {
+    background: transparent;
+    color: #E6D8D7;
+}
+
+.leasingDetailsButton {
+    background: transparent;
+    color: #E6D8D7;
+    border: none;
+    font-size: 14px;
+    transition: 500ms;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.leasingDetailsButton:hover {
+    transition: 500ms;
+    color: #F6DBC0;
+    text-decoration: underline;
+}
+
+.leasingButtons {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.leasingProgressBar {
+    width: 100%;
+    height: 10px;
+    border-radius: 999px;
+    background: #232323;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.leasingProgressHeader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #c2a77c;
+}
+
+.leasingProgressBar>span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #D4A78C, #F6DBC0);
+    border-radius: 999px;
+}
