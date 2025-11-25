@@ -655,6 +655,7 @@
 }
 
 /* ----------------------------- Leasing Page ------------------------ */
+/* ----------------------------- Leasing Card ------------------------ */
 .card--leasing {
     border-radius: 16px;
     padding: 22px 26px;
@@ -668,39 +669,75 @@
 }
 
 .card--leasing h3 {
+    margin: 0 0 12px;
     font-size: 1.1rem;
     font-weight: 600;
     color: #F6DBC0;
 }
 
+/* Layout med två kolumner */
 .leasingLayout {
     display: grid;
-    grid-template-columns: 1.6fr 1fr;
-    align-items: start;
+    grid-template-columns: 1.8fr 1.2fr;
+    align-items: center;
     gap: 20px;
 }
 
-.leasingCarImage img {
-    width: auto;
-    height: 150px;
+/* Vänster sida */
+.leasingLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Topp-rad med label + rubrik + pris */
+.leasingTopRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.leasingLabel {
+    margin: 0 0 4px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #c2a77c;
+    opacity: 0.9;
 }
 
 .leasingHeadline {
-    margin: 0 0 10px;
-    font-size: 15px;
+    margin: 0;
+    font-size: 1rem;
     letter-spacing: 0.2px;
     color: #F6DBC0;
 }
 
+/* Prisblock */
+.leasingPriceBlock {
+    text-align: right;
+}
+
 .leasingPrice {
-    font-size: 15px;
+    display: block;
+    font-size: 1rem;
     font-weight: 600;
     color: #F6DBC0;
 }
 
+.leasingPriceNote {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.75rem;
+    color: #c2a77c;
+}
+
+/* Detaljer */
 .leasingCarDetails ul {
     list-style: none;
-    margin-top: 10px;
+    margin: 6px 0 0;
+    padding: 0;
 }
 
 .leasingCarDetails li {
@@ -710,6 +747,56 @@
 
 .leasingCarDetails li span {
     color: #F6DBC0;
+}
+
+/* Höger sida – bilbild */
+.leasingRight {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.leasingCarImage img {
+    height: 150px;
+    width: auto;
+    display: block;
+    border-radius: 12px;
+    filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.6));
+}
+
+/* Progress-del */
+.leasingProgressBlock {
+    margin-top: 16px;
+}
+
+.leasingProgressHeader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #c2a77c;
+}
+
+.leasingProgressBar {
+    width: 100%;
+    height: 10px;
+    border-radius: 999px;
+    background: #232323;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.leasingProgressBar>span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #D4A78C, #F6DBC0);
+    border-radius: 999px;
+}
+
+
+.leasingButtons {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    justify-content: center;
 }
 
 .leasingUpgradeButton {
@@ -722,7 +809,7 @@
     box-shadow: 0 6px 16px rgba(212, 167, 140, 0.25);
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
-    transition: 500ms;
+    transition: 250ms ease;
     border-radius: 10px;
 }
 
@@ -736,9 +823,8 @@
     color: #E6D8D7;
     border: none;
     font-size: 14px;
-    transition: 500ms;
-    margin: 10px;
     cursor: pointer;
+    transition: 500ms;
 }
 
 .leasingDetailsButton:hover {
@@ -747,31 +833,15 @@
     text-decoration: underline;
 }
 
-.leasingButtons {
-    display: flex;
-    padding-top: 10px;
-    justify-content: center;
-}
 
-.leasingProgressBar {
-    width: 100%;
-    height: 10px;
-    border-radius: 999px;
-    background: #232323;
-    overflow: hidden;
-    margin-top: 6px;
-}
+/* Enkel responsiv justering */
+@media (max-width: 900px) {
+    .leasingLayout {
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+    }
 
-.leasingProgressHeader {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8rem;
-    color: #c2a77c;
-}
-
-.leasingProgressBar>span {
-    display: block;
-    height: 100%;
-    background: linear-gradient(90deg, #D4A78C, #F6DBC0);
-    border-radius: 999px;
+    .leasingRight {
+        justify-content: flex-start;
+    }
 }
