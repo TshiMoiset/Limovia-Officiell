@@ -1,54 +1,39 @@
-let screenSizex = window.matchMedia("(max-width: 1025px)");
-let screenSizey = window.matchMedia("(max-width: 568px)");
-let smallNavigation = document.getElementById("smallNavigation");
+ <!-- Övriga kampanjer -->
+                        <div class="campaignList">
 
-document
-  .getElementById("openNavbutton")
-  .addEventListener("click", function (event) {
-    event.stopPropagation(); // Prevent click event from reaching document when open button is clicked
-    openNavbar();
-  });
+                            <!-- <article class="campaignItem">
 
-document
-  .getElementById("closeNavbutton")
-  .addEventListener("click", function () {
-    closeNavbar();
-  });
+                                <div>
+                                    <p class="campaignTag campaignTag--leasing">Leasing</p>
+                                    <h5>3 månader fri uppgradering</h5>
+                                    <p class="campaignText">
+                                        Uppgradera till Volvo EX90 Excellence utan extra månadskostnad de första 3
+                                        månaderna.
+                                    </p>
+                                </div>
 
-// Add event listeners to buttons and links within the navbar to close the navbar when clicked
-let navbarElements = smallNavigation.querySelectorAll("button, a");
-for (let i = 0; i < navbarElements.length; i++) {
-  navbarElements[i].addEventListener("click", closeNavbar);
-}
+                                <div class="campaignItemMeta">
+                                    <span>Gäller nya leasingavtal t.o.m. 31/12</span>
+                                    <button class="btn campaignSmall">Läs mer</button>
+                                </div>
 
-function openNavbar() {
-  document.getElementById("openNavbutton").style.display = "none";
-  document.getElementById("closeNavbutton").style.display = "block";
-  if (screenSizey.matches) {
-    smallNavigation.style.width = "100%";
-  } else if (screenSizex.matches) {
-    smallNavigation.style.width = "35%";
-  }
-  document.addEventListener("click", closeNavbarOutside);
+                            </article>-->
 
-  // Set opacity of main content to 0.5 (black) with smooth transition
-  document.getElementById("main").style.transition = "opacity 0.5s ease-in-out";
-  document.getElementById("main").style.opacity = "0.5";
-}
+                            <!-- <article class="campaignItem">
 
-function closeNavbar() {
-  smallNavigation.style.width = "0";
-  document.getElementById("openNavbutton").style.display = "block";
-  document.getElementById("closeNavbutton").style.display = "none";
-  document.removeEventListener("click", closeNavbarOutside);
+                                <div>
+                                    <p class="campaignTag campaignTag--transfer">Flygplatstransfer</p>
+                                    <h5>Fast pris till Arlanda</h5>
+                                    <p class="campaignText">
+                                        Exklusivt medlemspris på alla Limovia-resor till och från Arlanda hela vintern.
+                                    </p>
+                                </div>
 
-  // Restore opacity of main content to 1 with smooth transition
-  document.getElementById("main").style.transition = "opacity 0.5s ease-in-out";
-  document.getElementById("main").style.opacity = "1";
-}
+                                <div class="campaignItemMeta">
+                                    <span>Endast medlemmar · Gäller t.o.m. 15/1</span>
+                                    <button class="btn campaignSmall">Visa pris</button>
+                                </div>
 
-function closeNavbarOutside(event) {
-  if (!smallNavigation.contains(event.target)) {
-    closeNavbar();
-  }
-}
+                            </article>-->
+
+                        </div>
