@@ -4,7 +4,6 @@
     height: 100%;
     /*background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);*/
 }
-
 .dashboardNavigation {
     padding-top: 75px;
     width: 340px;
@@ -97,9 +96,9 @@
     color: #E6D8D7;
 }
 
-.overViewContainer {
+.overviewContainer {
     box-sizing: border-box;
-    min-height: 100vh;
+    min-height: 100%;
     margin-left: 340px;
     /* background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);*/
     padding: 95px 30px 10px 30px;

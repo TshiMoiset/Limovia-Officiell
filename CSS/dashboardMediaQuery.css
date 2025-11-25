@@ -7,7 +7,7 @@
         width: 290px;
     }
 
-    .overViewContainer {
+    .overviewContainer {
         margin-left: 290px;
     }
 
@@ -47,7 +47,7 @@
 
     /* ---------------------- Overview Container ---------------------- */
 
-    .overViewContainer {
+    .overviewContainer {
         margin-left: 0;
     }
 
@@ -205,8 +205,8 @@
 
 @media screen and (max-width: 426px) {
 
-    /* -------------------- overViewContainer -------------------- */
-    .overViewContainer {
+    /* -------------------- overviewContainer -------------------- */
+    .overviewContainer {
         padding: 95px 0px 10px;
 
     }
