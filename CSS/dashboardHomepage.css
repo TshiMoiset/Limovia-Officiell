@@ -829,16 +829,3 @@
     color: #F6DBC0;
     text-decoration: underline;
 }
-
-
-/* Enkel responsiv justering */
-/*@media (max-width: 900px) {
-    .leasingLayout {
-        grid-template-columns: 1fr;
-        align-items: flex-start;
-    }
-
-    .leasingRight {
-        justify-content: flex-start;
-    }
-}*/
