@@ -398,7 +398,6 @@
 }
 
 /* ====== Kortet (samma känsla som Kommande resa) ====== */
-/* ====== Kortet (samma känsla som Kommande resa) ====== */
 .card--points {
     border-radius: 16px;
     padding: 22px 26px;
@@ -806,7 +805,7 @@
     box-shadow: 0 6px 16px rgba(212, 167, 140, 0.25);
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
-    transition: 250ms ease;
+    transition: 500ms;
     border-radius: 10px;
 }
 
