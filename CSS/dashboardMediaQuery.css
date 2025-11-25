@@ -1,11 +1,24 @@
 @media screen and (max-width: 1025px) {
+
+    /* -------------------- Dashboard navigation -------------------- */
+
+
+    .dashboardNavigation {
+        width: 290px;
+    }
+
+    .overViewContainer {
+        margin-left: 290px;
+    }
+
+    /* -------------------- Footer -------------------- */
+
     .footerContent {
         flex-direction: column;
         grid-gap: 5px;
         align-items: center;
     }
 
-    /* -------------------- Footer -------------------- */
 
     .footerContent {
         flex-direction: column;
@@ -68,6 +81,15 @@
         grid-template-columns: 150px 1fr;
         grid-gap: 50px;
     }
+
+    /* ---------------------- Leasing ---------------------- */
+
+    .leasingCarImage img {
+        height: 150px;
+        width: auto;
+    }
+
+
 
     /* ---------------------- Footer ---------------------- */
 
@@ -161,6 +183,16 @@
 
     .tierLink-SmallerScreens {
         display: block;
+    }
+
+    /* ---------------------- Leasing ---------------------- */
+
+    .leasingLayout {
+        display: block;
+    }
+
+    .leasingRight {
+        display: none;
     }
 
     /* -------------------- Footer -------------------- */

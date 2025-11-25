@@ -655,7 +655,6 @@
 }
 
 /* ----------------------------- Leasing Page ------------------------ */
-/* ----------------------------- Leasing Card ------------------------ */
 .card--leasing {
     border-radius: 16px;
     padding: 22px 26px;
@@ -699,12 +698,10 @@
 }
 
 .leasingLabel {
-    margin: 0 0 4px;
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: #c2a77c;
-    opacity: 0.9;
+    color: #e0c28a;
 }
 
 .leasingHeadline {
@@ -730,7 +727,7 @@
     display: block;
     margin-top: 2px;
     font-size: 0.75rem;
-    color: #c2a77c;
+    color: #e0c28a;
 }
 
 /* Detaljer */
@@ -772,7 +769,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
-    color: #c2a77c;
+    color: #e0c28a;
 }
 
 .leasingProgressBar {
@@ -835,7 +832,7 @@
 
 
 /* Enkel responsiv justering */
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
     .leasingLayout {
         grid-template-columns: 1fr;
         align-items: flex-start;
@@ -844,4 +841,4 @@
     .leasingRight {
         justify-content: flex-start;
     }
-}
+}*/
