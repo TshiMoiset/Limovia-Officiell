@@ -1,11 +1,11 @@
 footer {
+    bottom: 0;
     background-color: black;
     position: relative;
     color: white;
     width: 100%;
     padding: 16px 0;
     transition: 500ms;
-    bottom: 0;
 }
 
 .footerLogo h3 {

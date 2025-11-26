@@ -1,8 +1,10 @@
 @media screen and (max-width: 1025px) {
 
+    .mainPageContainer {
+        min-height: 175vh;
+    }
+
     /* -------------------- Dashboard navigation -------------------- */
-
-
     .dashboardNavigation {
         width: 290px;
     }
@@ -120,6 +122,10 @@
 
 @media screen and (max-width: 541px) {
 
+    .mainPageContainer {
+        min-height: 205vh;
+    }
+
     /* ---------------------- Next trip ---------------------- */
     .nextTripLayout {
         display: grid;
@@ -204,6 +210,10 @@
 }
 
 @media screen and (max-width: 426px) {
+
+    .mainPageContainer {
+        min-height: 235vh;
+    }
 
     /* -------------------- overviewContainer -------------------- */
     .overviewContainer {

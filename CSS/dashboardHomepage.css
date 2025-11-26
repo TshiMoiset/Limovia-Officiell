@@ -1,9 +1,17 @@
 .mainPageContainer {
     color: white;
     background: #0c0c0c;
-    height: 100%;
+    min-height: 100vh;
     /*background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);*/
 }
+
+.overviewContainer {
+    box-sizing: border-box;
+    margin-left: 340px;
+    padding: 95px 30px 10px 30px;
+    /* background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);*/
+}
+
 .dashboardNavigation {
     padding-top: 75px;
     width: 340px;
@@ -13,6 +21,7 @@
     overflow: auto;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .profileImageAndLevel {
@@ -94,14 +103,6 @@
 
 .settingsButton:hover {
     color: #E6D8D7;
-}
-
-.overviewContainer {
-    box-sizing: border-box;
-    min-height: 100%;
-    margin-left: 340px;
-    /* background: linear-gradient(135deg, #0C0C0C 0%, #1A1A1A 100%);*/
-    padding: 95px 30px 10px 30px;
 }
 
 .dashboardGrid {
