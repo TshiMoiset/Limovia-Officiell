@@ -126,6 +126,10 @@
         min-height: 205vh;
     }
 
+    .overviewContainer {
+        padding: 95px 5px 10px;
+    }
+
     /* ---------------------- Next trip ---------------------- */
     .nextTripLayout {
         display: grid;
@@ -218,7 +222,6 @@
     /* -------------------- overviewContainer -------------------- */
     .overviewContainer {
         padding: 95px 0px 10px;
-
     }
 
     .dashboardGrid,
